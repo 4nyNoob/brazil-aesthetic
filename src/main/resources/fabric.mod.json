@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "brazil-asthetic",
+	"version": "${version}",
+	"name": "Brazil Asthetic",
+	"description": "This is a mod that adds brazilian items into minecraft :)",
+	"authors": [
+		"4ny"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/brazil-asthetic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"any.brazilasthetic.BrazilAsthetic"
+		],
+		"client": [
+			"any.brazilasthetic.BrazilAstheticClient"
+		],
+		"fabric-datagen": [
+			"any.brazilasthetic.BrazilAstheticDataGenerator"
+		]
+	},
+	"mixins": [
+		"brazil-asthetic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

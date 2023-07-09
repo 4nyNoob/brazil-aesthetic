@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "any.brazilasthetic.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
