@@ -1,5 +1,7 @@
 package any.brazilasthetic;
 
+import any.brazilasthetic.item.ModItemGroups;
+import any.brazilasthetic.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +14,7 @@ public class BrazilAsthetic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 	}
 }
