@@ -1,7 +1,14 @@
 {
-  "itemGroup.modtab": "Custom Mobs",
+  "itemgroup.brazil": "Brazil Asthetic",
+
 
   "item.brazil-asthetic.testitem": "Test Item",
   "item.brazil-asthetic.cup_american": "American Cup",
-  "itemgroup.brazil": "Brazil Items"
+  "item.brazil-asthetic.cup_american.tooltip" : "actually this is a soviet design...",
+
+
+  "block.brazil-asthetic.blue_wire_chair": "Blue Wire Chair",
+  "block.brazil-asthetic.green_wire_chair": "Green Wire Chair",
+  "block.brazil-asthetic.red_wire_chair": "Red Wire Chair",
+  "block.brazil-asthetic.yellow_wire_chair": "Yellow Wire Chair"
 }
