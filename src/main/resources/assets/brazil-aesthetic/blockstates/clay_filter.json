@@ -1,0 +1,19 @@
+{
+  "variants" : {
+    "facing=north": {
+      "model": "brazil-aesthetic:block/clay_filter"
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/clay_filter",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/clay_filter",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "brazil-aesthetic:block/clay_filter",
+      "y": 90
+    }
+  }
+}

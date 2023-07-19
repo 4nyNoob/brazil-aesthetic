@@ -5,10 +5,20 @@
   "item.brazil-aesthetic.testitem": "Test Item",
   "item.brazil-aesthetic.cup_american": "American Cup",
   "item.brazil-aesthetic.cup_american.tooltip" : "actually this is a soviet design...",
+  "item.brazil-aesthetic.water_cup_american": "American Cup With Water",
+  "item.brazil-aesthetic.water_cup_american.tooltip" : "the DEFINITIVE way of drinking water",
 
 
   "block.brazil-aesthetic.blue_wire_chair": "Blue Wire Chair",
   "block.brazil-aesthetic.green_wire_chair": "Green Wire Chair",
   "block.brazil-aesthetic.red_wire_chair": "Red Wire Chair",
-  "block.brazil-aesthetic.yellow_wire_chair": "Yellow Wire Chair"
+  "block.brazil-aesthetic.yellow_wire_chair": "Yellow Wire Chair",
+  "block.brazil-aesthetic.clay_filter": "Clay Filter",
+  "block.brazil-aesthetic.yellow_bar_chair": "Yellow Bar Chair",
+  "block.brazil-aesthetic.red_bar_chair": "Red Bar Chair",
+  "block.brazil-aesthetic.white_bar_chair": "White Bar Chair",
+  "block.brazil-aesthetic.yellow_bar_table": "Yellow Bar Table",
+  "block.brazil-aesthetic.red_bar_table": "Red Bar Table",
+  "block.brazil-aesthetic.amber_plate": "Amber Plate",
+  "block.brazil-aesthetic.pineapple_jar": "Pineaple Jar"
 }

@@ -1,6 +1,9 @@
 package any.brazilaesthetic.block;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
@@ -13,14 +16,22 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-public class ChairBlock extends HorizontalFacingBlock {
+public class TableBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public ChairBlock(Settings settings) {
+    public TableBlock(Settings settings) {
         super(settings);
 
     }
-
+    protected static final VoxelShape BAR_TABLE_SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(1, 14, 1, 15, 16, 15),
+            Block.createCuboidShape(1, 0, 1, 3, 16, 3),
+            Block.createCuboidShape(13, 0, 1, 15, 16, 3),
+            Block.createCuboidShape(1, 0, 13, 3, 16, 15),
+            Block.createCuboidShape(13, 0, 13, 15, 16, 15),
+            Block.createCuboidShape(0, 14, 3, 16, 16, 13),
+            Block.createCuboidShape(3, 14, 0, 13, 16, 16)
+    );
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
@@ -44,6 +55,6 @@ public class ChairBlock extends HorizontalFacingBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.125f, 0f, 0.125f, 0.875f, 0.5f, 0.875f);
+        return BAR_TABLE_SHAPE;
     }
 }

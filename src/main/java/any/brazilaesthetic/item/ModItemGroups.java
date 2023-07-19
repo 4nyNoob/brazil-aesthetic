@@ -14,16 +14,24 @@ public class ModItemGroups {
     public static final ItemGroup BRAZIL_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BrazilAesthetic.MOD_ID, "brazil"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.brazil"))
-                    .icon(() -> new ItemStack(ModItems.TEST_ITEM)).entries(((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.CLAY_FILTER))
+                    .entries(((displayContext, entries) -> {
                         //MOD ITEMS
-                        //entries.add(ModItems.TEST_ITEM);
                         entries.add(ModItems.CUP_AMERICAN);
-
+                        entries.add(ModItems.WATER_CUP_AMERICAN);
                         //MOD BLOCKS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
                         entries.add(ModBlocks.GREEN_WIRE_CHAIR);
                         entries.add(ModBlocks.RED_WIRE_CHAIR);
                         entries.add(ModBlocks.YELLOW_WIRE_CHAIR);
+                        entries.add(ModBlocks.CLAY_FILTER);
+                        entries.add(ModBlocks.YELLOW_BAR_CHAIR);
+                        entries.add(ModBlocks.RED_BAR_CHAIR);
+                        entries.add(ModBlocks.WHITE_BAR_CHAIR);
+                        entries.add(ModBlocks.YELLOW_BAR_TABLE);
+                        entries.add(ModBlocks.RED_BAR_TABLE);
+                        entries.add(ModBlocks.AMBER_PLATE);
+                        entries.add(ModBlocks.PINEAPPLE_JAR);
                     })).build());
 
     public static void registerItemGroups() {
