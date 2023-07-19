@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "brazil-asthetic",
+	"id": "brazil-aesthetic",
 	"version": "1.20.1-0.1",
-	"name": "Brazil Asthetic",
+	"name": "Brazil Aesthetic",
 	"description": "This is a mod that adds brazilian items into minecraft :)",
 	"authors": [
 		"4ny"
@@ -16,17 +16,17 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"any.brazilasthetic.BrazilAsthetic"
+			"any.brazilaesthetic.BrazilAesthetic"
 		],
 		"client": [
-			"any.brazilasthetic.BrazilAstheticClient"
+			"any.brazilaesthetic.BrazilAestheticClient"
 		],
 		"fabric-datagen": [
-			"any.brazilasthetic.BrazilAstheticDataGenerator"
+			"any.brazilaesthetic.BrazilAestheticDataGenerator"
 		]
 	},
 	"mixins": [
-		"brazil-asthetic.mixins.json"
+		"brazil-aesthetic.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",

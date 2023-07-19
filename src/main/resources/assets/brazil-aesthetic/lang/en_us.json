@@ -1,0 +1,14 @@
+{
+  "itemgroup.brazil": "Brazil Aesthetic",
+
+
+  "item.brazil-aesthetic.testitem": "Test Item",
+  "item.brazil-aesthetic.cup_american": "American Cup",
+  "item.brazil-aesthetic.cup_american.tooltip" : "actually this is a soviet design...",
+
+
+  "block.brazil-aesthetic.blue_wire_chair": "Blue Wire Chair",
+  "block.brazil-aesthetic.green_wire_chair": "Green Wire Chair",
+  "block.brazil-aesthetic.red_wire_chair": "Red Wire Chair",
+  "block.brazil-aesthetic.yellow_wire_chair": "Yellow Wire Chair"
+}
