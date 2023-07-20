@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "#S#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:clay_ball"
+    },
+    "X": {
+      "item": "minecraft:water_bucket"
+    },
+    "S": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "brazil-aesthetic:clay_filter"
+  }
+}

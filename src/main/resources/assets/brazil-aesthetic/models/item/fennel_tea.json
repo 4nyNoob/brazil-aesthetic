@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "brazil-aesthetic:item/mate"
+        "layer0": "brazil-aesthetic:item/fennel_tea"
     }
 }

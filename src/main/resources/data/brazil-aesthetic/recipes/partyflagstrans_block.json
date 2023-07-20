@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "PPP",
+    "BYR"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "B": {
+      "item": "minecraft:pink_dye"
+    },
+    "Y": {
+      "item": "minecraft:white_dye"
+    },
+    "R": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "result": {
+    "item": "brazil-aesthetic:party_flags_trans"
+  }
+}

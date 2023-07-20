@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "PPP",
+    "BYR"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "B": {
+      "item": "minecraft:red_dye"
+    },
+    "Y": {
+      "item": "minecraft:orange_shard"
+    },
+    "R": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "brazil-aesthetic:party_flags_lesbian"
+  }
+}

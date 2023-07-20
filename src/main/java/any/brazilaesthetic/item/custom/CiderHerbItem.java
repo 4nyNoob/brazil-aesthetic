@@ -8,13 +8,13 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class CalderaoItem extends Item {
-    public CalderaoItem(Settings settings) {
+public class CiderHerbItem extends Item {
+    public CiderHerbItem(Settings settings) {
         super(settings);
     }
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         //american cup
-        tooltip.add(Text.translatable("item.brazil-aesthetic.calderao.tooltip"));
+        tooltip.add(Text.translatable("item.brazil-aesthetic.ciderherb.tooltip"));
     }
 }

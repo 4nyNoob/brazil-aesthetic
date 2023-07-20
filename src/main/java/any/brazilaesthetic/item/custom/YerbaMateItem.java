@@ -8,13 +8,13 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class MateItem extends Item {
-    public MateItem(Settings settings) {
+public class YerbaMateItem extends Item {
+    public YerbaMateItem(Settings settings) {
         super(settings);
     }
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         //american cup
-        tooltip.add(Text.translatable("item.brazil-aesthetic.mate.tooltip"));
+        tooltip.add(Text.translatable("item.brazil-aesthetic.yerbamate.tooltip"));
     }
 }

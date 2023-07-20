@@ -20,38 +20,38 @@ public class ModItems {
     public static final Item COXINHA = registerItem("coxinha",
             new CoxinhaItem(new FabricItemSettings()));
 
-    public static final Item CACHACA = registerItem("cachaca",
-            new CachacaItem(new FabricItemSettings()));
+    public static final Item FIFTYONE = registerItem("fiftyone",
+            new FiftyOneItem(new FabricItemSettings()));
 
-    public static final Item CALDERAO = registerItem("calderao",
-            new CalderaoItem(new FabricItemSettings()));
+    public static final Item CAULDRON = registerItem("clay_cauldron",
+            new CauldronItem(new FabricItemSettings()));
 
-    public static final Item CHACIDEIRA = registerItem("chacideira",
-            new ChaCideiraItem(new FabricItemSettings()));
+    public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
+            new CiderHerbTeaItem(new FabricItemSettings()));
 
-    public static final Item CHAERVADOCE = registerItem("chaervadoce",
-            new ChaErvaDoceItem(new FabricItemSettings()));
+    public static final Item FENNEl_TEA = registerItem("fennel_tea",
+            new FennelTeaItem(new FabricItemSettings()));
 
-    public static final Item CHAMATE = registerItem("chamate",
-            new ChaErvaDoceItem(new FabricItemSettings()));
+    public static final Item YERBA_MATE_TEA = registerItem("yerba_mate_tea",
+            new ChaMateItem(new FabricItemSettings()));
 
-    public static final Item EVADOCE = registerItem("evadoce",
-            new EvaDoceItem(new FabricItemSettings()));
+    public static final Item FENNEL = registerItem("fennel",
+            new FennelItem(new FabricItemSettings()));
 
-    public static final Item FEIJOADA = registerItem("feijoada",
-            new FeijoadaItem(new FabricItemSettings()));
+    public static final Item CLAY_CAULDRON_WITH_FEIJOADA = registerItem("clay_cauldron_with_feijoada",
+            new ClayCauldronWithFeijoadaItem(new FabricItemSettings()));
 
-    public static final Item FOLHASCIDEIRA = registerItem("folhascideira",
-            new FolhasCideiraItem(new FabricItemSettings()));
+    public static final Item CIDER_HERB = registerItem("cider_herb",
+            new CiderHerbItem(new FabricItemSettings()));
 
     public static final Item GUARANA = registerItem("guarana",
             new GuaranaItem(new FabricItemSettings()));
 
-    public static final Item MATE = registerItem("mate",
-            new MateItem(new FabricItemSettings()));
+    public static final Item YERBA_MATE = registerItem("yerba_mate",
+            new YerbaMateItem(new FabricItemSettings()));
 
-    public static final Item XICRA = registerItem("xicra",
-            new XicraItem(new FabricItemSettings()));
+    public static final Item AMBER_MUG = registerItem("amber_mug",
+            new AmberMugItem(new FabricItemSettings()));
 
 
 

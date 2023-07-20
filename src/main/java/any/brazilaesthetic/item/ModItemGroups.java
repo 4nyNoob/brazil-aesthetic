@@ -21,17 +21,17 @@ public class ModItemGroups {
                         entries.add(ModItems.WATER_CUP_AMERICAN);
                         entries.add(ModItems.COXINHA);
                         entries.add(ModItems.ACAI);
-                        entries.add(ModItems.CACHACA);
-                        entries.add(ModItems.MATE);
-                        entries.add(ModItems.FEIJOADA);
+                        entries.add(ModItems.FIFTYONE);
+                        entries.add(ModItems.YERBA_MATE);
+                        entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
                         entries.add(ModItems.GUARANA);
-                        entries.add(ModItems.CALDERAO);
-                        entries.add(ModItems.CHACIDEIRA);
-                        entries.add(ModItems.CHAMATE);
-                        entries.add(ModItems.CHAERVADOCE);
-                        entries.add(ModItems.EVADOCE);
-                        entries.add(ModItems.FOLHASCIDEIRA);
-                        entries.add(ModItems.XICRA);
+                        entries.add(ModItems.CAULDRON);
+                        entries.add(ModItems.CIDER_HERB_TEA);
+                        entries.add(ModItems.YERBA_MATE_TEA);
+                        entries.add(ModItems.FENNEl_TEA);
+                        entries.add(ModItems.FENNEL);
+                        entries.add(ModItems.CIDER_HERB);
+                        entries.add(ModItems.AMBER_MUG);
 
                         //MOD BLOCKS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
