@@ -19,6 +19,20 @@ public class ModItemGroups {
                         //MOD ITEMS
                         entries.add(ModItems.CUP_AMERICAN);
                         entries.add(ModItems.WATER_CUP_AMERICAN);
+                        entries.add(ModItems.COXINHA);
+                        entries.add(ModItems.ACAI);
+                        entries.add(ModItems.CACHACA);
+                        entries.add(ModItems.MATE);
+                        entries.add(ModItems.FEIJOADA);
+                        entries.add(ModItems.GUARANA);
+                        entries.add(ModItems.CALDERAO);
+                        entries.add(ModItems.CHACIDEIRA);
+                        entries.add(ModItems.CHAMATE);
+                        entries.add(ModItems.CHAERVADOCE);
+                        entries.add(ModItems.EVADOCE);
+                        entries.add(ModItems.FOLHASCIDEIRA);
+                        entries.add(ModItems.XICRA);
+
                         //MOD BLOCKS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
                         entries.add(ModBlocks.GREEN_WIRE_CHAIR);

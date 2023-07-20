@@ -1,8 +1,7 @@
 package any.brazilaesthetic.item;
 
 import any.brazilaesthetic.BrazilAesthetic;
-import any.brazilaesthetic.item.custom.CupAmericanItem;
-import any.brazilaesthetic.item.custom.WaterCupAmericanItem;
+import any.brazilaesthetic.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -16,6 +15,46 @@ public class ModItems {
             new CupAmericanItem(new FabricItemSettings().maxCount(4)));
     public static final Item WATER_CUP_AMERICAN = registerItem("water_cup_american",
             new WaterCupAmericanItem(new FabricItemSettings().maxCount(1)));
+    public static final Item ACAI = registerItem("acai",
+            new AcaiItem(new FabricItemSettings()));
+    public static final Item COXINHA = registerItem("coxinha",
+            new CoxinhaItem(new FabricItemSettings()));
+
+    public static final Item CACHACA = registerItem("cachaca",
+            new CachacaItem(new FabricItemSettings()));
+
+    public static final Item CALDERAO = registerItem("calderao",
+            new CalderaoItem(new FabricItemSettings()));
+
+    public static final Item CHACIDEIRA = registerItem("chacideira",
+            new ChaCideiraItem(new FabricItemSettings()));
+
+    public static final Item CHAERVADOCE = registerItem("chaervadoce",
+            new ChaErvaDoceItem(new FabricItemSettings()));
+
+    public static final Item CHAMATE = registerItem("chamate",
+            new ChaErvaDoceItem(new FabricItemSettings()));
+
+    public static final Item EVADOCE = registerItem("evadoce",
+            new EvaDoceItem(new FabricItemSettings()));
+
+    public static final Item FEIJOADA = registerItem("feijoada",
+            new FeijoadaItem(new FabricItemSettings()));
+
+    public static final Item FOLHASCIDEIRA = registerItem("folhascideira",
+            new FolhasCideiraItem(new FabricItemSettings()));
+
+    public static final Item GUARANA = registerItem("guarana",
+            new GuaranaItem(new FabricItemSettings()));
+
+    public static final Item MATE = registerItem("mate",
+            new MateItem(new FabricItemSettings()));
+
+    public static final Item XICRA = registerItem("xicra",
+            new XicraItem(new FabricItemSettings()));
+
+
+
 
     private static Item registerItem( String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(BrazilAesthetic.MOD_ID, name), item);
