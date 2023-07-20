@@ -39,6 +39,25 @@ public class ModBlocks {
             new JarBlock(FabricBlockSettings.create().strength(1f)));
     public static final Block CAPYBARA = registerBlock("capybara",
             new ChairBlock(FabricBlockSettings.create().strength(1f)));
+    public static final Block PARTY_FLAGS = registerBlock("party_flags",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_2 = registerBlock("party_flags_2",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_AROMANTIC = registerBlock("party_flags_aromantic",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_ASEXUAL = registerBlock("party_flags_asexual",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_BISEXUAL = registerBlock("party_flags_bisexual",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_LESBIAN = registerBlock("party_flags_lesbian",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_PANSEXUAL = registerBlock("party_flags_pansexual",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_PRIDE = registerBlock("party_flags_pride",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+    public static final Block PARTY_FLAGS_TRANS = registerBlock("party_flags_trans",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+
 
 
     private static Block registerBlock(String name, Block block) {
