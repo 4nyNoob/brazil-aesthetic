@@ -1,33 +1,28 @@
 package any.brazilaesthetic.block;
 
-import any.brazilaesthetic.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class ClayFilterBlock extends HorizontalFacingBlock {
+public class FlipFlopBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public ClayFilterBlock(Settings settings) {
+    public FlipFlopBlock(Settings settings) {
         super(settings);
     }
 
@@ -35,20 +30,6 @@ public class ClayFilterBlock extends HorizontalFacingBlock {
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
         return this.getDefaultState().with(FACING, cxt.getHorizontalPlayerFacing().getOpposite());
-    }
-    @Override
-    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return !world.isAir(pos.down());
-    }
-
-    @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        ItemStack itemStack = null;
-        if (!world.isClient && player.getStackInHand(hand).isOf(ModItems.CUP_AMERICAN)) {
-            player.setStackInHand(hand, ModItems.WATER_CUP_AMERICAN.getDefaultStack());
-            return ActionResult.SUCCESS;
-        }
-        return ActionResult.PASS;
     }
 
     @Override
@@ -67,7 +48,22 @@ public class ClayFilterBlock extends HorizontalFacingBlock {
     }
 
     @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
+    }
+
+    protected static final VoxelShape SHAPE_NS = VoxelShapes.union(
+            Block.createCuboidShape(5, 0, 4, 11, 2, 12)
+    );
+    protected static final VoxelShape SHAPE_EW = VoxelShapes.union(
+            Block.createCuboidShape(4, 0, 5, 12, 2, 11)
+    );
+
+    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.1875f, 0f, 0.1875f, 0.8125f, 0.9375f, 0.815f);
+        if (state.get(FACING) == Direction.EAST || state.get(FACING) == Direction.WEST){
+            return SHAPE_EW;
+        }
+        return SHAPE_NS;
     }
 }

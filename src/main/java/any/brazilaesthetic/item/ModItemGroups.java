@@ -32,6 +32,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FENNEL);
                         entries.add(ModItems.CIDER_HERB);
                         entries.add(ModItems.AMBER_MUG);
+                        entries.add(ModItems.COCONUT_WITH_STRAW);
 
                         //MOD BLOCKS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
@@ -56,6 +57,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PARTY_FLAGS_PANSEXUAL);
                         entries.add(ModBlocks.PARTY_FLAGS_PRIDE);
                         entries.add(ModBlocks.PARTY_FLAGS_TRANS);
+                        entries.add(ModBlocks.COPACABANA_SIDEWALK);
+                        entries.add(ModBlocks.CALENDAR);
+                        entries.add(ModBlocks.FLIP_FLOP);
+                        entries.add(ModBlocks.FLIP_FLOP_2);
                     })).build());
 
     public static void registerItemGroups() {

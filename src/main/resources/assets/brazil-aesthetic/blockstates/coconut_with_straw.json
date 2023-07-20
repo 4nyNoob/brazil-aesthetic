@@ -1,0 +1,19 @@
+{
+  "variants" : {
+    "facing=north": {
+      "model": "brazil-aesthetic:block/coconut_with_straw"
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/coconut_with_straw",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/coconut_with_straw",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "brazil-aesthetic:block/coconut_with_straw",
+      "y": 90
+    }
+  }
+}

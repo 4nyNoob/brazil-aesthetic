@@ -20,12 +20,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class PlateBlock extends Block {
 
-    public static final int MAX_PLATE_STACK = 5;
+    //public static final int MAX_PLATE_STACK = 5;
     public static final IntProperty PLATES = IntProperty.of("plates", 1, 5);
 
     public PlateBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)(this.stateManager.getDefaultState()).with(PLATES, 1));
+        this.setDefaultState((this.stateManager.getDefaultState()).with(PLATES, 1));
     }
     protected static final VoxelShape ONE_PLATE_SHAPE = VoxelShapes.union(
             Block.createCuboidShape(4, 0, 4, 12, 1.5, 12)
