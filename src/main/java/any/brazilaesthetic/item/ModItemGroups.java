@@ -19,6 +19,7 @@ public class ModItemGroups {
                         //MOD ITEMS
                         entries.add(ModItems.CUP_AMERICAN);
                         entries.add(ModItems.WATER_CUP_AMERICAN);
+                        entries.add(ModItems.COXINHA);
                         //MOD BLOCKS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
                         entries.add(ModBlocks.GREEN_WIRE_CHAIR);

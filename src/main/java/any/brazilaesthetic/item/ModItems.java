@@ -1,6 +1,7 @@
 package any.brazilaesthetic.item;
 
 import any.brazilaesthetic.BrazilAesthetic;
+import any.brazilaesthetic.item.custom.CoxinhaItem;
 import any.brazilaesthetic.item.custom.CupAmericanItem;
 import any.brazilaesthetic.item.custom.WaterCupAmericanItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -16,6 +17,8 @@ public class ModItems {
             new CupAmericanItem(new FabricItemSettings().maxCount(4)));
     public static final Item WATER_CUP_AMERICAN = registerItem("water_cup_american",
             new WaterCupAmericanItem(new FabricItemSettings().maxCount(1)));
+    public static final Item COXINHA = registerItem("coxinha",
+            new CoxinhaItem(new FabricItemSettings()));
 
     private static Item registerItem( String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(BrazilAesthetic.MOD_ID, name), item);
