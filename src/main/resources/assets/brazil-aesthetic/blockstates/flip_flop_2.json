@@ -1,0 +1,19 @@
+{
+  "variants" : {
+    "facing=north": {
+      "model": "brazil-aesthetic:block/flip_flop_2"
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/flip_flop_2",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/flip_flop_2",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "brazil-aesthetic:block/flip_flop_2",
+      "y": 90
+    }
+  }
+}

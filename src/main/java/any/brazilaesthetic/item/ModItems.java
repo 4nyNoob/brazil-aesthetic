@@ -1,8 +1,10 @@
 package any.brazilaesthetic.item;
 
 import any.brazilaesthetic.BrazilAesthetic;
+import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -52,6 +54,10 @@ public class ModItems {
 
     public static final Item XICRA = registerItem("xicra",
             new XicraItem(new FabricItemSettings()));
+
+    public static final Item COCONUT_WITH_STRAW = registerItem("coconut_with_straw_item",
+            new CoconutWithStrawItem(ModBlocks.COCONUT_WITH_STRAW, new FabricItemSettings().maxCount(1)));
+
 
 
 
