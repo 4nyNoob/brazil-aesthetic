@@ -32,6 +32,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_BAR_TABLE);
                         entries.add(ModBlocks.AMBER_PLATE);
                         entries.add(ModBlocks.PINEAPPLE_JAR);
+                        entries.add(ModBlocks.CAPYBARA);
                     })).build());
 
     public static void registerItemGroups() {

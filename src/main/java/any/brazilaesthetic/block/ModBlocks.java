@@ -37,6 +37,8 @@ public class ModBlocks {
             new PlateBlock(FabricBlockSettings.create().strength(20f).sounds(BlockSoundGroup.GLASS).nonOpaque()));
     public static final Block PINEAPPLE_JAR = registerBlock("pineapple_jar",
             new JarBlock(FabricBlockSettings.create().strength(1f)));
+    public static final Block CAPYBARA = registerBlock("capybara",
+            new ChairBlock(FabricBlockSettings.create().strength(1f)));
 
 
     private static Block registerBlock(String name, Block block) {
