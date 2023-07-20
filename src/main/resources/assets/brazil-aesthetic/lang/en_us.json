@@ -33,11 +33,14 @@
   "item.brazil-aesthetic.yerbamate.tooltip": "South American herb, used to medicine and tea preparing",
   "item.brazil-aesthetic.ambermug": "Amber mug",
   "item.brazil-aesthetic.ambermug.tooltip": "The rumors say it's UNBREAKABLE!",
+  "item.brazil-aesthetic.coconut_with_straw": "Coconut with Straw",
+  "item.brazil-aesthetic.coconut_with_straw.tooltip": "Refreshing drink direto from Rio de Janeiro!",
 
   "block.brazil-aesthetic.blue_wire_chair": "Blue Wire Chair",
   "block.brazil-aesthetic.green_wire_chair": "Green Wire Chair",
   "block.brazil-aesthetic.red_wire_chair": "Red Wire Chair",
   "block.brazil-aesthetic.yellow_wire_chair": "Yellow Wire Chair",
+  "block.brazil-aesthetic.coconut_with_straw": "Coconut With Straw",
   "block.brazil-aesthetic.clay_filter": "Clay Filter",
   "block.brazil-aesthetic.yellow_bar_chair": "Yellow Bar Chair",
   "block.brazil-aesthetic.red_bar_chair": "Red Bar Chair",
@@ -45,5 +48,10 @@
   "block.brazil-aesthetic.yellow_bar_table": "Yellow Bar Table",
   "block.brazil-aesthetic.red_bar_table": "Red Bar Table",
   "block.brazil-aesthetic.amber_plate": "Amber Plate",
-  "block.brazil-aesthetic.pineapple_jar": "Pineaple Jar"
+  "block.brazil-aesthetic.pineapple_jar": "Pineaple Jar",
+  "block.brazil-aesthetic.calendar": "Calendar",
+  "block.brazil-aesthetic.copacabana_sidewalk": "Copabana Sidewalk",
+  "block.brazil-aesthetic.flip_flop_1": "Flip Flops",
+  "block.brazil-aesthetic.flip_flop_2": "Flip Flops",
+
 }
