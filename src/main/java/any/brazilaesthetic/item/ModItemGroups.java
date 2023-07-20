@@ -47,6 +47,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AMBER_PLATE);
                         entries.add(ModBlocks.PINEAPPLE_JAR);
                         entries.add(ModBlocks.CAPYBARA);
+                        entries.add(ModBlocks.PARTY_FLAGS);
+                        entries.add(ModBlocks.PARTY_FLAGS_2);
+                        entries.add(ModBlocks.PARTY_FLAGS_AROMANTIC);
+                        entries.add(ModBlocks.PARTY_FLAGS_ASEXUAL);
+                        entries.add(ModBlocks.PARTY_FLAGS_BISEXUAL);
+                        entries.add(ModBlocks.PARTY_FLAGS_LESBIAN);
+                        entries.add(ModBlocks.PARTY_FLAGS_PANSEXUAL);
+                        entries.add(ModBlocks.PARTY_FLAGS_PRIDE);
+                        entries.add(ModBlocks.PARTY_FLAGS_TRANS);
                     })).build());
 
     public static void registerItemGroups() {
