@@ -72,6 +72,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FLIP_FLOP);
                         entries.add(ModBlocks.FLIP_FLOP_2);
                         entries.add(ModBlocks.ORANGE_MIRROR);
+                        entries.add(ModBlocks.PORCELAIN_CHICKEN);
                     })).build());
 
     public static void registerItemGroups() {
