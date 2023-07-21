@@ -21,44 +21,30 @@ public class ModItems {
             new AcaiItem(new FabricItemSettings()));
     public static final Item COXINHA = registerItem("coxinha",
             new CoxinhaItem(new FabricItemSettings()));
-
     public static final Item FIFTYONE = registerItem("fiftyone",
             new FiftyOneItem(new FabricItemSettings()));
-
     public static final Item CAULDRON = registerItem("clay_cauldron",
             new CauldronItem(new FabricItemSettings()));
-
     public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
             new CiderHerbTeaItem(new FabricItemSettings()));
-
     public static final Item FENNEl_TEA = registerItem("fennel_tea",
             new FennelTeaItem(new FabricItemSettings()));
-
     public static final Item YERBA_MATE_TEA = registerItem("yerba_mate_tea",
             new ChaMateItem(new FabricItemSettings()));
-
     public static final Item FENNEL = registerItem("fennel",
             new FennelItem(new FabricItemSettings()));
-
     public static final Item CLAY_CAULDRON_WITH_FEIJOADA = registerItem("clay_cauldron_with_feijoada",
             new ClayCauldronWithFeijoadaItem(new FabricItemSettings()));
-
     public static final Item CIDER_HERB = registerItem("cider_herb",
             new CiderHerbItem(new FabricItemSettings()));
-
     public static final Item GUARANA = registerItem("guarana",
             new GuaranaItem(new FabricItemSettings()));
-
     public static final Item YERBA_MATE = registerItem("yerba_mate",
             new YerbaMateItem(new FabricItemSettings()));
-
     public static final Item AMBER_MUG = registerItem("amber_mug",
             new AmberMugItem(new FabricItemSettings()));
-
     public static final Item COCONUT_WITH_STRAW = registerItem("coconut_with_straw_item",
             new CoconutWithStrawItem(ModBlocks.COCONUT_WITH_STRAW, new FabricItemSettings().maxCount(1)));
-
-
 
 
 

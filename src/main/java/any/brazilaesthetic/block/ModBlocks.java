@@ -67,6 +67,11 @@ public class ModBlocks {
             new FlipFlop2Block(FabricBlockSettings.create().strength(1f).nonOpaque()));
     public static final Block COCONUT_WITH_STRAW = registerBlock("coconut_with_straw",
             new CoconutWithStrawBlock(FabricBlockSettings.create().strength(1f)));
+    public static final Block ORANGE_MIRROR = registerBlock("orange_mirror",
+            new OrangeMirrorBlock(FabricBlockSettings.create().strength(1f)));
+    public static final Block PORCELAIN_CHICKEN = registerBlock("porcelain_chicken",
+            new PorcelainChickenBlock(FabricBlockSettings.create().strength(1f)));
+
 
 
 

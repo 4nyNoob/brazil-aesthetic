@@ -61,6 +61,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CALENDAR);
                         entries.add(ModBlocks.FLIP_FLOP);
                         entries.add(ModBlocks.FLIP_FLOP_2);
+                        entries.add(ModBlocks.ORANGE_MIRROR);
                     })).build());
 
     public static void registerItemGroups() {

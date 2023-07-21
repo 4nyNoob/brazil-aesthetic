@@ -1,0 +1,19 @@
+{
+  "variants" : {
+    "facing=north": {
+      "model": "brazil-aesthetic:block/porcelain_chicken"
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/porcelain_chicken",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/porcelain_chicken",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "brazil-aesthetic:block/porcelain_chicken",
+      "y": 90
+    }
+  }
+}
