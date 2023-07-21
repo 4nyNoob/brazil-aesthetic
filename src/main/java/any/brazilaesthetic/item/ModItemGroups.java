@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FIFTYONE);
                         entries.add(ModItems.YERBA_MATE);
                         entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
+                        entries.add(ModItems.CLAY_CAULDRON_WITH_CANJICA);
                         entries.add(ModItems.GUARANA);
                         entries.add(ModItems.CAULDRON);
                         entries.add(ModItems.CIDER_HERB_TEA);
@@ -33,6 +34,15 @@ public class ModItemGroups {
                         entries.add(ModItems.CIDER_HERB);
                         entries.add(ModItems.AMBER_MUG);
                         entries.add(ModItems.COCONUT_WITH_STRAW);
+                        entries.add(ModItems.AVOCADO_JUICE);
+                        entries.add(ModItems.BRIGADEIRO);
+                        entries.add(ModItems.CHEESE);
+                        entries.add(ModItems.CHEESE_BREAD);
+                        entries.add(ModItems.FRIED_PASTRY);
+                        entries.add(ModItems.GUARANA_JUICE);
+                        entries.add(ModItems.ORANGE);
+                        entries.add(ModItems.ORANGE_JUICE);
+
 
                         //MOD BLOCKS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);

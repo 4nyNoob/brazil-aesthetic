@@ -24,7 +24,8 @@ public class ModItems {
     public static final Item FIFTYONE = registerItem("fiftyone",
             new FiftyOneItem(new FabricItemSettings()));
     public static final Item CAULDRON = registerItem("clay_cauldron",
-            new CauldronItem(new FabricItemSettings()));
+            new ClayCauldronItem(new FabricItemSettings()));
+
     public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
             new CiderHerbTeaItem(new FabricItemSettings()));
     public static final Item FENNEl_TEA = registerItem("fennel_tea",
