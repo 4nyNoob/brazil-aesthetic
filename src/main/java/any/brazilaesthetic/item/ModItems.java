@@ -25,6 +25,23 @@ public class ModItems {
             new FiftyOneItem(new FabricItemSettings()));
     public static final Item CAULDRON = registerItem("clay_cauldron",
             new ClayCauldronItem(new FabricItemSettings()));
+    public static final Item CHEESE = registerItem("cheese",
+            new CheeseItem(new FabricItemSettings()));
+    public static final Item CHEESE_BREAD = registerItem("cheese_bread",
+            new CheeseBreadItem(new FabricItemSettings()));
+    public static final Item AVOCADO_JUICE = registerItem("avocado_juice",
+            new AvocadoJuiceItem(new FabricItemSettings()));
+    public static final Item ORANGE = registerItem("orange",
+            new OrangeItem(new FabricItemSettings()));
+    public static final Item ORANGE_JUICE = registerItem("orange_juice",
+            new OrangeJuiceItem(new FabricItemSettings()));
+    public static final Item GUARANA_JUICE = registerItem("guarana_juice",
+            new GuaranaJuiceItem(new FabricItemSettings()));
+    public static final Item BRIGADEIRO = registerItem("brigadeiro",
+            new BrigadeiroItem(new FabricItemSettings()));
+
+    public static final Item FRIED_PASTRY = registerItem("fried_pastry",
+            new FriedPastryItem(new FabricItemSettings()));
 
     public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
             new CiderHerbTeaItem(new FabricItemSettings()));
@@ -35,6 +52,8 @@ public class ModItems {
     public static final Item FENNEL = registerItem("fennel",
             new FennelItem(new FabricItemSettings()));
     public static final Item CLAY_CAULDRON_WITH_FEIJOADA = registerItem("clay_cauldron_with_feijoada",
+            new ClayCauldronWithFeijoadaItem(new FabricItemSettings()));
+    public static final Item CLAY_CAULDRON_WITH_CANJICA = registerItem("clay_cauldron_with_canjica",
             new ClayCauldronWithFeijoadaItem(new FabricItemSettings()));
     public static final Item CIDER_HERB = registerItem("cider_herb",
             new CiderHerbItem(new FabricItemSettings()));
