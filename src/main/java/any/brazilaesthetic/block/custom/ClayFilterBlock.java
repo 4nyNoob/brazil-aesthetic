@@ -1,41 +1,54 @@
-package any.brazilaesthetic.block;
+package any.brazilaesthetic.block.custom;
 
+import any.brazilaesthetic.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
+import net.minecraft.util.Hand;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class TableBlock extends HorizontalFacingBlock {
+public class ClayFilterBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public TableBlock(Settings settings) {
+    public ClayFilterBlock(Settings settings) {
         super(settings);
-
     }
-    protected static final VoxelShape BAR_TABLE_SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(1, 14, 1, 15, 16, 15),
-            Block.createCuboidShape(1, 0, 1, 3, 16, 3),
-            Block.createCuboidShape(13, 0, 1, 15, 16, 3),
-            Block.createCuboidShape(1, 0, 13, 3, 16, 15),
-            Block.createCuboidShape(13, 0, 13, 15, 16, 15),
-            Block.createCuboidShape(0, 14, 3, 16, 16, 13),
-            Block.createCuboidShape(3, 14, 0, 13, 16, 16)
-    );
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
         return this.getDefaultState().with(FACING, cxt.getHorizontalPlayerFacing().getOpposite());
+    }
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
+    }
+
+    @Override
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        ItemStack itemStack = null;
+        if (!world.isClient && player.getStackInHand(hand).isOf(ModItems.CUP_AMERICAN)) {
+            player.setStackInHand(hand, ModItems.WATER_CUP_AMERICAN.getDefaultStack());
+            return ActionResult.SUCCESS;
+        }
+        return ActionResult.PASS;
     }
 
     @Override
@@ -55,6 +68,6 @@ public class TableBlock extends HorizontalFacingBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return BAR_TABLE_SHAPE;
+        return VoxelShapes.cuboid(0.1875f, 0f, 0.1875f, 0.8125f, 0.9375f, 0.815f);
     }
 }

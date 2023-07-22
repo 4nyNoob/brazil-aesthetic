@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
@@ -43,7 +44,6 @@ public class AcaiItem extends Item {
         if (!world.isClient) {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 1, 2));
         }
-
         return stack;
     }
 

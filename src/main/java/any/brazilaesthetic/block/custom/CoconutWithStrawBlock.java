@@ -1,35 +1,46 @@
-package any.brazilaesthetic.block;
+package any.brazilaesthetic.block.custom;
 
+import any.brazilaesthetic.item.ModItems;
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
+import net.minecraft.util.*;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class FlipFlopBlock extends HorizontalFacingBlock {
+public class CoconutWithStrawBlock extends HorizontalFacingBlock implements FabricBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public FlipFlopBlock(Settings settings) {
+    public CoconutWithStrawBlock(Settings settings) {
         super(settings);
     }
+
+    protected static final VoxelShape JAR_SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(4, 0, 4, 12, 8, 12)
+    );
 
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
         return this.getDefaultState().with(FACING, cxt.getHorizontalPlayerFacing().getOpposite());
+    }
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
     }
 
     @Override
@@ -48,22 +59,7 @@ public class FlipFlopBlock extends HorizontalFacingBlock {
     }
 
     @Override
-    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return !world.isAir(pos.down());
-    }
-
-    protected static final VoxelShape SHAPE_NS = VoxelShapes.union(
-            Block.createCuboidShape(5, 0, 4, 11, 2, 12)
-    );
-    protected static final VoxelShape SHAPE_EW = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 5, 12, 2, 11)
-    );
-
-    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        if (state.get(FACING) == Direction.EAST || state.get(FACING) == Direction.WEST){
-            return SHAPE_EW;
-        }
-        return SHAPE_NS;
+        return JAR_SHAPE;
     }
 }

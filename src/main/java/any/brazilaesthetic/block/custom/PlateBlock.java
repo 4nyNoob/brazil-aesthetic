@@ -1,4 +1,4 @@
-package any.brazilaesthetic.block;
+package any.brazilaesthetic.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;

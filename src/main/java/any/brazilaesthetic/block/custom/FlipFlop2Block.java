@@ -1,4 +1,4 @@
-package any.brazilaesthetic.block;
+package any.brazilaesthetic.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -15,21 +15,16 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class PartyFlagsBlock extends HorizontalFacingBlock {
+public class FlipFlop2Block extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public PartyFlagsBlock(Settings settings) {
+    public FlipFlop2Block(Settings settings) {
         super(settings);
-
     }
-    protected static final VoxelShape PARTY_FLAG_SHAPE_NS = VoxelShapes.union(
-            Block.createCuboidShape(0, 10, 6.5, 16, 14, 9.5)
-    );
-    protected static final VoxelShape PARTY_FLAG_SHAPE_EW = VoxelShapes.union(
-            Block.createCuboidShape(6.5, 10, 0, 9.5, 14, 16)
-    );
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
@@ -52,10 +47,16 @@ public class PartyFlagsBlock extends HorizontalFacingBlock {
     }
 
     @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
+    }
+
+    protected static final VoxelShape SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(2, 0, 2, 14, 2, 14)
+    );
+
+    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        if (state.get(FACING) == Direction.EAST || state.get(FACING) == Direction.WEST){
-            return PARTY_FLAG_SHAPE_EW;
-        }
-        return PARTY_FLAG_SHAPE_NS;
+        return SHAPE;
     }
 }

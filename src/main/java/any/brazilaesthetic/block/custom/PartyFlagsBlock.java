@@ -1,4 +1,4 @@
-package any.brazilaesthetic.block;
+package any.brazilaesthetic.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -17,28 +17,19 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
-public class OrangeMirrorBlock extends HorizontalFacingBlock {
+public class PartyFlagsBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public OrangeMirrorBlock(Settings settings) {
+    public PartyFlagsBlock(Settings settings) {
         super(settings);
 
     }
-
-    protected static final VoxelShape SHAPE_N = VoxelShapes.union(
-            Block.createCuboidShape(3, 2, 14, 13, 14, 16)
+    protected static final VoxelShape PARTY_FLAG_SHAPE_NS = VoxelShapes.union(
+            Block.createCuboidShape(0, 10, 6.5, 16, 14, 9.5)
     );
-    protected static final VoxelShape SHAPE_S = VoxelShapes.union(
-            Block.createCuboidShape(3, 2, 0, 13, 14, 2)
+    protected static final VoxelShape PARTY_FLAG_SHAPE_EW = VoxelShapes.union(
+            Block.createCuboidShape(6.5, 10, 0, 9.5, 14, 16)
     );
-    protected static final VoxelShape SHAPE_E = VoxelShapes.union(
-            Block.createCuboidShape(0, 2, 3, 2, 14, 13)
-    );
-    protected static final VoxelShape SHAPE_W = VoxelShapes.union(
-            Block.createCuboidShape(14, 2, 3, 16, 14, 13)
-    );
-
-
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
@@ -62,15 +53,9 @@ public class OrangeMirrorBlock extends HorizontalFacingBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        if (state.get(FACING) == Direction.NORTH){
-            return SHAPE_N;
+        if (state.get(FACING) == Direction.EAST || state.get(FACING) == Direction.WEST){
+            return PARTY_FLAG_SHAPE_EW;
         }
-        if (state.get(FACING) == Direction.SOUTH){
-            return SHAPE_S;
-        }
-        if (state.get(FACING) == Direction.EAST){
-            return SHAPE_E;
-        }
-        return SHAPE_W;
+        return PARTY_FLAG_SHAPE_NS;
     }
 }

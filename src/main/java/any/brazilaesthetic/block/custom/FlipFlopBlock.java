@@ -1,4 +1,4 @@
-package any.brazilaesthetic.block;
+package any.brazilaesthetic.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -7,21 +7,23 @@ import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class CopacabanaSidewalk extends HorizontalFacingBlock {
+public class FlipFlopBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public CopacabanaSidewalk(Settings settings) {
+    public FlipFlopBlock(Settings settings) {
         super(settings);
-
     }
 
     @Nullable
@@ -43,5 +45,25 @@ public class CopacabanaSidewalk extends HorizontalFacingBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
+    }
+
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
+    }
+
+    protected static final VoxelShape SHAPE_NS = VoxelShapes.union(
+            Block.createCuboidShape(5, 0, 4, 11, 2, 12)
+    );
+    protected static final VoxelShape SHAPE_EW = VoxelShapes.union(
+            Block.createCuboidShape(4, 0, 5, 12, 2, 11)
+    );
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
+        if (state.get(FACING) == Direction.EAST || state.get(FACING) == Direction.WEST){
+            return SHAPE_EW;
+        }
+        return SHAPE_NS;
     }
 }
