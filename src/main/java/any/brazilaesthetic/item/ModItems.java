@@ -39,13 +39,11 @@ public class ModItems {
             new GuaranaJuiceItem(new FabricItemSettings()));
     public static final Item BRIGADEIRO = registerItem("brigadeiro",
             new BrigadeiroItem(new FabricItemSettings()));
-
     public static final Item FRIED_PASTRY = registerItem("fried_pastry",
             new FriedPastryItem(new FabricItemSettings()));
-
     public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
             new CiderHerbTeaItem(new FabricItemSettings()));
-    public static final Item FENNEl_TEA = registerItem("fennel_tea",
+    public static final Item FENNEL_TEA = registerItem("fennel_tea",
             new FennelTeaItem(new FabricItemSettings()));
     public static final Item YERBA_MATE_TEA = registerItem("yerba_mate_tea",
             new ChaMateItem(new FabricItemSettings()));
@@ -59,19 +57,14 @@ public class ModItems {
             new CiderHerbItem(new FabricItemSettings()));
     public static final Item GUARANA = registerItem("guarana",
             new GuaranaItem(new FabricItemSettings()));
-
     public static final Item AVOCADO = registerItem("avocado",
             new AvocadoItem(new FabricItemSettings()));
-
     public static final Item BEANS = registerItem("beans",
             new BeansItem(new FabricItemSettings()));
-
     public static final Item BEIJU = registerItem("beiju",
             new BeijuItem(new FabricItemSettings()));
-
     public static final Item CORN_GRAINS = registerItem("corn_grains",
             new CornGrainsItem(new FabricItemSettings()));
-
     public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",
             new MandiocaFlourItem(new FabricItemSettings()));
     public static final Item YERBA_MATE = registerItem("yerba_mate",

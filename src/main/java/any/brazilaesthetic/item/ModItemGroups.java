@@ -29,7 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULDRON);
                         entries.add(ModItems.CIDER_HERB_TEA);
                         entries.add(ModItems.YERBA_MATE_TEA);
-                        entries.add(ModItems.FENNEl_TEA);
+                        entries.add(ModItems.FENNEL_TEA);
                         entries.add(ModItems.FENNEL);
                         entries.add(ModItems.CIDER_HERB);
                         entries.add(ModItems.AMBER_MUG);
