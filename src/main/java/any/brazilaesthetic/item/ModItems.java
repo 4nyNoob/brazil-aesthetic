@@ -59,6 +59,21 @@ public class ModItems {
             new CiderHerbItem(new FabricItemSettings()));
     public static final Item GUARANA = registerItem("guarana",
             new GuaranaItem(new FabricItemSettings()));
+
+    public static final Item AVOCADO = registerItem("avocado",
+            new AvocadoItem(new FabricItemSettings()));
+
+    public static final Item BEANS = registerItem("beans",
+            new BeansItem(new FabricItemSettings()));
+
+    public static final Item BEIJU = registerItem("beiju",
+            new BeijuItem(new FabricItemSettings()));
+
+    public static final Item CORN_GRAINS = registerItem("corn_grains",
+            new CornGrainsItem(new FabricItemSettings()));
+
+    public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",
+            new MandiocaFlourItem(new FabricItemSettings()));
     public static final Item YERBA_MATE = registerItem("yerba_mate",
             new YerbaMateItem(new FabricItemSettings()));
     public static final Item AMBER_MUG = registerItem("amber_mug",

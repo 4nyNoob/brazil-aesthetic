@@ -42,6 +42,11 @@ public class ModItemGroups {
                         entries.add(ModItems.GUARANA_JUICE);
                         entries.add(ModItems.ORANGE);
                         entries.add(ModItems.ORANGE_JUICE);
+                        entries.add(ModItems.AVOCADO);
+                        entries.add(ModItems.BEANS);
+                        entries.add(ModItems.BEIJU);
+                        entries.add(ModItems.CORN_GRAINS);
+                        entries.add(ModItems.MANDIOCA_FLOUR);
 
 
                         //MOD BLOCKS
