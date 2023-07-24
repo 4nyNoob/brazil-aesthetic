@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XSX ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "brazil-aesthetic:amber_mug"
+    },
+    "X": {
+      "item": "brazil-aesthetic:yerba_mate"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "brazil-aesthetic:yerba_mate_tea"
+  }
+}

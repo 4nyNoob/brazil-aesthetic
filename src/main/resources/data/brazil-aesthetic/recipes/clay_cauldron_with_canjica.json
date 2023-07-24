@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SXT",
+    "#X#",
+    " W "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:milk_bucket"
+    },
+    "S": {
+      "item": "brazil-aesthetic:fennel"
+    },
+    "X": {
+      "item": "brazil-aesthetic:corn_grains"
+    },
+    "T": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "W": {
+      "item": "brazil-aesthetic:clay_cauldron"
+    }
+  },
+  "result": {
+    "item": "brazil-aesthetic:clay_cauldron_with_canjica"
+  }
+}

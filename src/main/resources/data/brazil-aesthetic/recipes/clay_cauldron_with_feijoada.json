@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SXT",
+    "#X#",
+    " W "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:water_bucket"
+    },
+    "S": {
+      "item": "brazil-aesthetic:orange"
+    },
+    "X": {
+      "item": "brazil-aesthetic:beans"
+    },
+    "T": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "W": {
+      "item": "brazil-aesthetic:clay_cauldron"
+    }
+  },
+  "result": {
+    "item": "brazil-aesthetic:clay_cauldron_with_feijoada"
+  }
+}
