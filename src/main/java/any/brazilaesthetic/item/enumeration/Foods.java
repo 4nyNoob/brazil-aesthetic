@@ -12,7 +12,7 @@ public enum Foods {
     COCONUT_WITH_STRAW(0,0, () ->
             new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, FoodItem.VERY_SHORT_DURATION, 0)
             , 1f, false, false, true),
-    WATER_CUP_AMERICAN(0,0, () ->
+    WATER_CUP_AMERICAN(2,2, () ->
             new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, FoodItem.VERY_SHORT_DURATION, 0)
             , 1f, false, false, true),
     GUARANA_JUICE(0,0, () ->

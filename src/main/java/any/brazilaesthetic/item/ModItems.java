@@ -6,7 +6,7 @@ import any.brazilaesthetic.item.custom.*;
 import any.brazilaesthetic.item.enumeration.Foods;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -53,7 +53,7 @@ public class ModItems {
     public static final Item COXINHA = registerItem("coxinha",
             new CoxinhaItem(new FabricItemSettings()));
     public static final Item FIFTYONE = registerItem("fiftyone",
-            new DrinkItem(food(Foods.FIFTY_ONE, ModItems.CUP_AMERICAN, 1), true,true));
+            new DrinkItem(food(Foods.FIFTY_ONE, Items.GLASS_BOTTLE, 3), true,true));
     public static final Item CAULDRON = registerItem("clay_cauldron",
             new ClayCauldronItem(new FabricItemSettings()));
     public static final Item CHEESE = registerItem("cheese",

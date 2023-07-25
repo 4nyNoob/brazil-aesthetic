@@ -8,6 +8,9 @@ import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
@@ -23,6 +26,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
 
 public class ClayFilterBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
@@ -45,7 +49,9 @@ public class ClayFilterBlock extends HorizontalFacingBlock {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack itemStack = null;
         if (!world.isClient && player.getStackInHand(hand).isOf(ModItems.CUP_AMERICAN)) {
-            player.setStackInHand(hand, ModItems.WATER_CUP_AMERICAN.getDefaultStack());
+            player.getStackInHand(hand).decrement(1);
+            player.giveItemStack(ModItems.WATER_CUP_AMERICAN.getDefaultStack());
+            world.playSound(null, pos, SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.BLOCKS, 0.5f, 1f);
             return ActionResult.SUCCESS;
         }
         return ActionResult.PASS;
