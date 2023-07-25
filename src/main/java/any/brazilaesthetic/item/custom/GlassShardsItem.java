@@ -8,13 +8,13 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ChaMateItem extends Item {
-    public ChaMateItem(Settings settings) {
+public class GlassShardsItem extends Item {
+    public GlassShardsItem(Settings settings) {
         super(settings);
     }
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         //american cup
-        tooltip.add(Text.translatable("item.brazil-aesthetic.chamate.tooltip"));
+        tooltip.add(Text.translatable("item.brazil-aesthetic.glass_shards.tooltip"));
     }
 }

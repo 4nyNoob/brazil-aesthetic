@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.WATER_CUP_AMERICAN);
                         entries.add(ModItems.COXINHA);
                         entries.add(ModItems.ACAI);
+                        entries.add(ModItems.GLASS_SHARDS);
                         entries.add(ModItems.FIFTYONE);
                         entries.add(ModItems.YERBA_MATE);
                         entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);

@@ -15,6 +15,6 @@ public class AvocadoJuiceItem extends Item {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         //american cup
-        tooltip.add(Text.translatable("item.brazil-aesthetic.avocadojuice.tooltip"));
+        tooltip.add(Text.translatable("item.brazil-aesthetic.avocado_juice.tooltip"));
     }
 }

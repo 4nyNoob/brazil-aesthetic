@@ -15,6 +15,6 @@ public class CornGrainsItem extends Item {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         //american cup
-        tooltip.add(Text.translatable("item.brazil-aesthetic.corngrains.tooltip"));
+        tooltip.add(Text.translatable("item.brazil-aesthetic.corn_grains.tooltip"));
     }
 }

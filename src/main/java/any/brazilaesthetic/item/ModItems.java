@@ -4,7 +4,6 @@ import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,6 +18,8 @@ public class ModItems {
             new WaterCupAmericanItem(new FabricItemSettings().maxCount(1)));
     public static final Item ACAI = registerItem("acai",
             new AcaiItem(new FabricItemSettings()));
+    public static final Item GLASS_SHARDS = registerItem("glass_shards",
+            new GlassShardsItem(new FabricItemSettings()));
     public static final Item COXINHA = registerItem("coxinha",
             new CoxinhaItem(new FabricItemSettings()));
     public static final Item FIFTYONE = registerItem("fiftyone",
@@ -46,7 +47,7 @@ public class ModItems {
     public static final Item FENNEL_TEA = registerItem("fennel_tea",
             new FennelTeaItem(new FabricItemSettings()));
     public static final Item YERBA_MATE_TEA = registerItem("yerba_mate_tea",
-            new ChaMateItem(new FabricItemSettings()));
+            new YerbaMateTeaItem(new FabricItemSettings()));
     public static final Item FENNEL = registerItem("fennel",
             new FennelItem(new FabricItemSettings()));
     public static final Item CLAY_CAULDRON_WITH_FEIJOADA = registerItem("clay_cauldron_with_feijoada",

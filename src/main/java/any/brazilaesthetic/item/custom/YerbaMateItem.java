@@ -15,6 +15,6 @@ public class YerbaMateItem extends Item {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         //american cup
-        tooltip.add(Text.translatable("item.brazil-aesthetic.yerbamate.tooltip"));
+        tooltip.add(Text.translatable("item.brazil-aesthetic.yerba_mate.tooltip"));
     }
 }
