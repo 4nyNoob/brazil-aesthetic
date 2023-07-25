@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class FiftyOneItem extends Item {
+public class FiftyOneItem extends DrinkItem {
     public FiftyOneItem(Settings settings) {
         super(settings);
     }
