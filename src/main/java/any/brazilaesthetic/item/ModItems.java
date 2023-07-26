@@ -81,7 +81,7 @@ public class ModItems {
     public static final Item BEANS = registerItem("beans",
             new BeansItem(new FabricItemSettings()));
     public static final Item BEIJU = registerItem("beiju",
-            new FoodItem(food(Foods.BEIJU), false, true));
+            new FoodItem(food(Foods.BEIJU,null,64), false, true));
     public static final Item CORN_GRAINS = registerItem("corn_grains",
             new CornGrainsItem(new FabricItemSettings()));
     public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",
@@ -89,7 +89,7 @@ public class ModItems {
     public static final Item YERBA_MATE = registerItem("yerba_mate",
             new YerbaMateItem(new FabricItemSettings()));
     public static final Item COCONUT_WITH_STRAW = registerItem("coconut_with_straw_item",
-            new DrinkItem(food(Foods.COCONUT_WITH_STRAW, ModItems.AMBER_MUG, 1), true,true));
+            new DrinkItem(food(Foods.COCONUT_WITH_STRAW, null, 1), true,true));
 
 
 
