@@ -69,7 +69,6 @@ public class FoodItem extends Item {
             affectConsumer(stack, world, user);
         }
 
-        assert stack.getItem().getRecipeRemainder() != null;
         ItemStack container = new ItemStack(stack.getItem().getRecipeRemainder());
 
 
@@ -84,7 +83,8 @@ public class FoodItem extends Item {
                 stack.decrement(1);
             }
         }
-        if (stack.isEmpty() && hasRecipeRemainder()) {
+
+        if (stack.isEmpty() && container.getRecipeRemainder()!=null) {
             return container;
         } else {
             if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode && !player.getInventory().insertStack(container)) {

@@ -6,6 +6,7 @@ import any.brazilaesthetic.item.custom.*;
 import any.brazilaesthetic.item.enumeration.Foods;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -81,7 +82,7 @@ public class ModItems {
     public static final Item BEANS = registerItem("beans",
             new BeansItem(new FabricItemSettings()));
     public static final Item BEIJU = registerItem("beiju",
-            new FoodItem(food(Foods.BEIJU,null,64), false, true));
+            new FoodItem(food(Foods.BEIJU, null ,64), false, true));
     public static final Item CORN_GRAINS = registerItem("corn_grains",
             new CornGrainsItem(new FabricItemSettings()));
     public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",
