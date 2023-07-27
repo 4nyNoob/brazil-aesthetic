@@ -5,23 +5,25 @@ import any.brazilaesthetic.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
     public static final Block BLUE_WIRE_CHAIR = registerBlock("blue_wire_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(4f).nonOpaque()));
+            new WireChairBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()));
     public static final Block GREEN_WIRE_CHAIR = registerBlock("green_wire_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(4f).nonOpaque()));
+            new WireChairBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()));
     public static final Block RED_WIRE_CHAIR = registerBlock("red_wire_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(4f).nonOpaque()));
+            new WireChairBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()));
     public static final Block YELLOW_WIRE_CHAIR = registerBlock("yellow_wire_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(4f).nonOpaque()));
+            new WireChairBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()));
     public static final Block CLAY_FILTER = registerBlock("clay_filter",
             new ClayFilterBlock(FabricBlockSettings.create().strength(1f)));
     public static final Block YELLOW_BAR_CHAIR = registerBlock("yellow_bar_chair",

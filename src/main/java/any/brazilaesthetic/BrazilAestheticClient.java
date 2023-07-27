@@ -1,13 +1,23 @@
 package any.brazilaesthetic;
 
 import any.brazilaesthetic.block.ModBlocks;
+import any.brazilaesthetic.block.entity.SeatEntity;
+import any.brazilaesthetic.util.ModSit;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.EmptyEntityRenderer;
+import net.minecraft.client.render.entity.EntityRenderer;
+import net.minecraft.client.render.entity.EntityRendererFactory;
+import net.minecraft.util.Identifier;
 
 public class BrazilAestheticClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        EntityRendererRegistry.register(ModSit.SEAT, EmptyRenderer::new);
+
         //enable alpha clip on blocks
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_WIRE_CHAIR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_WIRE_CHAIR, RenderLayer.getCutout());
@@ -32,5 +42,19 @@ public class BrazilAestheticClient implements ClientModInitializer {
         //enable alpha blend on blocks
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_PLATE, RenderLayer.getTranslucent());
 
+    }
+
+    private static class EmptyRenderer extends EntityRenderer<SeatEntity> {
+        protected EmptyRenderer(EntityRendererFactory.Context ctx) {
+            super(ctx);
+        }
+        @Override
+        public boolean shouldRender(SeatEntity entity, Frustum frustum, double d, double e, double f) {
+            return false;
+        }
+        @Override
+        public Identifier getTexture(SeatEntity entity) {
+            return null;
+        }
     }
 }

@@ -3,6 +3,7 @@ package any.brazilaesthetic;
 import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.item.ModItemGroups;
 import any.brazilaesthetic.item.ModItems;
+import any.brazilaesthetic.util.ModSit;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.text.MutableText;
@@ -26,5 +27,7 @@ public class BrazilAesthetic implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+
+		ModSit.registerSitUtil();
 	}
 }

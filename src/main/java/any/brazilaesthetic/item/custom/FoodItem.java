@@ -83,8 +83,7 @@ public class FoodItem extends Item {
                 stack.decrement(1);
             }
         }
-
-        if (stack.isEmpty() && container.getRecipeRemainder()!=null) {
+        if (stack.isEmpty()) {
             return container;
         } else {
             if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode && !player.getInventory().insertStack(container)) {
