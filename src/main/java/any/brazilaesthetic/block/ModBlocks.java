@@ -27,11 +27,11 @@ public class ModBlocks {
     public static final Block CLAY_FILTER = registerBlock("clay_filter",
             new ClayFilterBlock(FabricBlockSettings.create().strength(1f)));
     public static final Block YELLOW_BAR_CHAIR = registerBlock("yellow_bar_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+            new BarChairBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
     public static final Block RED_BAR_CHAIR = registerBlock("red_bar_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+            new BarChairBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
     public static final Block WHITE_BAR_CHAIR = registerBlock("white_bar_chair",
-            new ChairBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+            new BarChairBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
     public static final Block RED_BAR_TABLE = registerBlock("red_bar_table",
             new TableBlock(FabricBlockSettings.create().strength(1f)));
     public static final Block YELLOW_BAR_TABLE = registerBlock("yellow_bar_table",

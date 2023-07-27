@@ -32,8 +32,12 @@ public class WireChairBlock extends ChairBlock {
         super(settings);
     }
 
+    protected static final VoxelShape WIRE_CHAIR_SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(2, 0, 2, 14, 6, 14)
+    );
+
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.125f, 0f, 0.125f, 0.875f, 0.3f, 0.875f);
+        return WIRE_CHAIR_SHAPE;
     }
 }

@@ -25,11 +25,11 @@ import static any.brazilaesthetic.block.entity.SeatEntity.OCCUPIED;
 
 public class ModSit {
     public static final EntityType<SeatEntity> SEAT = Registry.register(Registries.ENTITY_TYPE, new Identifier(BrazilAesthetic.MOD_ID, "seat"),
-            FabricEntityTypeBuilder.<SeatEntity>create(SpawnGroup.MISC, SeatEntity::new).dimensions(EntityDimensions.fixed(0.1F, 0.1F))
+            FabricEntityTypeBuilder.<SeatEntity>create(SpawnGroup.MISC, SeatEntity::new).dimensions(EntityDimensions.fixed(0.001F, 0.001F))
                     .build());
 
     private static ActionResult spawnSeat(World world, PlayerEntity player, BlockState state, BlockPos blockPos, double yOffset, Vec3d comparePos) {
-        if (state.getBlock() instanceof WireChairBlock) {
+        if (state.getBlock() instanceof ChairBlock) {
             SeatEntity sit = SEAT.create(world);
             Vec3d pos = new Vec3d(blockPos.getX() + 0.5D, blockPos.getY() + yOffset, blockPos.getZ() + 0.5D);
             OCCUPIED.put(comparePos, player.getBlockPos());
@@ -61,9 +61,14 @@ public class ModSit {
                 boolean notSneakingEmptyHand = player.getStackInHand(hand).isEmpty() && !player.isSneaking();
                 boolean noAxe = !(player.getStackInHand(Hand.MAIN_HAND).getItem() instanceof AxeItem || player.getStackInHand(Hand.OFF_HAND).getItem() instanceof AxeItem);
 
-                // ARMCHAIRS
+                // WIRE CHAIR
                 if (notSneakingEmptyHand && state.isIn(ModBlockTags.WIRE_CHAIRS)) {
-                    return spawnSeat(world, player, state, hitResult.getBlockPos(), 0.3, comparePos);
+                    return spawnSeat(world, player, state, hitResult.getBlockPos(), 0.175f, comparePos);
+                }
+
+                // BAR CHAIR
+                if (notSneakingEmptyHand && state.isIn(ModBlockTags.BAR_CHAIRS)) {
+                    return spawnSeat(world, player, state, hitResult.getBlockPos(), 0.3f, comparePos);
                 }
             }
             return ActionResult.PASS;

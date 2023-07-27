@@ -11,7 +11,7 @@ public class ModBlockTags {
     public static final TagKey<Block> SEATS = create("seats");
 
     private static TagKey<Block> create(String path) {
-        return create(path, "clutter");
+        return create(path, "brazil-aesthetic");
     }
 
     private static TagKey<Block> create(String path, String namespace) {
