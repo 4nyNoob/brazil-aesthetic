@@ -59,11 +59,12 @@ public enum Foods {
     BEIJU(4, 0.5f),
     COXINHA(3, 0.6f),
     GLASS_SHARDS(0, 0.0f, () ->
-            new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0)
+            new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 1)
             , 1f, false, false, true),
     BRIGADEIRO(2, 0.6f),
     FRIED_PASTRY(4, 0.8f),
     CHEESE(2, 0.6f),
+    CHEESE_BREAD(3, 0.6f),
 
 
 

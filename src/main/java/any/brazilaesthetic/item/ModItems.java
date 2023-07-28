@@ -15,8 +15,6 @@ import net.minecraft.util.Identifier;
 import static any.brazilaesthetic.item.ModItemConfig.food;
 
 public class ModItems {
-    public static final Item TEST_ITEM = registerItem("testitem",
-            new Item(new FabricItemSettings()));
 
 
     /* Food Containers */
@@ -28,7 +26,6 @@ public class ModItems {
             new AmberMugItem(new FabricItemSettings().maxCount(4)));
     public static final Item CAULDRON = registerItem("clay_cauldron",
             new ClayCauldronItem(new FabricItemSettings().maxCount(4)));
-
 
 
     /* Drinks */
@@ -58,13 +55,13 @@ public class ModItems {
 
 
     public static final Item ACAI = registerItem("acai",
-            new FoodItem(food(Foods.ACAI), false, true));
+            new FoodItem(food(Foods.ACAI, Items.AIR, 64), false, true));
     public static final Item ORANGE = registerItem("orange",
-            new FoodItem(food(Foods.ORANGE), false, true));
+            new FoodItem(food(Foods.ORANGE, Items.AIR, 64), false, true));
     public static final Item GUARANA = registerItem("guarana",
-            new FoodItem(food(Foods.GUARANA), true, true));
+            new FoodItem(food(Foods.GUARANA, Items.AIR, 64), true, true));
     public static final Item AVOCADO = registerItem("avocado",
-            new FoodItem(food(Foods.AVOCADO), false, true));
+            new FoodItem(food(Foods.AVOCADO, Items.AIR, 64), false, true));
 
 
     /* Snacks */
@@ -82,11 +79,12 @@ public class ModItems {
             new FoodItem(food(Foods.FRIED_PASTRY, Items.AIR, 64), false, true));
     public static final Item CHEESE = registerItem("cheese",
             new FoodItem(food(Foods.CHEESE, Items.AIR, 64), false, true));
-
-
-
     public static final Item CHEESE_BREAD = registerItem("cheese_bread",
-            new CheeseBreadItem(new FabricItemSettings()));
+            new FoodItem(food(Foods.CHEESE_BREAD, Items.AIR, 64), false, true));
+
+
+
+
     public static final Item FENNEL = registerItem("fennel",
             new FennelItem(new FabricItemSettings()));
     public static final Item CLAY_CAULDRON_WITH_FEIJOADA = registerItem("clay_cauldron_with_feijoada",
