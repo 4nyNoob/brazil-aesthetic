@@ -63,11 +63,11 @@ public class ModBlocks {
     public static final Block COPACABANA_SIDEWALK = registerBlock("copacabana_sidewalk",
             new CopacabanaSidewalk(FabricBlockSettings.create().strength(4f)));
     public static final Block CALENDAR = registerBlock("calendar",
-            new CalendarBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+            new CalendarBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block FLIP_FLOP = registerBlock("flip_flop",
-            new FlipFlopBlock(FabricBlockSettings.create().strength(1f).nonOpaque()));
+            new FlipFlopBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block FLIP_FLOP_2 = registerBlock("flip_flop_2",
-            new FlipFlop2Block(FabricBlockSettings.create().strength(1f).nonOpaque()));
+            new FlipFlop2Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block COCONUT_WITH_STRAW = registerBlock("coconut_with_straw",
             new CoconutWithStrawBlock(FabricBlockSettings.create().strength(1f)));
     public static final Block ORANGE_MIRROR = registerBlock("orange_mirror",

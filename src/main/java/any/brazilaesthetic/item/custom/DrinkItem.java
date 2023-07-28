@@ -44,8 +44,6 @@ public class DrinkItem extends FoodItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack heldStack = user.getStackInHand(hand);
-        String itemName = heldStack.getTranslationKey();
-        ItemStack returnItem = null;
         if (heldStack.isFood()) {
             if (user.canConsume(heldStack.getItem().getFoodComponent().isAlwaysEdible())) {
                 user.setCurrentHand(hand);
@@ -53,12 +51,6 @@ public class DrinkItem extends FoodItem {
             } else {
                 return TypedActionResult.fail(heldStack);
             }
-        }
-        if (itemName.endsWith("tea")){
-            returnItem = new ItemStack(ModItems.AMBER_MUG);
-        }
-        if (itemName.endsWith("juice")){
-            returnItem = new ItemStack(ModItems.CUP_AMERICAN);
         }
         return ItemUsage.consumeHeldItem(world, user, hand);
     }

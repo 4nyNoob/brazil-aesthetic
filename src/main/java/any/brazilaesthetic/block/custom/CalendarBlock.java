@@ -62,15 +62,18 @@ public class CalendarBlock extends HorizontalFacingBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        if (state.get(FACING) == Direction.NORTH){
-            return SHAPE_N;
+        switch (state.get(FACING)) {
+            case NORTH -> {
+                return SHAPE_N;
+            } case SOUTH -> {
+                return  SHAPE_S;
+            } case EAST -> {
+                return  SHAPE_E;
+            } case WEST -> {
+                return  SHAPE_W;
+            } default -> {
+                return null;
+            }
         }
-        if (state.get(FACING) == Direction.SOUTH){
-            return SHAPE_S;
-        }
-        if (state.get(FACING) == Direction.EAST){
-            return SHAPE_E;
-        }
-        return SHAPE_W;
     }
 }
