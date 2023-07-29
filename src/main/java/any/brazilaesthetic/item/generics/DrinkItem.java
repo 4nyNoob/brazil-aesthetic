@@ -1,4 +1,4 @@
-package any.brazilaesthetic.item.custom;
+package any.brazilaesthetic.item.generics;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;

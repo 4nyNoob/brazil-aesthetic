@@ -3,7 +3,7 @@ package any.brazilaesthetic.item.enumeration;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
-import any.brazilaesthetic.item.custom.FoodItem;
+import any.brazilaesthetic.item.generics.FoodItem;
 
 import java.util.function.Supplier;
 

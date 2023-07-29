@@ -1,12 +1,11 @@
 package any.brazilaesthetic.item;
 
 import any.brazilaesthetic.BrazilAesthetic;
-import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.item.custom.*;
+import any.brazilaesthetic.item.generics.DrinkItem;
+import any.brazilaesthetic.item.generics.FoodItem;
 import any.brazilaesthetic.item.enumeration.Foods;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

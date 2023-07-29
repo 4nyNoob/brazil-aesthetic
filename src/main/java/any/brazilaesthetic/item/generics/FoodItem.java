@@ -1,7 +1,6 @@
-package any.brazilaesthetic.item.custom;
+package any.brazilaesthetic.item.generics;
 
 import any.brazilaesthetic.BrazilAesthetic;
-import any.brazilaesthetic.item.ModItems;
 import com.google.common.collect.Lists;
 import com.mojang.datafixers.util.Pair;
 import net.fabricmc.api.EnvType;
@@ -22,16 +21,12 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
-import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.FormattableFlags;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 public class FoodItem extends Item {
     public static final int VERY_SHORT_DURATION = 100;    // 3 seconds
