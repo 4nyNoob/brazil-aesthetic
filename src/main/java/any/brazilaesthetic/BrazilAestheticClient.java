@@ -41,6 +41,7 @@ public class BrazilAestheticClient implements ClientModInitializer {
 
         //enable alpha blend on blocks
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_PLATE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_MUG, RenderLayer.getTranslucent());
 
     }
 

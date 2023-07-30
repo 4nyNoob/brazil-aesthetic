@@ -15,6 +15,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,6 +28,7 @@ public class PlateBlock extends Block {
         super(settings);
         this.setDefaultState((this.stateManager.getDefaultState()).with(PLATES, 1));
     }
+
     protected static final VoxelShape ONE_PLATE_SHAPE = VoxelShapes.union(
             Block.createCuboidShape(4, 0, 4, 12, 1.5, 12)
     );
@@ -62,6 +64,7 @@ public class PlateBlock extends Block {
         }
         return FIVE_PLATES_SHAPE;
     }
+
     @Override
     public boolean canReplace(BlockState state, ItemPlacementContext context) {
         if (!context.shouldCancelInteraction() && context.getStack().getItem() == this.asItem() && state.get(PLATES) < 5) {
@@ -69,10 +72,20 @@ public class PlateBlock extends Block {
         }
         return super.canReplace(state, context);
     }
+
+    @Override
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        if (!state.canPlaceAt(world, pos)) {
+            return Blocks.AIR.getDefaultState();
+        }
+        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+    }
+
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         return !world.isAir(pos.down());
     }
+
     @Override
     @Nullable
     public BlockState getPlacementState(ItemPlacementContext ctx) {
@@ -82,6 +95,7 @@ public class PlateBlock extends Block {
         }
         return super.getPlacementState(ctx);
     }
+
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(PLATES);

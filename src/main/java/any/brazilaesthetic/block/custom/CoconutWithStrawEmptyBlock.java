@@ -1,5 +1,6 @@
 package any.brazilaesthetic.block.custom;
 
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -8,26 +9,33 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class CopacabanaSidewalk extends HorizontalFacingBlock {
+public class CoconutWithStrawEmptyBlock extends HorizontalFacingBlock implements FabricBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public CopacabanaSidewalk(Settings settings) {
+    public CoconutWithStrawEmptyBlock(Settings settings) {
         super(settings);
-
     }
+
+    protected static final VoxelShape SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(4, 0, 4, 12, 8, 12)
+    );
 
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
         return this.getDefaultState().with(FACING, cxt.getHorizontalPlayerFacing().getOpposite());
+    }
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
     }
 
     @Override
@@ -43,5 +51,10 @@ public class CopacabanaSidewalk extends HorizontalFacingBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
+        return SHAPE;
     }
 }

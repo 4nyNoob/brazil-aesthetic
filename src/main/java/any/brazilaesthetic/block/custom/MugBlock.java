@@ -2,7 +2,7 @@ package any.brazilaesthetic.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -15,21 +15,17 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldAccess;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class PartyFlagsBlock extends HorizontalFacingBlock {
+public class MugBlock extends Block {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public PartyFlagsBlock(Settings settings) {
+    public MugBlock(Settings settings) {
         super(settings);
-
     }
-    protected static final VoxelShape SHAPE_NS = VoxelShapes.union(
-            Block.createCuboidShape(0, 10, 6.5, 16, 14, 9.5)
-    );
-    protected static final VoxelShape SHAPE_EW = VoxelShapes.union(
-            Block.createCuboidShape(6.5, 10, 0, 9.5, 14, 16)
-    );
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext cxt) {
@@ -51,12 +47,25 @@ public class PartyFlagsBlock extends HorizontalFacingBlock {
         builder.add(FACING);
     }
 
+    @Override
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        if (!state.canPlaceAt(world, pos)) {
+            return Blocks.AIR.getDefaultState();
+        }
+        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+    }
+
+    @Override
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return !world.isAir(pos.down());
+    }
+
+    protected static final VoxelShape SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(6, 0, 6, 10, 4, 10)
+    );
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        if (state.get(FACING) == Direction.EAST || state.get(FACING) == Direction.WEST){
-            return SHAPE_EW;
-        }
-        return SHAPE_NS;
+        return SHAPE;
     }
 }

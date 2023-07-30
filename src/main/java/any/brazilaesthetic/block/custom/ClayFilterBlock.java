@@ -72,8 +72,12 @@ public class ClayFilterBlock extends HorizontalFacingBlock {
         builder.add(FACING);
     }
 
+    protected static final VoxelShape SHAPE = VoxelShapes.union(
+            Block.createCuboidShape(3, 0, 3, 13, 15, 13)
+    );
+
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.1875f, 0f, 0.1875f, 0.8125f, 0.9375f, 0.815f);
+        return SHAPE;
     }
 }

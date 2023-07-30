@@ -66,7 +66,6 @@ public class FoodItem extends Item {
 
         ItemStack container = new ItemStack(stack.getItem().getRecipeRemainder());
 
-
         if (stack.isFood()) {
             super.finishUsing(stack, world, user);
         } else if (user instanceof PlayerEntity player) {

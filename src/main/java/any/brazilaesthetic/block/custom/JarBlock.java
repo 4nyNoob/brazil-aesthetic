@@ -6,11 +6,9 @@ import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsage;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
@@ -31,7 +29,7 @@ public class JarBlock extends HorizontalFacingBlock implements FabricBlock {
         super(settings);
     }
 
-    protected static final VoxelShape JAR_SHAPE = VoxelShapes.union(
+    protected static final VoxelShape SHAPE = VoxelShapes.union(
             Block.createCuboidShape(5.5, 0, 5.5, 10.5, 8.3, 10.5)
     );
 
@@ -71,6 +69,6 @@ public class JarBlock extends HorizontalFacingBlock implements FabricBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return JAR_SHAPE;
+        return SHAPE;
     }
 }
