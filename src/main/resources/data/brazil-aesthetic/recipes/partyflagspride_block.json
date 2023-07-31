@@ -16,10 +16,10 @@
       "item": "minecraft:red_dye"
     },
     "Y": {
-      "item": "minecraft:amethyst_dye"
+      "item": "minecraft:amethyst_shard"
     },
     "R": {
-      "item": "minecraft:purple_dye"
+      "item": "minecraft:yellow_dye"
     }
   },
   "result": {
