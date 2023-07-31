@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "brazil-aesthetic:mandioca"
+    }
+  },
+  "result": {
+    "count": 3,
+    "item": "brazil-aesthetic:mandioca_flour"
+  }
+}
