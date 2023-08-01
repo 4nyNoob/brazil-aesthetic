@@ -33,6 +33,9 @@ public class ModItems {
                 new DrinkItem(food(Foods.GUARANA_JUICE, ModItems.CUP_AMERICAN , 1), true,true));
         public static final Item ORANGE_JUICE = registerItem("orange_juice",
                 new DrinkItem(food(Foods.ORANGE_JUICE, ModItems.CUP_AMERICAN, 1), true,true));
+
+        public static final Item ACEROLA_JUICE = registerItem("acerola_juice",
+            new DrinkItem(food(Foods.ACEROLA_JUICE, ModItems.CUP_AMERICAN, 1), true,true));
         public static final Item WATER_CUP_AMERICAN = registerItem("water_cup_american",
                 new DrinkItem(food(Foods.WATER_CUP_AMERICAN, ModItems.CUP_AMERICAN, 1), true,true));
         public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
@@ -52,6 +55,10 @@ public class ModItems {
                 new FoodItem(food(Foods.ACAI, Items.AIR, 64), false, true));
         public static final Item ORANGE = registerItem("orange",
                 new FoodItem(food(Foods.ORANGE, Items.AIR, 64), false, true));
+
+        public static final Item ACEROLA = registerItem("acerola",
+            new FoodItem(food(Foods.ACEROLA, Items.AIR, 64), false, true));
+
         public static final Item GUARANA = registerItem("guarana",
                 new FoodItem(food(Foods.GUARANA, Items.AIR, 64), true, true));
         public static final Item AVOCADO = registerItem("avocado",
@@ -67,12 +74,18 @@ public class ModItems {
                 new FoodItem(food(Foods.COXINHA, Items.AIR, 64), false, true));
         public static final Item BRIGADEIRO = registerItem("brigadeiro",
                 new FoodItem(food(Foods.BRIGADEIRO, Items.AIR, 64), false, true));
+
+        public static final Item BEIJINHO = registerItem("beijinho",
+            new FoodItem(food(Foods.BEIJINHO, Items.AIR, 64), false, true));
         public static final Item FRIED_PASTRY = registerItem("fried_pastry",
                 new FoodItem(food(Foods.FRIED_PASTRY, Items.AIR, 64), false, true));
         public static final Item CHEESE = registerItem("cheese",
                 new FoodItem(food(Foods.CHEESE, Items.AIR, 64), false, true));
         public static final Item CHEESE_BREAD = registerItem("cheese_bread",
                 new FoodItem(food(Foods.CHEESE_BREAD, Items.AIR, 64), false, true));
+
+    public static final Item MANDIOCA = registerItem("mandioca",
+            new FoodItem(food(Foods.MANDIOCA, Items.AIR, 64), false, true));
 
 
 
@@ -87,6 +100,9 @@ public class ModItems {
             new CiderHerbItem(new FabricItemSettings()));
     public static final Item BEANS = registerItem("beans",
             new BeansItem(new FabricItemSettings()));
+
+
+
     public static final Item CORN_GRAINS = registerItem("corn_grains",
             new CornGrainsItem(new FabricItemSettings()));
     public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",

@@ -25,6 +25,10 @@ public enum Foods {
     ORANGE_JUICE(0,0, () ->
             new StatusEffectInstance(StatusEffects.LEVITATION, 20, 0)
             , 1f, false, false, true),
+
+    ACEROLA_JUICE(0,0, () ->
+            new StatusEffectInstance(StatusEffects.RESISTANCE, FoodItem.SHORT_DURATION, 0)
+            , 1f, false, false, true),
     AVOCADO_JUICE(0,0, () ->
             new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, FoodItem.VERY_SHORT_DURATION, 0)
             , 1f, false, false, true),
@@ -46,9 +50,14 @@ public enum Foods {
 
 
     ACAI(1, 0.3f),
+
+    ACEROLA(1, 0.3f),
     ORANGE(2, 0.5f),
     GUARANA(0,0, () ->
             new StatusEffectInstance(StatusEffects.SPEED, FoodItem.VERY_SHORT_DURATION, 0)
+            , 0.5f, false, false, false),
+    MANDIOCA(0,0, () ->
+            new StatusEffectInstance(StatusEffects.POISON, FoodItem.SHORT_DURATION, 0)
             , 0.5f, false, false, false),
     AVOCADO(2, 0.5f),
 
@@ -62,6 +71,8 @@ public enum Foods {
             new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 1)
             , 1f, false, false, true),
     BRIGADEIRO(2, 0.6f),
+
+    BEIJINHO(2, 0.6f),
     FRIED_PASTRY(4, 0.8f),
     CHEESE(2, 0.6f),
     CHEESE_BREAD(3, 0.6f),

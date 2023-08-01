@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "brazil-aesthetic:water_cup_american"
+    },
+    {
+      "item": "brazil-aesthetic:acerola"
+    }
+  ],
+  "result": {
+    "item": "brazil-aesthetic:acerola_juice"
+  }
+}
