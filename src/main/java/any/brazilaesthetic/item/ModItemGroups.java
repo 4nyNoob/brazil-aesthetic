@@ -31,10 +31,12 @@ public class ModItemGroups {
                     //JUICES
                         entries.add(ModItems.CUP_AMERICAN);
                         entries.add(ModItems.WATER_CUP_AMERICAN);
+                        entries.add(ModItems.MILK_CUP_AMERICAN);
                         entries.add(ModItems.AVOCADO_JUICE);
                         entries.add(ModItems.GUARANA_JUICE);
                         entries.add(ModItems.ORANGE_JUICE);
                         entries.add(ModItems.ACEROLA_JUICE);
+                        entries.add(ModItems.CANE_JUICE);
 
                     //TEAS
                         entries.add(ModItems.AMBER_MUG);
@@ -53,12 +55,15 @@ public class ModItemGroups {
                         entries.add(ModItems.FRIED_PASTRY);
                         entries.add(ModItems.COXINHA);
                         entries.add(ModItems.BEIJU);
+                        entries.add(ModItems.FRENCH_BREAD);
                         entries.add(ModItems.BRIGADEIRO);
                         entries.add(ModItems.BEIJINHO);
+                        entries.add(ModItems.COCONUT);
                         entries.add(ModItems.COCONUT_WITH_STRAW);
                         entries.add(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
                         entries.add(ModItems.BEANS);
                         entries.add(ModItems.CORN_GRAINS);
+                        entries.add(ModItems.RICE_GRAINS);
                         entries.add(ModItems.MANDIOCA_FLOUR);
 
                     //CHAIRS

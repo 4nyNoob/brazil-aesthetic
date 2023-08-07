@@ -36,8 +36,14 @@ public class ModItems {
 
         public static final Item ACEROLA_JUICE = registerItem("acerola_juice",
             new DrinkItem(food(Foods.ACEROLA_JUICE, ModItems.CUP_AMERICAN, 1), true,true));
+
+        public static final Item CANE_JUICE = registerItem("cane_juice",
+            new DrinkItem(food(Foods.CANE_JUICE, ModItems.CUP_AMERICAN, 1), true,true));
         public static final Item WATER_CUP_AMERICAN = registerItem("water_cup_american",
                 new DrinkItem(food(Foods.WATER_CUP_AMERICAN, ModItems.CUP_AMERICAN, 1), true,true));
+
+        public static final Item MILK_CUP_AMERICAN = registerItem("milk_cup_american",
+            new DrinkItem(food(Foods.MILK_CUP_AMERICAN, ModItems.CUP_AMERICAN, 1), true,true));
         public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
                 new DrinkItem(food(Foods.CIDER_HERB_TEA, ModItems.AMBER_MUG, 1), true,true));
         public static final Item FENNEL_TEA = registerItem("fennel_tea",
@@ -68,6 +74,9 @@ public class ModItems {
     // SNACKS
         public static final Item BEIJU = registerItem("beiju",
                 new FoodItem(food(Foods.BEIJU, Items.AIR, 64), false, true));
+
+    public static final Item FRENCH_BREAD = registerItem("french_bread",
+            new FoodItem(food(Foods.FRENCH_BREAD, Items.AIR, 64), false, true));
         public static final Item GLASS_SHARDS = registerItem("glass_shards",
                 new FoodItem(food(Foods.GLASS_SHARDS, Items.AIR, 64), false, true));
         public static final Item COXINHA = registerItem("coxinha",
@@ -105,6 +114,12 @@ public class ModItems {
 
     public static final Item CORN_GRAINS = registerItem("corn_grains",
             new CornGrainsItem(new FabricItemSettings()));
+
+    public static final Item RICE_GRAINS = registerItem("rice_grains",
+            new RiceGrainsItem(new FabricItemSettings()));
+
+    public static final Item COCONUT = registerItem("coconut",
+            new CoconutItem(new FabricItemSettings()));
     public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",
             new MandiocaFlourItem(new FabricItemSettings()));
     public static final Item YERBA_MATE = registerItem("yerba_mate",

@@ -7,6 +7,8 @@
   "item.brazil-aesthetic.cup_american.tooltip" : "actually this is a soviet design...",
   "item.brazil-aesthetic.water_cup_american": "American Cup With Water",
   "item.brazil-aesthetic.water_cup_american.tooltip" : "the DEFINITIVE way of drinking water",
+  "item.brazil-aesthetic.milk_cup_american": "American Cup With Milk",
+  "item.brazil-aesthetic.milk_cup_american.tooltip" : "lukewarm, for good sleeping",
   "item.brazil-aesthetic.coxinha": "Coxinha",
   "item.brazil-aesthetic.coxinha.tooltip": "Coxinha is the BEST food ever made",
   "item.brazil-aesthetic.acai": "Açaí",
@@ -39,6 +41,8 @@
   "item.brazil-aesthetic.beans.tooltip": "Don't trow them at Itto!",
   "item.brazil-aesthetic.corn_grains": "Corn Grains",
   "item.brazil-aesthetic.corn_grains.tooltip": "It could break your teeth!",
+  "block.brazil-aesthetic.rice_grains": "Rice Grains",
+  "item.brazil-aesthetic.rice_grains.tooltip": "Cook it before eating!",
   "item.brazil-aesthetic.mandioca_flour": "Mandioca Flour",
   "item.brazil-aesthetic.mandioca_flour.tooltip": "Do not confuse with other powder",
   "item.brazil-aesthetic.cheese": "Cheese",
@@ -66,6 +70,10 @@
   "item.brazil-aesthetic.orange": "Orange",
   "item.brazil-aesthetic.orange.tooltip": "Sometimes sweet, sometimes sour",
   "item.brazil-aesthetic.butter_pot_item.tooltip": "Delicious",
+  "item.brazil-aesthetic.cane_juice": "Cane Juice",
+  "item.brazil-aesthetic.cane_juice.tooltip": "Looks so good yeah, looks so sweet",
+  "item.brazil-aesthetic.french_bread": "French Bread",
+  "item.brazil-aesthetic.french_bread.tooltip": "Pão de sal, cacetinho, pão careca, pão de jacó, whatever u want to call it",
 
 
 
@@ -98,5 +106,7 @@
   "block.brazil-aesthetic.orange_mirror": "Orange Mirror",
   "block.brazil-aesthetic.porcelain_chicken": "Porcelain Chicken",
   "block.brazil-aesthetic.broken_floor_tiles": "Broken Floor Tiles Block",
-  "block.brazil-aesthetic.butter_pot": "Butter Pot"
+  "block.brazil-aesthetic.butter_pot": "Butter Pot",
+  "block.brazil-aesthetic.coconut": "Coconut"
+
 }
