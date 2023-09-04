@@ -36,6 +36,9 @@
 		"geckolib": ">=4.2.1"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"another-mod": "*",
+		"architectury": ">=9.1.12",
+		"cloth-config": ">=11.1.106",
+		"roughlyenoughitems": ">=12.0.652"
 	}
 }
