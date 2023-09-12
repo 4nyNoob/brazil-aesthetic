@@ -80,4 +80,9 @@ public class ButterPotBlock extends HorizontalFacingBlock implements FabricBlock
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
+
+    @Override
+    public void appendTooltip(ItemStack stack, BlockView world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("block.brazil-aesthetic.butter_pot.tooltip").formatted(Formatting.GRAY));
+    }
 }

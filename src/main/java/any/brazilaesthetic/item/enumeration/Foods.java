@@ -19,21 +19,18 @@ public enum Foods {
     WATER_CUP_AMERICAN(2,0.15f, () ->
             new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, FoodItem.VERY_SHORT_DURATION, 1)
             , 1f, false, false, true),
-
     MILK_CUP_AMERICAN(2,0.15f, () ->
             new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, FoodItem.VERY_SHORT_DURATION, 1)
             , 1f, false, false, true),
     GUARANA_JUICE(0,0, () ->
-            new StatusEffectInstance(StatusEffects.SPEED, FoodItem.VERY_SHORT_DURATION, 0)
+            new StatusEffectInstance(StatusEffects.HASTE, FoodItem.VERY_SHORT_DURATION, 0)
             , 1.f, false, false, true),
-
     CANE_JUICE(0,0, () ->
             new StatusEffectInstance(StatusEffects.SPEED, 20, 0)
             , 1f, false, false, true),
     ORANGE_JUICE(0,0, () ->
             new StatusEffectInstance(StatusEffects.LEVITATION, 20, 0)
             , 1f, false, false, true),
-
     ACEROLA_JUICE(0,0, () ->
             new StatusEffectInstance(StatusEffects.RESISTANCE, FoodItem.SHORT_DURATION, 0)
             , 1f, false, false, true),
@@ -58,41 +55,41 @@ public enum Foods {
 
 
     ACAI(1, 0.3f),
-
     ACEROLA(1, 0.3f),
     ORANGE(2, 0.5f),
     GUARANA(0,0, () ->
-            new StatusEffectInstance(StatusEffects.SPEED, FoodItem.VERY_SHORT_DURATION, 0)
+            new StatusEffectInstance(StatusEffects.HASTE, FoodItem.VERY_SHORT_DURATION, 0)
             , 0.5f, false, false, false),
+    AVOCADO(2, 0.5f),
+
+
+
     MANDIOCA(0,0, () ->
             new StatusEffectInstance(StatusEffects.POISON, FoodItem.SHORT_DURATION, 0)
             , 0.5f, false, false, false),
-    AVOCADO(2, 0.5f),
+
 
 
     //SNACKS
 
 
     BEIJU(4, 0.5f),
-
     FRENCH_BREAD(4, 0.5f),
     COXINHA(3, 0.6f),
     GLASS_SHARDS(0, 0.0f, () ->
             new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 1)
             , 1f, false, false, true),
     BRIGADEIRO(2, 0.6f),
-
     BEIJINHO(2, 0.6f),
     FRIED_PASTRY(4, 0.8f),
     CHEESE(2, 0.6f),
     CHEESE_BREAD(3, 0.6f),
 
-
+    FEIJOADA(5, 0.6f),
 
     FOOD_PLACEHOLDER(4, 2.0f, () ->
             new StatusEffectInstance(StatusEffects.GLOWING, 0, 2)
             , 1f, false, true, false);
-
 
 
 

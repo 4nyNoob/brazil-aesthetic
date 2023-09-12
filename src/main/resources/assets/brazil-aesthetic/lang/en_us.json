@@ -12,7 +12,6 @@
   "item.brazil-aesthetic.coxinha": "Coxinha",
   "item.brazil-aesthetic.coxinha.tooltip": "Coxinha is the BEST food ever made",
   "item.brazil-aesthetic.acai": "Açaí",
-  "item.brazil-aesthetic.acai.tooltip": "Açaí is a delicious fruit from brazilian amazon rainforest",
   "item.brazil-aesthetic.fiftyone": "Fifty One",
   "item.brazil-aesthetic.fiftyone.tooltip": "A traditional brazillian alcoholic  drink",
   "item.brazil-aesthetic.clay_cauldron": "Clay Cauldron",
@@ -30,9 +29,7 @@
   "item.brazil-aesthetic.cider_herb": "Cider Herb",
   "item.brazil-aesthetic.cider_herb.tooltip": "A citrus cousin of mint, lime flavored",
   "item.brazil-aesthetic.guarana": "Guaraná",
-  "item.brazil-aesthetic.guarana.tooltip": "is a fruit native to the Brazilian Amazon rainforest",
   "item.brazil-aesthetic.yerba_mate": "Yerba Mate",
-  "item.brazil-aesthetic.yerba_mate.tooltip": "South American herb, used to medicine and tea preparing",
   "block.brazil-aesthetic.amber_mug": "Amber mug",
   "item.brazil-aesthetic.amber_mug_item.tooltip": "The rumors say it's UNBREAKABLE!",
   "item.brazil-aesthetic.coconut_with_straw": "Coconut with Straw",
@@ -48,9 +45,8 @@
   "item.brazil-aesthetic.cheese": "Cheese",
   "item.brazil-aesthetic.cheese.tooltip": "Fungus did it",
   "item.brazil-aesthetic.avocado": "Avocado",
-  "item.brazil-aesthetic.avocado.tooltip": "Grandma Juju approves",
   "item.brazil-aesthetic.avocado_juice": "Avocado Smoothie",
-  "item.brazil-aesthetic.avocado_juice.tooltip": "Grandma Juju approves again",
+  "item.brazil-aesthetic.avocado_juice.tooltip": "Grandma Juju approves",
   "item.brazil-aesthetic.beiju": "Beiju",
   "item.brazil-aesthetic.beiju.tooltip": "Beiju, not tapioca",
   "item.brazil-aesthetic.brigadeiro": "Brigadeiro",
@@ -69,11 +65,16 @@
   "item.brazil-aesthetic.glass_shards.tooltip": "They said it came inside a certain chocolate bar",
   "item.brazil-aesthetic.orange": "Orange",
   "item.brazil-aesthetic.orange.tooltip": "Sometimes sweet, sometimes sour",
-  "item.brazil-aesthetic.butter_pot_item.tooltip": "Delicious",
   "item.brazil-aesthetic.cane_juice": "Cane Juice",
   "item.brazil-aesthetic.cane_juice.tooltip": "Looks so good yeah, looks so sweet",
   "item.brazil-aesthetic.french_bread": "French Bread",
   "item.brazil-aesthetic.french_bread.tooltip": "Pão de sal, cacetinho, pão careca, pão de jacó, whatever u want to call it",
+  "item.brazil-aesthetic.mandioca": "Mandioca",
+  "item.brazil-aesthetic.acerola": "Acerola",
+  "item.brazil-aesthetic.beijinho": "Beijinho",
+  "item.brazil-aesthetic.beijinho.tooltip": "It means: little kiss",
+  "item.brazil-aesthetic.coconut": "Coconut",
+  "item.brazil-aesthetic.acerola_juice": "Acerola Juice",
 
 
 
@@ -107,6 +108,7 @@
   "block.brazil-aesthetic.porcelain_chicken": "Porcelain Chicken",
   "block.brazil-aesthetic.broken_floor_tiles": "Broken Floor Tiles Block",
   "block.brazil-aesthetic.butter_pot": "Butter Pot",
+  "block.brazil-aesthetic.butter_pot.tooltip": "Delicious",
   "block.brazil-aesthetic.coconut": "Coconut"
 
 }

@@ -16,6 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.brazil"))
                     .icon(() -> new ItemStack(ModBlocks.CLAY_FILTER))
                     .entries(((displayContext, entries) -> {
+
                     //INGREDIENTS
                         entries.add(ModItems.ACAI);
                         entries.add(ModItems.GUARANA);
@@ -30,6 +31,7 @@ public class ModItemGroups {
 
                     //JUICES
                         entries.add(ModItems.CUP_AMERICAN);
+
                         entries.add(ModItems.WATER_CUP_AMERICAN);
                         entries.add(ModItems.MILK_CUP_AMERICAN);
                         entries.add(ModItems.AVOCADO_JUICE);
@@ -39,13 +41,15 @@ public class ModItemGroups {
                         entries.add(ModItems.CANE_JUICE);
 
                     //TEAS
-                        entries.add(ModItems.AMBER_MUG);
+                        entries.add(ModBlocks.AMBER_MUG);
+
                         entries.add(ModItems.CIDER_HERB_TEA);
                         entries.add(ModItems.YERBA_MATE_TEA);
                         entries.add(ModItems.FENNEL_TEA);
 
                     //CAULDRON FOOD
-                        entries.add(ModItems.CAULDRON);
+                        entries.add(ModItems.CLAY_CAULDRON);
+
                         entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
                         entries.add(ModItems.CLAY_CAULDRON_WITH_CANJICA);
 
@@ -65,6 +69,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CORN_GRAINS);
                         entries.add(ModItems.RICE_GRAINS);
                         entries.add(ModItems.MANDIOCA_FLOUR);
+                        entries.add(ModItems.GLASS_SHARDS);
 
                     //CHAIRS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
@@ -80,8 +85,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_BAR_TABLE);
 
                     //DECORATIONS
-                        entries.add(ModItems.GLASS_SHARDS);
-                        entries.add(ModItems.BUTTER_POT_ITEM);
+                        entries.add(ModBlocks.BUTTER_POT);
                         entries.add(ModBlocks.CLAY_FILTER);
                         entries.add(ModBlocks.AMBER_PLATE);
                         entries.add(ModBlocks.PINEAPPLE_JAR);

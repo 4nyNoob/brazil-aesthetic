@@ -6,8 +6,11 @@ import any.brazilaesthetic.item.ModItems;
 import any.brazilaesthetic.util.ModSit;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib.GeckoLib;
@@ -24,9 +27,9 @@ public class BrazilAesthetic implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		GeckoLib.initialize();
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
-		ModBlocks.registerModBlocks();
 
 		ModSit.registerSitUtil();
 	}
