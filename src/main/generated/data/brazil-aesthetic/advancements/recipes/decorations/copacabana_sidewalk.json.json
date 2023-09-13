@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acai": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "brazil-aesthetic:acai"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:copacabana_sidewalk.json"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_acai",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:copacabana_sidewalk.json"
+    ]
+  },
+  "sends_telemetry_event": false
+}

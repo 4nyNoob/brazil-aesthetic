@@ -15,14 +15,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.COPACABANA_SIDEWALK);
+        //CUBE-ALL BLOCKS
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_FLOOR_TILES);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        //2D ITEM MODELS
         itemModelGenerator.register(ModItems.CUP_AMERICAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLAY_CAULDRON, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.AMBER_MUG.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModItems.AVOCADO_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GUARANA_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE_JUICE, Models.GENERATED);
@@ -34,7 +36,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FENNEL_TEA, Models.GENERATED);
         itemModelGenerator.register(ModItems.YERBA_MATE_TEA, Models.GENERATED);
         itemModelGenerator.register(ModItems.FIFTYONE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.COCONUT_WITH_STRAW, Models.GENERATED);
         itemModelGenerator.register(ModItems.ACAI, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ACEROLA, Models.GENERATED);

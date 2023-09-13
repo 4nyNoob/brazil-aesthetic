@@ -2,7 +2,6 @@ package any.brazilaesthetic.util;
 
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.custom.ChairBlock;
-import any.brazilaesthetic.block.custom.WireChairBlock;
 import any.brazilaesthetic.block.entity.SeatEntity;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;

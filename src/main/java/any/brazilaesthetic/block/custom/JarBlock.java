@@ -2,7 +2,10 @@ package any.brazilaesthetic.block.custom;
 
 import any.brazilaesthetic.item.ModItems;
 import net.fabricmc.fabric.api.block.v1.FabricBlock;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;

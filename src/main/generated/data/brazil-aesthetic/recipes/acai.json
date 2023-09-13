@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "brazil-aesthetic:copacabana_sidewalk.json"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "brazil-aesthetic:acai"
+  }
+}
