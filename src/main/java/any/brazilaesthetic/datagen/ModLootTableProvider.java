@@ -4,9 +4,6 @@ import any.brazilaesthetic.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.CandleBlock;
-import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -61,17 +58,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BROKEN_FLOOR_TILES);
         addDrop(ModBlocks.BUTTER_POT);
 
-        BlockStateDrop5(ModBlocks.AMBER_PLATE, "plates");
+        //DROP UP TO 5 ITEMS DEPENDENDING ON THE PROVIDED BLOCKSTATE
+        addDrop(ModBlocks.AMBER_PLATE, BlockStateDrop5(ModBlocks.AMBER_PLATE, "plates"));
     }
 
     public LootTable.Builder BlockStateDrop5(Block block, String blockstate) {
         return LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f))
-                .with((LootPoolEntry.Builder)this.applyExplosionDecay(block, (LootFunctionConsumingBuilder)
-                        ItemEntry.builder(block)
-                                .apply(List.of(Integer.valueOf(2), Integer.valueOf(3), Integer.valueOf(4), Integer.valueOf(5)),
-                                        quantity -> SetCountLootFunction.builder(ConstantLootNumberProvider.create(quantity.intValue()))
-                                                .conditionally(BlockStatePropertyLootCondition.builder(block)
-                                                        .properties(StatePredicate.Builder.create()
-                                                                .exactMatch((Property<Integer>) block.getStateManager().getProperty(blockstate), quantity.intValue())))))));
+            .with((LootPoolEntry.Builder)this.applyExplosionDecay(block, (LootFunctionConsumingBuilder)
+            ItemEntry.builder(block)
+            .apply(List.of(Integer.valueOf(2), Integer.valueOf(3), Integer.valueOf(4), Integer.valueOf(5)),
+            quantity -> SetCountLootFunction.builder(ConstantLootNumberProvider.create(quantity.intValue()))
+            .conditionally(BlockStatePropertyLootCondition.builder(block)
+            .properties(StatePredicate.Builder.create()
+            .exactMatch((Property<Integer>) block.getStateManager().getProperty(blockstate), quantity.intValue())))))));
     }
 }

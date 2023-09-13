@@ -4,20 +4,15 @@ import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.loader.language.LanguageAdapter;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 public class ModBlocks {
 
@@ -92,7 +87,7 @@ public class ModBlocks {
 
 
     //DECORATION BLOCKS
-        public static final Block COPACABANA_SIDEWALK = registerBlock("copacabana_sidewalk",
+        public static final Block COPACABANA_SIDEWALK = registerBlock("copacabana_sidewalk.json",
                 new BidirectionalFacingBlock(FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)));
         public static final Block COCONUT_WITH_STRAW_EMPTY = registerBlock("coconut_with_straw_empty",
                 new CoconutWithStrawEmptyBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
