@@ -44,5 +44,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#' , Items.BROWN_STAINED_GLASS)
                 .criterion(hasItem(Items.BROWN_STAINED_GLASS), FabricRecipeProvider.conditionsFromItem(Items.BROWN_STAINED_GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.AMBER_PLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COXINHA, 4)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern("###")
+                .input('#' , Items.WHEAT)
+                .input('X' , Items.COOKED_CHICKEN)
+                .criterion(hasItem(Items.WHEAT), FabricRecipeProvider.conditionsFromItem(Items.WHEAT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COXINHA)));
     }
 }

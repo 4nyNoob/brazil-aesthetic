@@ -66,6 +66,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMBER_PLATE, BlockStateDrop5(ModBlocks.AMBER_PLATE, "plates"));
 
         //CROP DROPS
+            //RICE CROP
             BlockStatePropertyLootCondition.Builder builder =
                     BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
                     .properties(StatePredicate.Builder.create()
@@ -73,6 +74,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                     .exactMatch(RiceCropBlock.AGE, 7));
             //ADD DROPS TO BLOCK        //BLOCK                         //PRODUCT            //SEED ITEM
             addDrop(ModBlocks.RICE_CROP, cropDrops(ModBlocks.RICE_CROP, ModItems.RICE_GRAINS, ModItems.RICE_SEEDS, builder));
+
     }
 
     public LootTable.Builder BlockStateDrop5(Block block, String blockstate) {
