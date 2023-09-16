@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copacabana_sidewalk.json"
+        "recipe": "minecraft:copacabana_sidewalk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copacabana_sidewalk.json"
+      "minecraft:copacabana_sidewalk"
     ]
   },
   "sends_telemetry_event": false

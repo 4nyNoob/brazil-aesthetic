@@ -1,6 +1,7 @@
 package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
+import any.brazilaesthetic.block.custom.RiceCropBlock;
 import any.brazilaesthetic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -17,6 +18,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //CUBE-ALL BLOCKS
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_FLOOR_TILES);
+
+        //CROP MODELS
+        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
     }
 
     @Override
@@ -57,9 +61,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CIDER_HERB, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEANS, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORN_GRAINS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RICE_GRAINS, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MANDIOCA_FLOUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.YERBA_MATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RICE_GRAINS, Models.GENERATED);
     }
 }

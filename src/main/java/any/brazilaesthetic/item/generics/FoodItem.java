@@ -34,9 +34,7 @@ public class FoodItem extends Item {
     public static final int SHORT_DURATION = 1200;    // 1 minute
     public static final int MEDIUM_DURATION = 3600;    // 3 minutes
     public static final int LONG_DURATION = 6000;    // 5 minutes
-
     private static final MutableText NO_EFFECTS = (Text.translatable("effect.none")).formatted(Formatting.GRAY);
-
     private final boolean hasFoodEffectTooltip;
     private final boolean hasCustomTooltip;
 
@@ -60,11 +58,12 @@ public class FoodItem extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        assert stack.getItem().getRecipeRemainder() != null;
+        ItemStack container = new ItemStack(stack.getItem().getRecipeRemainder());
+
         if (!world.isClient()) {
             affectConsumer(stack, world, user);
         }
-
-        ItemStack container = new ItemStack(stack.getItem().getRecipeRemainder());
 
         if (stack.isFood()) {
             super.finishUsing(stack, world, user);
@@ -77,6 +76,7 @@ public class FoodItem extends Item {
                 stack.decrement(1);
             }
         }
+
         if (stack.isEmpty()) {
             return container;
         } else {
@@ -100,7 +100,7 @@ public class FoodItem extends Item {
             tooltip.add(BrazilAesthetic.CustomTooltip(this + ".tooltip").formatted(Formatting.GRAY));
         }
         if (hasFoodEffectTooltip) {
-            addFoodEffectTooltip(stack, tooltip, 1.f);
+            addFoodEffectTooltip(stack, tooltip, 1.0f);
         }
     }
 

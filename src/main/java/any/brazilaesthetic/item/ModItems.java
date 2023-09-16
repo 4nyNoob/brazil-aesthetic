@@ -2,11 +2,12 @@ package any.brazilaesthetic.item;
 
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.ModBlocks;
-import any.brazilaesthetic.item.custom.*;
+//import any.brazilaesthetic.item.custom.*;
 import any.brazilaesthetic.item.enumeration.Foods;
 import any.brazilaesthetic.item.generics.DrinkItem;
 import any.brazilaesthetic.item.generics.FoodItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
@@ -20,28 +21,26 @@ public class ModItems {
 
     //  FOOD CONTAINERS
         public static final Item CUP_AMERICAN = registerItem("cup_american",
-                new CupAmericanItem(new FabricItemSettings().maxCount(16)));
-        //public static final Item AMBER_MUG = registerItem("amber_mug_item",
-                //new AmberMugItem(new FabricItemSettings().maxCount(4)));
+                new Item(new FabricItemSettings().maxCount(16)));
         public static final Item CLAY_CAULDRON = registerItem("clay_cauldron",
                 new Item(new FabricItemSettings().maxCount(4)));
 
 
     // DRINKS
         public static final Item AVOCADO_JUICE = registerItem("avocado_juice",
-                new DrinkItem(food(Foods.AVOCADO_JUICE, ModItems.CUP_AMERICAN, 16), true,true));
+                new DrinkItem(food(Foods.AVOCADO_JUICE, ModItems.CUP_AMERICAN, 16), false,false));
         public static final Item GUARANA_JUICE = registerItem("guarana_juice",
-                new DrinkItem(food(Foods.GUARANA_JUICE, ModItems.CUP_AMERICAN , 16), true,true));
+                new DrinkItem(food(Foods.GUARANA_JUICE, ModItems.CUP_AMERICAN , 16), false,false));
         public static final Item ORANGE_JUICE = registerItem("orange_juice",
-                new DrinkItem(food(Foods.ORANGE_JUICE, ModItems.CUP_AMERICAN, 16), true,true));
+                new DrinkItem(food(Foods.ORANGE_JUICE, ModItems.CUP_AMERICAN, 16), false,false));
         public static final Item ACEROLA_JUICE = registerItem("acerola_juice",
                 new DrinkItem(food(Foods.ACEROLA_JUICE, ModItems.CUP_AMERICAN, 16), false,false));
         public static final Item CANE_JUICE = registerItem("cane_juice",
-                new DrinkItem(food(Foods.CANE_JUICE, ModItems.CUP_AMERICAN, 16), true,true));
+                new DrinkItem(food(Foods.CANE_JUICE, ModItems.CUP_AMERICAN, 16), false,false));
         public static final Item WATER_CUP_AMERICAN = registerItem("water_cup_american",
                 new DrinkItem(food(Foods.WATER_CUP_AMERICAN, ModItems.CUP_AMERICAN, 16), true,true));
         public static final Item MILK_CUP_AMERICAN = registerItem("milk_cup_american",
-                new DrinkItem(food(Foods.MILK_CUP_AMERICAN, ModItems.CUP_AMERICAN, 16), true,true));
+                new DrinkItem(food(Foods.MILK_CUP_AMERICAN, ModItems.CUP_AMERICAN, 16), false,false));
         public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
                 new DrinkItem(food(Foods.CIDER_HERB_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,true));
         public static final Item FENNEL_TEA = registerItem("fennel_tea",
@@ -88,6 +87,7 @@ public class ModItems {
                 new FoodItem(food(Foods.CHEESE_BREAD, Items.AIR, 64), false, false));
 
 
+
     public static final Item MANDIOCA = registerItem("mandioca",
             new FoodItem(food(Foods.MANDIOCA, Items.AIR, 64), false, false));
     public static final Item FENNEL = registerItem("fennel",
@@ -98,20 +98,24 @@ public class ModItems {
             new FoodItem(food(Foods.FEIJOADA, ModItems.CLAY_CAULDRON, 1)));
     public static final Item CIDER_HERB = registerItem("cider_herb",
             new Item(new FabricItemSettings()));
+
+
     public static final Item BEANS = registerItem("beans",
-            new BeansItem(new FabricItemSettings()));
-
-
+            new Item(new FabricItemSettings()));
     public static final Item CORN_GRAINS = registerItem("corn_grains",
-            new CornGrainsItem(new FabricItemSettings()));
+            new Item(new FabricItemSettings()));
     public static final Item RICE_GRAINS = registerItem("rice_grains",
-            new RiceGrainsItem(new FabricItemSettings()));
+            new Item(new FabricItemSettings()));
     public static final Item COCONUT = registerItem("coconut",
             new Item(new FabricItemSettings()));
     public static final Item MANDIOCA_FLOUR = registerItem("mandioca_flour",
-            new MandiocaFlourItem(new FabricItemSettings()));
+            new Item(new FabricItemSettings()));
     public static final Item YERBA_MATE = registerItem("yerba_mate",
             new Item(new FabricItemSettings()));
+
+    //SEEDS
+    public static final Item RICE_SEEDS = registerItem("rice_seeds",
+            new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings()));
 
 
     //public static final Item BUTTER_POT_ITEM = registerItem("butter_pot_item",

@@ -1,7 +1,9 @@
-// 1.20.1	2023-09-13T18:41:34.005994581	Brazil Aesthetic/Block Loot Tables
+// 1.20.1	2023-09-16T10:40:20.370243994	Brazil Aesthetic/Block Loot Tables
 68f1ede7d3d686448df19f9977aa0954f2888449 data/brazil-aesthetic/loot_tables/blocks/party_flags_pansexual.json
 328dc8bb9a2fd29323204c38d9fd291e61ca4a19 data/brazil-aesthetic/loot_tables/blocks/yellow_bar_chair.json
+49144b67d119b1d21665aa1dd2e08ac815a8bf7e data/brazil-aesthetic/loot_tables/blocks/red_wire_chair.json
 64010cb3a159f2db3b81d335914cecf2082dea8b data/brazil-aesthetic/loot_tables/blocks/party_flags_bisexual.json
+d2a42adb2f338a9996c91597a564d9ef03b10f96 data/brazil-aesthetic/loot_tables/blocks/copacabana_sidewalk.json
 d52a2d6f2c124c177392acf7875f52a74a3e4495 data/brazil-aesthetic/loot_tables/blocks/amber_mug.json
 e0215e6f916dfcf02d08129e8eb5590039f84b87 data/brazil-aesthetic/loot_tables/blocks/pineapple_jar.json
 3405c2b4710949c657a39e12e36c91cf1c5939db data/brazil-aesthetic/loot_tables/blocks/porcelain_chicken.json
@@ -11,6 +13,7 @@ d25282f99eb4c00e922d908f9c6b827c3175db46 data/brazil-aesthetic/loot_tables/block
 533d8669131794e01e495e65bfcea368cd2bf736 data/brazil-aesthetic/loot_tables/blocks/butter_pot.json
 5f48c0690e878aaf01d3b9363e85b2f4553bf0d2 data/brazil-aesthetic/loot_tables/blocks/blue_wire_chair.json
 715218e6df42b30ba274ca2cd41f480c10a0f6d9 data/brazil-aesthetic/loot_tables/blocks/red_bar_chair.json
+f5bf98b3c196325d7b4f0cb19811c23a67d6af1b data/brazil-aesthetic/loot_tables/blocks/rice_crop.json
 54a8ed8d912d6b278c64bee340f818a62ead5114 data/brazil-aesthetic/loot_tables/blocks/red_bar_table.json
 40122294fc90ad524ddf3cead2194fd00c052596 data/brazil-aesthetic/loot_tables/blocks/party_flags_trans.json
 fcc76b98a7d85a1a78f3d967df1bee928cdf5041 data/brazil-aesthetic/loot_tables/blocks/party_flags.json
@@ -21,7 +24,6 @@ fc1f0e9d592914cbdedc01c00803afd4fc82a893 data/brazil-aesthetic/loot_tables/block
 849ec302d10014dfedfc65a2d7dd2bce4c50d792 data/brazil-aesthetic/loot_tables/blocks/clay_filter.json
 f2a2dbabd7a5c07612e4fc1849d038a6f1121a38 data/brazil-aesthetic/loot_tables/blocks/calendar.json
 cab107451caae574d95e9cb24cc7e33561265245 data/brazil-aesthetic/loot_tables/blocks/flip_flop_2.json
-72546efc1578b2110e07a5a963d89d7a960a04a3 data/brazil-aesthetic/loot_tables/blocks/copacabana_sidewalk.json.json
 079930ad025165d65f3dc009d23d78299cfe9a1c data/brazil-aesthetic/loot_tables/blocks/amber_plate.json
 c32051a0941b74c26827948012d849f1d07c83dc data/brazil-aesthetic/loot_tables/blocks/party_flags_asexual.json
 19d0371f9022b7fdd7a54e3e4c7cfd9ff72ba8e8 data/brazil-aesthetic/loot_tables/blocks/yellow_bar_table.json

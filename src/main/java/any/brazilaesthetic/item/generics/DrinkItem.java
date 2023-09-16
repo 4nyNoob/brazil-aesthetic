@@ -8,6 +8,8 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
+import java.util.Objects;
+
 public class DrinkItem extends FoodItem {
     public DrinkItem(Settings settings) {
         super(settings);
@@ -34,8 +36,9 @@ public class DrinkItem extends FoodItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack heldStack = user.getStackInHand(hand);
+        heldStack.getDrinkSound();
         if (heldStack.isFood()) {
-            if (user.canConsume(heldStack.getItem().getFoodComponent().isAlwaysEdible())) {
+            if (user.canConsume(Objects.requireNonNull(heldStack.getItem().getFoodComponent()).isAlwaysEdible())) {
                 user.setCurrentHand(hand);
                 return TypedActionResult.consume(heldStack);
             } else {

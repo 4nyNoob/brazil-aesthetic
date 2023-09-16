@@ -29,6 +29,9 @@ public class ModItemGroups {
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.MANDIOCA);
 
+                    //SEEDS
+                        entries.add(ModItems.RICE_SEEDS);
+
                     //JUICES
                         entries.add(ModItems.CUP_AMERICAN);
 

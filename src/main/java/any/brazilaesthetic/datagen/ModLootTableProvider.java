@@ -1,9 +1,13 @@
 package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
+import any.brazilaesthetic.block.custom.RiceCropBlock;
+import any.brazilaesthetic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -30,7 +34,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RED_BAR_CHAIR);
         addDrop(ModBlocks.YELLOW_WIRE_CHAIR);
         addDrop(ModBlocks.YELLOW_BAR_CHAIR);
-        addDrop(ModBlocks.RED_BAR_CHAIR);
+        addDrop(ModBlocks.RED_WIRE_CHAIR);
         addDrop(ModBlocks.WHITE_BAR_CHAIR);
         addDrop(ModBlocks.RED_BAR_TABLE);
         addDrop(ModBlocks.YELLOW_BAR_TABLE);
@@ -60,6 +64,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         //DROP UP TO 5 ITEMS DEPENDENDING ON THE PROVIDED BLOCKSTATE
         addDrop(ModBlocks.AMBER_PLATE, BlockStateDrop5(ModBlocks.AMBER_PLATE, "plates"));
+
+        //CROP DROPS
+            BlockStatePropertyLootCondition.Builder builder =
+                    BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
+                    .properties(StatePredicate.Builder.create()
+                    //ONLY DROP ITEMS AT THE AGE OF 7
+                    .exactMatch(RiceCropBlock.AGE, 7));
+            //ADD DROPS TO BLOCK        //BLOCK                         //PRODUCT            //SEED ITEM
+            addDrop(ModBlocks.RICE_CROP, cropDrops(ModBlocks.RICE_CROP, ModItems.RICE_GRAINS, ModItems.RICE_SEEDS, builder));
     }
 
     public LootTable.Builder BlockStateDrop5(Block block, String blockstate) {

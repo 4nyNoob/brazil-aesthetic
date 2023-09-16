@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copacabana_sidewalk.json": {
+    "has_copacabana_sidewalk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "brazil-aesthetic:copacabana_sidewalk.json"
+              "brazil-aesthetic:copacabana_sidewalk"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_copacabana_sidewalk.json",
+      "has_copacabana_sidewalk",
       "has_the_recipe"
     ]
   ],

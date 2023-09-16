@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "brazil-aesthetic:block/amber_plate",
@@ -94,7 +95,8 @@
 			"scale": [0.75, 0.75, 0.75]
 		},
 		"ground": {
-			"translation": [0, 6, 0]
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
 			"rotation": [30, 45, 0],
