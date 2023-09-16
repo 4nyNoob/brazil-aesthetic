@@ -27,40 +27,32 @@ public class PlateBlock extends Block {
         this.setDefaultState((this.stateManager.getDefaultState()).with(PLATES, 1));
     }
 
-    protected static final VoxelShape ONE_PLATE_SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 4, 12, 1.5, 12)
-    );
-    protected static final VoxelShape TWO_PLATES_SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 4, 12, 3, 12)
-    );
-    protected static final VoxelShape THREE_PLATES_SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 4, 12, 4.5, 12)
-    );
-    protected static final VoxelShape FOUR_PLATES_SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 4, 12, 6, 12)
-    );
-    protected static final VoxelShape FIVE_PLATES_SHAPE = VoxelShapes.union(
-            Block.createCuboidShape(4, 0, 4, 12, 7.5, 12)
-    );
+    private static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[]{
+            Block.createCuboidShape(4, 0, 4, 12, 1.5, 12),	//VALUE 1
+            Block.createCuboidShape(4, 0, 4, 12, 3, 12),	    //VALUE 2
+            Block.createCuboidShape(4, 0, 4, 12, 4.5, 12),	//VALUE 3
+            Block.createCuboidShape(4, 0, 4, 12, 6, 12),	    //VALUE 4
+            Block.createCuboidShape(4, 0, 4, 12, 7.5, 12),	//VALUE 5
+    };
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         switch (state.get(PLATES)) {
             default: {
-                return ONE_PLATE_SHAPE;
+                return AGE_TO_SHAPE[0];
             }
             case 2: {
-                return TWO_PLATES_SHAPE;
+                return AGE_TO_SHAPE[1];
             }
             case 3: {
-                return THREE_PLATES_SHAPE;
+                return AGE_TO_SHAPE[2];
             }
             case 4: {
-                return FOUR_PLATES_SHAPE;
+                return AGE_TO_SHAPE[3];
             }
             case 5:
         }
-        return FIVE_PLATES_SHAPE;
+        return AGE_TO_SHAPE[4];
     }
 
     @Override

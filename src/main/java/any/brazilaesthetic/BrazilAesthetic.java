@@ -17,6 +17,8 @@ public class BrazilAesthetic implements ModInitializer {
 	public static final String MOD_ID = "brazil-aesthetic";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+
+	//STANDARD TOOLTIP STYLE
 	public static MutableText CustomTooltip(String key, Object... args) {
 		return Text.translatable("item." + MOD_ID + "." + key, args);
 	}

@@ -42,7 +42,7 @@ public class RiceCropBlock extends CropBlock {
     //SEED ITEM
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.RICE_GRAINS;
+        return ModItems.RICE_SEEDS;
     }
 
     @Override
