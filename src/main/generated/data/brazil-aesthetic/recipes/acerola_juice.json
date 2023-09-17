@@ -3,20 +3,17 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:wheat"
+      "item": "brazil-aesthetic:cup_american"
     },
     "X": {
-      "item": "minecraft:cooked_chicken"
+      "item": "brazil-aesthetic:acerola"
     }
   },
   "pattern": [
-    " # ",
-    "#X#",
-    "###"
+    "#X"
   ],
   "result": {
-    "count": 4,
-    "item": "brazil-aesthetic:coxinha"
+    "item": "brazil-aesthetic:acerola_juice"
   },
   "show_notification": true
 }

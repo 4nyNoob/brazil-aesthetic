@@ -1,9 +1,13 @@
-// 1.20.1	2023-09-16T20:45:55.706403877	Brazil Aesthetic/Recipes
+// 1.20.1	2023-09-17T13:53:27.597559553	Brazil Aesthetic/Recipes
+9ef839b84aaa61f38550da191d933585bf819ff9 data/brazil-aesthetic/advancements/recipes/food/coxinha.json
+3c342343c9c428564ce87cbc637d8ce19db81217 data/brazil-aesthetic/advancements/recipes/misc/amber_plate.json
+7f6ca38a07a42b90e21854619c3a59e2033c87d8 data/brazil-aesthetic/recipes/coxinha.json
+67329db8d240e428f7274981f570d165bbe5bb26 data/brazil-aesthetic/recipes/amber_plate.json
 02a25e86a187e8cab0151dab1985c10472fde5c4 data/brazil-aesthetic/recipes/copacabana_sidewalk.json
 7cbe96304daa70fc5a8232ba70df2515e820cc02 data/brazil-aesthetic/advancements/recipes/decorations/copacabana_sidewalk.json
 63933107f0298d66dc069b4ea55ee67d137f63d5 data/brazil-aesthetic/recipes/acai.json
 0bc8f5e72eef16c49244e6d358e7f53e16948fdf data/brazil-aesthetic/advancements/recipes/building_blocks/acai.json
-9ef839b84aaa61f38550da191d933585bf819ff9 data/brazil-aesthetic/advancements/recipes/food/coxinha.json
-3c342343c9c428564ce87cbc637d8ce19db81217 data/brazil-aesthetic/advancements/recipes/misc/amber_plate.json
-c7720f41ae9c543996bab91a4fcb6f2c9d3ae9eb data/brazil-aesthetic/recipes/coxinha.json
-67329db8d240e428f7274981f570d165bbe5bb26 data/brazil-aesthetic/recipes/amber_plate.json
+8cf6f608cd9a5ba61f9bca15a2a09376ea19ddf2 data/brazil-aesthetic/advancements/recipes/misc/beiju_from_smelting_mandioca_flour.json
+e131ab0230697b12ed15b0ca67d1d94d233641f6 data/brazil-aesthetic/recipes/acerola_juice.json
+784cd1320c14f0e27b4ff9f439161a7e08b06401 data/brazil-aesthetic/advancements/recipes/food/acerola_juice.json
+6bedb47d3f27e7951a430543f5e9b8a3fb04a3f5 data/brazil-aesthetic/recipes/beiju_from_smelting_mandioca_flour.json
