@@ -3,15 +3,17 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:brown_stained_glass"
+      "item": "brazil-aesthetic:cup_american"
+    },
+    "X": {
+      "item": "brazil-aesthetic:orange"
     }
   },
   "pattern": [
-    "###"
+    "X#"
   ],
   "result": {
-    "count": 3,
-    "item": "brazil-aesthetic:amber_plate"
+    "item": "brazil-aesthetic:orange_juice"
   },
   "show_notification": true
 }

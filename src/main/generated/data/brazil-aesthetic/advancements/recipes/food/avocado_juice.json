@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cup_american": {
+    "has_milk_cup_american": {
       "conditions": {
         "items": [
           {
             "items": [
-              "brazil-aesthetic:cup_american"
+              "brazil-aesthetic:milk_cup_american"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:acerola_juice"
+        "recipe": "minecraft:avocado_juice"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cup_american",
+      "has_milk_cup_american",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:acerola_juice"
+      "minecraft:avocado_juice"
     ]
   },
   "sends_telemetry_event": false

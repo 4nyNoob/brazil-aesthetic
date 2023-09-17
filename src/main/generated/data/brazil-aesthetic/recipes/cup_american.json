@@ -3,15 +3,16 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:brown_stained_glass"
+      "item": "minecraft:glass"
     }
   },
   "pattern": [
-    "###"
+    "# #",
+    " # "
   ],
   "result": {
     "count": 3,
-    "item": "brazil-aesthetic:amber_plate"
+    "item": "brazil-aesthetic:cup_american"
   },
   "show_notification": true
 }

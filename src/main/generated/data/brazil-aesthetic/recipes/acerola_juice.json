@@ -10,7 +10,7 @@
     }
   },
   "pattern": [
-    "#X"
+    "X#"
   ],
   "result": {
     "item": "brazil-aesthetic:acerola_juice"

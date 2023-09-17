@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "brazil-aesthetic:fennel"
+    },
+    "S": {
+      "item": "brazil-aesthetic:amber_mug"
+    },
+    "X": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "#X#",
+    " S "
+  ],
+  "result": {
+    "count": 2,
+    "item": "brazil-aesthetic:fennel_tea"
+  },
+  "show_notification": true
+}

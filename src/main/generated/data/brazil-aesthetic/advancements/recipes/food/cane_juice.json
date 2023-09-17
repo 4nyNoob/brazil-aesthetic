@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:acerola_juice"
+        "recipe": "minecraft:cane_juice"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:acerola_juice"
+      "minecraft:cane_juice"
     ]
   },
   "sends_telemetry_event": false
