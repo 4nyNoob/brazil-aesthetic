@@ -1,5 +1,5 @@
-// 1.20.1	2023-09-17T14:06:42.7805556	Brazil Aesthetic/Tags for minecraft:block
-8499ee1ca75047fd68ac2f5a9206368899e0c7d2 data\minecraft\tags\blocks\mineable\pickaxe.json
-2de1ae77cb69e1b05b8d96a1d5e9a82171b4a6e2 data\brazil-aesthetic\tags\blocks\wire_chairs.json
-37ab7196cb62a0c7a193f968a659c24fdf31b0f6 data\brazil-aesthetic\tags\blocks\seats.json
-19db3ebb75bfe436efe5fe21984fadf7c9806ca0 data\brazil-aesthetic\tags\blocks\bar_chairs.json
+// 1.20.1	2023-09-17T13:53:27.596971718	Brazil Aesthetic/Tags for minecraft:block
+37ab7196cb62a0c7a193f968a659c24fdf31b0f6 data/brazil-aesthetic/tags/blocks/seats.json
+8499ee1ca75047fd68ac2f5a9206368899e0c7d2 data/minecraft/tags/blocks/mineable/pickaxe.json
+19db3ebb75bfe436efe5fe21984fadf7c9806ca0 data/brazil-aesthetic/tags/blocks/bar_chairs.json
+2de1ae77cb69e1b05b8d96a1d5e9a82171b4a6e2 data/brazil-aesthetic/tags/blocks/wire_chairs.json
