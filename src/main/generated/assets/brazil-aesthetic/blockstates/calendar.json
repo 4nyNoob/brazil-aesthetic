@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "brazil-aesthetic:block/calendar",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "brazil-aesthetic:block/calendar"
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/calendar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/calendar",
+      "y": 270
+    }
+  }
+}

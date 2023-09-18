@@ -22,10 +22,10 @@ public class ModBlocks {
 
     //  FOOD CONTAINERS
         public static final Block AMBER_PLATE = registerBlock("amber_plate",
-                new PlateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1.0f, 1200.0f)
+                new PlateBlock(FabricBlockSettings.create().strength(1.0f, 1200.0f)
                 .sounds(BlockSoundGroup.ANVIL).nonOpaque().pistonBehavior(PistonBehavior.BLOCK)));
         public static final Block AMBER_MUG = registerBlock("amber_mug",
-                new MugBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1.0f, 1200.0f)
+                new MugBlock(FabricBlockSettings.create().strength(1.0f, 1200.0f)
                 .sounds(BlockSoundGroup.ANVIL).nonOpaque().pistonBehavior(PistonBehavior.BLOCK)));
 
 

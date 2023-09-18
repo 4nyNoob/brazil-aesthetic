@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "brazil-aesthetic:block/butter_pot",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "brazil-aesthetic:block/butter_pot"
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/butter_pot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/butter_pot",
+      "y": 270
+    }
+  }
+}

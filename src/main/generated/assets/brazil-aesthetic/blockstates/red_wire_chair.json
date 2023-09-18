@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "brazil-aesthetic:block/red_wire_chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "brazil-aesthetic:block/red_wire_chair"
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/red_wire_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/red_wire_chair",
+      "y": 270
+    }
+  }
+}

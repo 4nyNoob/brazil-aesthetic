@@ -38,14 +38,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         //SHAPED RECIPE
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AMBER_PLATE, 3)
-                //.pattern("ooo")
-//                .pattern("# #")
                 .pattern("###")
                 .input('#' , Items.BROWN_STAINED_GLASS)
                 .criterion(hasItem(Items.BROWN_STAINED_GLASS), FabricRecipeProvider.conditionsFromItem(Items.BROWN_STAINED_GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.AMBER_PLATE)));
-
-
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CUP_AMERICAN, 3)
                 .pattern("# #")
@@ -91,7 +87,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X' , Items.SUGAR_CANE)
                 .criterion(hasItem(ModItems.CUP_AMERICAN), FabricRecipeProvider.conditionsFromItem(ModItems.CUP_AMERICAN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CANE_JUICE)));
-
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CIDER_HERB_TEA, 2)
                 .pattern("#X#")
@@ -162,7 +157,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FRIED_PASTRY)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHEESE_BREAD, 2)
-
                 .pattern(" # ")
                 .pattern("SXS")
                 .input('#' , Items.MILK_BUCKET)
@@ -172,7 +166,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHEESE_BREAD)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHEESE, 6)
-
                 .pattern("###")
                 .pattern("###")
                 .input('#' , Items.MILK_BUCKET)
@@ -187,7 +180,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FRENCH_BREAD)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FIFTYONE, 3)
-
                 .pattern("#S#")
                 .pattern(" # ")
                 .input('#' , Items.GLASS_BOTTLE)
@@ -196,7 +188,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FIFTYONE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLAY_CAULDRON, 1)
-
                 .pattern("# #")
                 .pattern("# #")
                 .pattern("###")
@@ -205,7 +196,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MANDIOCA_FLOUR, 4)
-
                 .pattern(" # ")
                 .pattern("# #")
                 .pattern(" # ")
@@ -214,7 +204,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MANDIOCA_FLOUR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_FEIJOADA, 1)
-
                 .pattern("SXT")
                 .pattern("#X#")
                 .pattern(" W ")
@@ -227,7 +216,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_FEIJOADA)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_CANJICA, 1)
-
                 .pattern("SXT")
                 .pattern("#X#")
                 .pattern(" W ")
@@ -242,7 +230,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //decorações :3
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.CALENDAR, 1)
-
                 .pattern("###")
                 .pattern("ABC")
                 .pattern("###")
@@ -254,7 +241,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CALENDAR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.BROKEN_FLOOR_TILES, 4)
-
                 .pattern("###")
                 .pattern("TTT")
                 .pattern("T#T")
@@ -264,7 +250,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BROKEN_FLOOR_TILES)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.COPACABANA_SIDEWALK, 4)
-
                 .pattern("###")
                 .pattern("TTT")
                 .pattern("T#T")
@@ -275,7 +260,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.BLUE_WIRE_CHAIR, 2)
-
                 .pattern(" # ")
                 .pattern("TTT")
                 .pattern("SSS")
@@ -286,7 +270,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BLUE_WIRE_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.RED_WIRE_CHAIR, 2)
-
                 .pattern(" # ")
                 .pattern("TTT")
                 .pattern("SSS")
@@ -297,7 +280,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RED_WIRE_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.GREEN_WIRE_CHAIR, 2)
-
                 .pattern(" # ")
                 .pattern("TTT")
                 .pattern("SSS")
@@ -307,19 +289,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GREEN_WIRE_CHAIR)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.GREEN_WIRE_CHAIR, 2)
-
-                .pattern(" # ")
-                .pattern("TTT")
-                .pattern("SSS")
-                .input('#' , Items.GREEN_DYE)
-                .input('T' , Items.STRING)
-                .input('S' , Items.STICK)
-                .criterion(hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GREEN_WIRE_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.YELLOW_WIRE_CHAIR, 2)
-
                 .pattern(" # ")
                 .pattern("TTT")
                 .pattern("SSS")
@@ -330,7 +301,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.YELLOW_WIRE_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.CLAY_FILTER, 1)
-
                 .pattern("###")
                 .pattern("#T#")
                 .pattern("#S#")
@@ -341,7 +311,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CLAY_FILTER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.ORANGE_MIRROR, 1)
-
                 .pattern("###")
                 .pattern("#T#")
                 .pattern("###")
@@ -351,7 +320,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORANGE_MIRROR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PORCELAIN_CHICKEN, 1)
-
                 .pattern(" # ")
                 .pattern("EBE")
                 .pattern(" E ")
@@ -362,7 +330,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PORCELAIN_CHICKEN)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PINEAPPLE_JAR, 1)
-
                 .pattern(" # ")
                 .pattern("EBE")
                 .pattern(" E ")
@@ -373,7 +340,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PINEAPPLE_JAR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -386,7 +352,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_2, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -399,7 +364,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_2)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_AROMANTIC, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -412,7 +376,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_AROMANTIC)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_ASEXUAL, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -425,7 +388,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_ASEXUAL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_BISEXUAL, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -438,7 +400,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_BISEXUAL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_LESBIAN, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -451,7 +412,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_LESBIAN)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_PANSEXUAL, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -462,9 +422,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C' , Items.CYAN_DYE)
                 .criterion(hasItem(Items.PAPER), FabricRecipeProvider.conditionsFromItem(Items.PAPER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_PANSEXUAL)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_PRIDE, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -477,7 +435,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_PRIDE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_NONBINARY, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -490,7 +447,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_NONBINARY)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_INTERSEXUAL, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABA")
@@ -502,7 +458,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_INTERSEXUAL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_TRANS, 1)
-
                 .pattern("###")
                 .pattern("PPP")
                 .pattern("ABC")
@@ -515,7 +470,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_TRANS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.RED_BAR_TABLE, 1)
-
                 .pattern("###")
                 .pattern("# #")
                 .pattern("# #")
@@ -525,7 +479,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.YELLOW_BAR_TABLE, 1)
-
                 .pattern("###")
                 .pattern("# #")
                 .pattern("# #")
@@ -534,7 +487,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.YELLOW_BAR_TABLE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.YELLOW_BAR_CHAIR, 1)
-
                 .pattern("#  ")
                 .pattern("###")
                 .pattern("# #")
@@ -543,7 +495,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.YELLOW_BAR_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.WHITE_BAR_CHAIR, 1)
-
                 .pattern("#  ")
                 .pattern("###")
                 .pattern("# #")
@@ -552,7 +503,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WHITE_BAR_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.RED_BAR_CHAIR, 1)
-
                 .pattern("#  ")
                 .pattern("###")
                 .pattern("# #")
@@ -561,7 +511,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RED_BAR_CHAIR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.BUTTER_POT, 1)
-
                 .pattern("###")
                 .pattern("#X#")
                 .pattern("###")
@@ -571,7 +520,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BUTTER_POT)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FLIP_FLOP, 1)
-
                 .pattern("X")
                 .pattern("#")
                 .input('X' , Items.BLUE_DYE)
@@ -580,7 +528,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLIP_FLOP)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FLIP_FLOP_2, 1)
-
                 .pattern("X  X")
                 .pattern("#  #")
                 .input('X' , Items.BLUE_DYE)

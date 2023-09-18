@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "brazil-aesthetic:block/party_flags_asexual",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "brazil-aesthetic:block/party_flags_asexual"
+    },
+    "facing=south": {
+      "model": "brazil-aesthetic:block/party_flags_asexual",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "brazil-aesthetic:block/party_flags_asexual",
+      "y": 270
+    }
+  }
+}

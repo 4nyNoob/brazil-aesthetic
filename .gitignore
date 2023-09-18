@@ -32,10 +32,12 @@ bin/
 
 run/
 
+# fabric cache
+/src/main/generated/.cache/
+
 # java
 
 hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
-/src/main/generated/.cache/
