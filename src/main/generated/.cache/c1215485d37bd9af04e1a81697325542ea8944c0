@@ -1,12 +1,14 @@
-// 1.20.1	2023-09-18T11:04:47.6407746	Brazil Aesthetic/Block Loot Tables
+// 1.20.1	2023-09-18T13:55:27.0423759	Brazil Aesthetic/Block Loot Tables
 54a8ed8d912d6b278c64bee340f818a62ead5114 data\brazil-aesthetic\loot_tables\blocks\red_bar_table.json
 40122294fc90ad524ddf3cead2194fd00c052596 data\brazil-aesthetic\loot_tables\blocks\party_flags_trans.json
 797a31d15d0c4101bc0b19247502de4ea316b5fa data\brazil-aesthetic\loot_tables\blocks\yellow_wire_chair.json
+850b548366d2b961f94f38938db43004ca260079 data\brazil-aesthetic\loot_tables\blocks\party_flags_nonbinary.json
 5f48c0690e878aaf01d3b9363e85b2f4553bf0d2 data\brazil-aesthetic\loot_tables\blocks\blue_wire_chair.json
 9bcfe5ef80a395dae9b746391421d4e17d69dee9 data\brazil-aesthetic\loot_tables\blocks\flip_flop.json
 715218e6df42b30ba274ca2cd41f480c10a0f6d9 data\brazil-aesthetic\loot_tables\blocks\red_bar_chair.json
 849ec302d10014dfedfc65a2d7dd2bce4c50d792 data\brazil-aesthetic\loot_tables\blocks\clay_filter.json
 c8fa0e52d4b355036db88c9d0730f45ab8de4ae1 data\brazil-aesthetic\loot_tables\blocks\green_wire_chair.json
+82072e12b7680309772c68e425597f06cbc19792 data\brazil-aesthetic\loot_tables\blocks\party_flags_intersexual.json
 d2a42adb2f338a9996c91597a564d9ef03b10f96 data\brazil-aesthetic\loot_tables\blocks\copacabana_sidewalk.json
 093f64327707ec96c1552a30b2dd53f91c15f498 data\brazil-aesthetic\loot_tables\blocks\party_flags_lesbian.json
 fc1f0e9d592914cbdedc01c00803afd4fc82a893 data\brazil-aesthetic\loot_tables\blocks\party_flags_pride.json

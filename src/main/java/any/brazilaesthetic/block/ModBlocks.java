@@ -62,6 +62,7 @@ public class ModBlocks {
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_ASEXUAL = registerBlock("party_flags_asexual",
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+
         public static final Block PARTY_FLAGS_BISEXUAL = registerBlock("party_flags_bisexual",
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_LESBIAN = registerBlock("party_flags_lesbian",
@@ -72,6 +73,12 @@ public class ModBlocks {
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_TRANS = registerBlock("party_flags_trans",
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block PARTY_FLAGS_INTERSEXUAL = registerBlock("party_flags_intersexual",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+
+    public static final Block PARTY_FLAGS_NONBINARY = registerBlock("party_flags_nonbinary",
+            new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
 
 
     //  HOUSE ITEMS

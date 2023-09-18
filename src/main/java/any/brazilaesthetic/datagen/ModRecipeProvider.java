@@ -49,6 +49,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CUP_AMERICAN, 3)
                 .pattern("# #")
+                .pattern("# #")
                 .pattern(" # ")
                 .input('#' , Items.GLASS)
                 .criterion(hasItem(Items.GLASS), FabricRecipeProvider.conditionsFromItem(Items.GLASS))
@@ -300,6 +301,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" # ")
                 .pattern("TTT")
                 .pattern("SSS")
+                .input('#' , Items.LIME_DYE)
+                .input('T' , Items.STRING)
+                .input('S' , Items.STICK)
+                .criterion(hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GREEN_WIRE_CHAIR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.GREEN_WIRE_CHAIR, 2)
+
+                .pattern(" # ")
+                .pattern("TTT")
+                .pattern("SSS")
                 .input('#' , Items.GREEN_DYE)
                 .input('T' , Items.STRING)
                 .input('S' , Items.STICK)
@@ -463,6 +475,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C' , Items.AMETHYST_SHARD)
                 .criterion(hasItem(Items.PAPER), FabricRecipeProvider.conditionsFromItem(Items.PAPER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_PRIDE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_NONBINARY, 1)
+
+                .pattern("###")
+                .pattern("PPP")
+                .pattern("ABC")
+                .input('#' , Items.STRING)
+                .input('P' , Items.PAPER)
+                .input('A' , Items.PURPLE_DYE)
+                .input('B' , Items.YELLOW_DYE)
+                .input('C' , Items.BLACK_DYE)
+                .criterion(hasItem(Items.PAPER), FabricRecipeProvider.conditionsFromItem(Items.PAPER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_NONBINARY)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_INTERSEXUAL, 1)
+
+                .pattern("###")
+                .pattern("PPP")
+                .pattern("ABA")
+                .input('#' , Items.STRING)
+                .input('P' , Items.PAPER)
+                .input('A' , Items.YELLOW_DYE)
+                .input('B' , Items.WHITE_DYE)
+                .criterion(hasItem(Items.PAPER), FabricRecipeProvider.conditionsFromItem(Items.PAPER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_INTERSEXUAL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_TRANS, 1)
 

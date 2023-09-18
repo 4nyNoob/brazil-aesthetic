@@ -1,8 +1,10 @@
-// 1.20.1	2023-09-18T11:04:47.5937894	Brazil Aesthetic/Model Definitions
+// 1.20.1	2023-09-18T13:55:27.034398	Brazil Aesthetic/Model Definitions
 18c3907efbd4ac4f8f57cac6743db28f82a78b08 assets\brazil-aesthetic\models\item\cider_herb_tea.json
 446aac02bbbf39b2874a1f93a274fb3fda61b7eb assets\brazil-aesthetic\models\item\mandioca.json
 bf3abec552a418fb1dab208c93c3319a299b622b assets\brazil-aesthetic\models\block\rice_crop_stage0.json
 abac04ad147bbeaaa6107797a33d1b98fb9d32ff assets\brazil-aesthetic\models\item\cheese_bread.json
+88db1d570501834f858af2f8dd42008af25a964e assets\brazil-aesthetic\blockstates\party_flags_intersexual.json
+ee73ada61211f4b534265a0f920e0fd1a05c5ec5 assets\brazil-aesthetic\blockstates\party_flags_nonbinary.json
 7f80af435ebc3a3cc6b4d88571fcb9f2abe897ae assets\brazil-aesthetic\models\item\french_bread.json
 880d724666008a39c9ca7fae0e556dfc3035b4bf assets\brazil-aesthetic\models\item\rice_seeds.json
 b1098a2b84edb2291c347a2f829a3d3e048ea482 assets\brazil-aesthetic\models\item\cane_juice.json
@@ -39,6 +41,7 @@ ba6eb612ec772fb660a2396a55146c4078499b63 assets\brazil-aesthetic\models\item\che
 a7eec617d1fdc38675b762d13a4cf12309fb3c87 assets\brazil-aesthetic\models\block\rice_crop_stage2.json
 90686aac025c8955072d2d21e3c174c67f00ae56 assets\brazil-aesthetic\models\item\acai.json
 362ff9cbbf3858f5bb2c445aa2eac171cffa7f24 assets\brazil-aesthetic\models\item\fennel_tea.json
+de57f525d2e35b2075a47f888f311ff905e12f1f assets\brazil-aesthetic\models\item\party_flags_intersexual.json
 d0f8217cfdbfd9431741c90facdaf632c2cf7a7e assets\brazil-aesthetic\models\item\amber_mug.json
 c0189859491452a273f1cc5b0c730252f86b12ab assets\brazil-aesthetic\models\block\rice_crop_stage1.json
 3ba65d02f9e4b6c21fde608d7c974e2b1e2a7238 assets\brazil-aesthetic\models\item\yerba_mate_tea.json
@@ -47,7 +50,8 @@ cac2f45a42b5ea5114f918087bf47e688c60c5cf assets\brazil-aesthetic\models\item\cox
 660a8c577ad8396190cd566f034fec11258c4554 assets\brazil-aesthetic\models\block\broken_floor_tiles.json
 18e4586f87644d1f29bff7e8a4802d9b3e0274fe assets\brazil-aesthetic\models\block\rice_crop_stage7.json
 d9324da0d39205d6e7c742d7eb371752b9fbc2e0 assets\brazil-aesthetic\models\item\beijinho.json
+114bbc030939b4e3fecce408bc79b0c008346713 assets\brazil-aesthetic\models\item\party_flags_nonbinary.json
 8f7a33c9f83d11927bac420343885942a1014c39 assets\brazil-aesthetic\models\item\mandioca_flour.json
 8a92c6d095f352d8b6d96476d159274414069f7c assets\brazil-aesthetic\models\item\guarana_juice.json
-e609b571b206add35efc8f725aa4e374ed40eaed assets\brazil-aesthetic\models\item\clay_cauldron_with_feijoada.json
 43672f4906a73624da8768a533f14c9fc1e8615e assets\brazil-aesthetic\models\item\water_cup_american.json
+e609b571b206add35efc8f725aa4e374ed40eaed assets\brazil-aesthetic\models\item\clay_cauldron_with_feijoada.json

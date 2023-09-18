@@ -40,6 +40,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YELLOW_BAR_TABLE);
         addDrop(ModBlocks.PARTY_FLAGS);
         addDrop(ModBlocks.PARTY_FLAGS_2);
+        addDrop(ModBlocks.PARTY_FLAGS_INTERSEXUAL);
+        addDrop(ModBlocks.PARTY_FLAGS_NONBINARY);
         addDrop(ModBlocks.PARTY_FLAGS_AROMANTIC);
         addDrop(ModBlocks.PARTY_FLAGS_ASEXUAL);
         addDrop(ModBlocks.PARTY_FLAGS_BISEXUAL);

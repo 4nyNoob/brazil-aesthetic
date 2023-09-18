@@ -112,6 +112,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PARTY_FLAGS_PANSEXUAL);
                         entries.add(ModBlocks.PARTY_FLAGS_PRIDE);
                         entries.add(ModBlocks.PARTY_FLAGS_TRANS);
+                        entries.add(ModBlocks.PARTY_FLAGS_INTERSEXUAL);
+                        entries.add(ModBlocks.PARTY_FLAGS_NONBINARY);
+
 
                     //WHY IS IT STILL HERE?
                         //entries.add(ModBlocks.CAPYBARA);

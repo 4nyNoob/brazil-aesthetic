@@ -21,6 +21,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         //CROP MODELS
         blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
+
+
+
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_INTERSEXUAL);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_NONBINARY);
     }
 
     @Override
