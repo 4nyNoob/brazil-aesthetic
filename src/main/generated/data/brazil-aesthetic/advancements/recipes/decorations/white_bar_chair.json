@@ -1,34 +1,34 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:white_bar_chair"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:deepslate"
+              "minecraft:white_dye"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:copacabana_sidewalk"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate",
+      "has_white_dye",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copacabana_sidewalk"
+      "minecraft:white_bar_chair"
     ]
   },
   "sends_telemetry_event": false

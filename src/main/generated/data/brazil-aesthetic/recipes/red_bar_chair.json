@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "item": "brazil-aesthetic:red_bar_chair"
+  },
+  "show_notification": true
+}

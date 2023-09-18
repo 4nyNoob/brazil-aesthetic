@@ -3,20 +3,19 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:diorite"
+      "item": "minecraft:yellow_dye"
     },
-    "T": {
-      "item": "minecraft:deepslate"
+    "X": {
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
     "###",
-    "TTT",
-    "T#T"
+    "#X#",
+    "###"
   ],
   "result": {
-    "count": 4,
-    "item": "brazil-aesthetic:copacabana_sidewalk"
+    "item": "brazil-aesthetic:butter_pot"
   },
   "show_notification": true
 }

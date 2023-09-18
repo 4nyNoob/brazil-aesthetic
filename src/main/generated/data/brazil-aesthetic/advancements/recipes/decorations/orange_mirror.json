@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_glass": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:deepslate"
+              "minecraft:glass"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copacabana_sidewalk"
+        "recipe": "minecraft:orange_mirror"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate",
+      "has_glass",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copacabana_sidewalk"
+      "minecraft:orange_mirror"
     ]
   },
   "sends_telemetry_event": false

@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:diorite"
+      "item": "minecraft:cobblestone"
     },
     "T": {
-      "item": "minecraft:deepslate"
+      "item": "minecraft:terracotta"
     }
   },
   "pattern": [
@@ -16,7 +16,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "brazil-aesthetic:copacabana_sidewalk"
+    "item": "brazil-aesthetic:broken_floor_tiles"
   },
   "show_notification": true
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:white_dye"
+    },
+    "X": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "brazil-aesthetic:flip_flop"
+  },
+  "show_notification": true
+}

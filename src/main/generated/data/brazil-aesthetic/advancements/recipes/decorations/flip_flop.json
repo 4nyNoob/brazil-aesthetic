@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_blue_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:deepslate"
+              "minecraft:blue_dye"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copacabana_sidewalk"
+        "recipe": "minecraft:flip_flop"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate",
+      "has_blue_dye",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copacabana_sidewalk"
+      "minecraft:flip_flop"
     ]
   },
   "sends_telemetry_event": false

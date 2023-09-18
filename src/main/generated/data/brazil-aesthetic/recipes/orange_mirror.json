@@ -3,20 +3,19 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:diorite"
+      "item": "minecraft:orange_dye"
     },
     "T": {
-      "item": "minecraft:deepslate"
+      "item": "minecraft:glass"
     }
   },
   "pattern": [
     "###",
-    "TTT",
-    "T#T"
+    "#T#",
+    "###"
   ],
   "result": {
-    "count": 4,
-    "item": "brazil-aesthetic:copacabana_sidewalk"
+    "item": "brazil-aesthetic:orange_mirror"
   },
   "show_notification": true
 }

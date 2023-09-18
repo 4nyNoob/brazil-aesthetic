@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:sugar_cane"
+    },
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "E": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    " # ",
+    "EBE",
+    " E "
+  ],
+  "result": {
+    "item": "brazil-aesthetic:pineapple_jar"
+  },
+  "show_notification": true
+}

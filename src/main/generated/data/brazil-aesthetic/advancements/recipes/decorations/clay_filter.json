@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_clay_ball": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:deepslate"
+              "minecraft:clay_ball"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copacabana_sidewalk"
+        "recipe": "minecraft:clay_filter"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate",
+      "has_clay_ball",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copacabana_sidewalk"
+      "minecraft:clay_filter"
     ]
   },
   "sends_telemetry_event": false

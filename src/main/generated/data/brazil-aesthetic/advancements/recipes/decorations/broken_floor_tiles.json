@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate": {
+    "has_terracotta": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:deepslate"
+              "minecraft:terracotta"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:copacabana_sidewalk"
+        "recipe": "minecraft:broken_floor_tiles"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate",
+      "has_terracotta",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:copacabana_sidewalk"
+      "minecraft:broken_floor_tiles"
     ]
   },
   "sends_telemetry_event": false

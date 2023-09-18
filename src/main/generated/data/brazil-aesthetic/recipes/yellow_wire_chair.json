@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:yellow_dye"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " # ",
+    "TTT",
+    "SSS"
+  ],
+  "result": {
+    "count": 2,
+    "item": "brazil-aesthetic:yellow_wire_chair"
+  },
+  "show_notification": true
+}
