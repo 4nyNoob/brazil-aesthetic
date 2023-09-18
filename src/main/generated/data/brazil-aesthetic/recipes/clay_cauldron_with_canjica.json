@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:water_bucket"
+    },
+    "S": {
+      "item": "brazil-aesthetic:fennel"
+    },
+    "T": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "W": {
+      "item": "brazil-aesthetic:clay_cauldron"
+    },
+    "X": {
+      "item": "brazil-aesthetic:corn_grains"
+    }
+  },
+  "pattern": [
+    "SXT",
+    "#X#",
+    " W "
+  ],
+  "result": {
+    "item": "brazil-aesthetic:clay_cauldron_with_canjica"
+  },
+  "show_notification": true
+}

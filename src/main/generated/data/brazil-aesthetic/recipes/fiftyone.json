@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "minecraft:sugar_cane"
+    }
+  },
+  "pattern": [
+    "#S#",
+    " # "
+  ],
+  "result": {
+    "count": 3,
+    "item": "brazil-aesthetic:fiftyone"
+  },
+  "show_notification": true
+}

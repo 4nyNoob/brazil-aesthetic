@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:milk_bucket"
+    },
+    "S": {
+      "item": "brazil-aesthetic:butter_pot"
+    },
+    "X": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    " # ",
+    " X ",
+    " S "
+  ],
+  "result": {
+    "count": 4,
+    "item": "brazil-aesthetic:beijinho"
+  },
+  "show_notification": true
+}

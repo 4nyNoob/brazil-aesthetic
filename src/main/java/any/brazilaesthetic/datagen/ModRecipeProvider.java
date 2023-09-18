@@ -45,14 +45,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BROWN_STAINED_GLASS), FabricRecipeProvider.conditionsFromItem(Items.BROWN_STAINED_GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.AMBER_PLATE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COXINHA, 4)
-                .pattern(" # ")
-                .pattern("#X#")
-                .pattern("###")
-                .input('#' , Items.WHEAT)
-                .input('X' , Items.COOKED_CHICKEN)
-                .criterion(hasItem(Items.WHEAT), FabricRecipeProvider.conditionsFromItem(Items.WHEAT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COXINHA)));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CUP_AMERICAN, 3)
                 .pattern("# #")
@@ -126,6 +119,125 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X' , Items.WATER_BUCKET)
                 .criterion(hasItem(Items.WATER_BUCKET), FabricRecipeProvider.conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.YERBA_MATE_TEA)));
+
+        //comidas
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COXINHA, 4)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern("###")
+                .input('#' , Items.WHEAT)
+                .input('X' , Items.COOKED_CHICKEN)
+                .criterion(hasItem(Items.WHEAT), FabricRecipeProvider.conditionsFromItem(Items.WHEAT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COXINHA)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEIJINHO, 4)
+                .pattern(" # ")
+                .pattern(" X ")
+                .pattern(" S ")
+                .input('#' , Items.MILK_BUCKET)
+                .input('X' , Items.SUGAR)
+                .input('S' , ModBlocks.BUTTER_POT)
+                .criterion(hasItem(Items.MILK_BUCKET), FabricRecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEIJINHO)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BRIGADEIRO, 4)
+                .pattern(" # ")
+                .pattern(" X ")
+                .pattern(" S ")
+                .input('#' , Items.MILK_BUCKET)
+                .input('X' , Items.SUGAR)
+                .input('S' , Items.COCOA_BEANS)
+                .criterion(hasItem(Items.MILK_BUCKET), FabricRecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BRIGADEIRO)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FRIED_PASTRY, 4)
+                .pattern(" # ")
+                .pattern("WXM")
+                .input('#' , Items.COOKED_PORKCHOP)
+                .input('X' , ModItems.FIFTYONE)
+                .input('W' , Items.WHEAT)
+                .input('M' , Items.MILK_BUCKET)
+                .criterion(hasItem(ModItems.FIFTYONE), FabricRecipeProvider.conditionsFromItem(ModItems.FIFTYONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FRIED_PASTRY)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHEESE_BREAD, 2)
+
+                .pattern(" # ")
+                .pattern("SXS")
+                .input('#' , Items.MILK_BUCKET)
+                .input('X' , Items.WHEAT)
+                .input('S' , ModItems.CHEESE)
+                .criterion(hasItem(ModItems.CHEESE), FabricRecipeProvider.conditionsFromItem(ModItems.CHEESE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHEESE_BREAD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHEESE, 6)
+
+                .pattern("###")
+                .pattern("###")
+                .input('#' , Items.MILK_BUCKET)
+                .criterion(hasItem(Items.MILK_BUCKET), FabricRecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CHEESE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FRENCH_BREAD, 1)
+                .pattern("X#")
+                .input('#' , Items.SUGAR)
+                .input('X' , Items.WHEAT)
+                .criterion(hasItem(Items.WHEAT), FabricRecipeProvider.conditionsFromItem(Items.WHEAT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FRENCH_BREAD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FIFTYONE, 3)
+
+                .pattern("#S#")
+                .pattern(" # ")
+                .input('#' , Items.GLASS_BOTTLE)
+                .input('S' , Items.SUGAR_CANE)
+                .criterion(hasItem(Items.GLASS_BOTTLE), FabricRecipeProvider.conditionsFromItem(Items.GLASS_BOTTLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FIFTYONE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLAY_CAULDRON, 1)
+
+                .pattern("# #")
+                .pattern("# #")
+                .pattern("###")
+                .input('#' , Items.CLAY_BALL)
+                .criterion(hasItem(Items.CLAY_BALL), FabricRecipeProvider.conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MANDIOCA_FLOUR, 4)
+
+                .pattern(" # ")
+                .pattern("# #")
+                .pattern(" # ")
+                .input('#' , ModItems.MANDIOCA)
+                .criterion(hasItem(ModItems.MANDIOCA), FabricRecipeProvider.conditionsFromItem(ModItems.MANDIOCA))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MANDIOCA_FLOUR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_FEIJOADA, 1)
+
+                .pattern("SXT")
+                .pattern("#X#")
+                .pattern(" W ")
+                .input('#' , Items.WATER_BUCKET)
+                .input('S' , ModItems.ORANGE)
+                .input('X' , ModItems.BEANS)
+                .input('T' , Items.COOKED_PORKCHOP)
+                .input('W' , ModItems.CLAY_CAULDRON)
+                .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_FEIJOADA)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_CANJICA, 1)
+
+                .pattern("SXT")
+                .pattern("#X#")
+                .pattern(" W ")
+                .input('#' , Items.WATER_BUCKET)
+                .input('S' , ModItems.FENNEL)
+                .input('X' , ModItems.CORN_GRAINS)
+                .input('T' , Items.COOKED_PORKCHOP)
+                .input('W' , ModItems.CLAY_CAULDRON)
+                .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_CANJICA)));
 
     }
 }
