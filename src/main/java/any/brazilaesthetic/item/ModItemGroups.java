@@ -112,8 +112,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PARTY_FLAGS_PANSEXUAL);
                         entries.add(ModBlocks.PARTY_FLAGS_PRIDE);
                         entries.add(ModBlocks.PARTY_FLAGS_TRANS);
-                        entries.add(ModBlocks.PARTY_FLAGS_INTERSEXUAL);
-                        entries.add(ModBlocks.PARTY_FLAGS_NONBINARY);
+                        entries.add(ModBlocks.PARTY_FLAGS_INTERSEX);
+                        entries.add(ModBlocks.PARTY_FLAGS_NON_BINARY);
 
 
                     //WHY IS IT STILL HERE?

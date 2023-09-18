@@ -4,11 +4,8 @@ import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -62,7 +59,6 @@ public class ModBlocks {
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_ASEXUAL = registerBlock("party_flags_asexual",
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
-
         public static final Block PARTY_FLAGS_BISEXUAL = registerBlock("party_flags_bisexual",
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_LESBIAN = registerBlock("party_flags_lesbian",
@@ -73,12 +69,10 @@ public class ModBlocks {
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_TRANS = registerBlock("party_flags_trans",
                 new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
-
-    public static final Block PARTY_FLAGS_INTERSEXUAL = registerBlock("party_flags_intersexual",
-            new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
-
-    public static final Block PARTY_FLAGS_NONBINARY = registerBlock("party_flags_nonbinary",
-            new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+        public static final Block PARTY_FLAGS_INTERSEX = registerBlock("party_flags_intersex",
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+        public static final Block PARTY_FLAGS_NON_BINARY = registerBlock("party_flags_non_binary",
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
 
 
     //  HOUSE ITEMS

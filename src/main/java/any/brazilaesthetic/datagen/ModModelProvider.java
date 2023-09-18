@@ -32,9 +32,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_AROMANTIC);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_ASEXUAL);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_BISEXUAL);
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_INTERSEXUAL);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_INTERSEX);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_LESBIAN);
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_NONBINARY);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_NON_BINARY);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_PANSEXUAL);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_PRIDE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_TRANS);

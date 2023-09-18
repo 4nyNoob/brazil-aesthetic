@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:party_flags_nonbinary"
+        "recipe": "minecraft:party_flags_non_binary"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:party_flags_nonbinary"
+      "minecraft:party_flags_non_binary"
     ]
   },
   "sends_telemetry_event": false
