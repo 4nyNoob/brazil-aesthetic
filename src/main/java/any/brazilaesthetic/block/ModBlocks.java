@@ -2,10 +2,13 @@ package any.brazilaesthetic.block;
 
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.custom.*;
+import any.brazilaesthetic.world.tree.AcerolaSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -52,27 +55,38 @@ public class ModBlocks {
 
     //  PARTY FLAGS
         public static final Block PARTY_FLAGS = registerBlock("party_flags",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_2 = registerBlock("party_flags_2",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_AROMANTIC = registerBlock("party_flags_aromantic",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_ASEXUAL = registerBlock("party_flags_asexual",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_BISEXUAL = registerBlock("party_flags_bisexual",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_LESBIAN = registerBlock("party_flags_lesbian",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_PANSEXUAL = registerBlock("party_flags_pansexual",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_PRIDE = registerBlock("party_flags_pride",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_TRANS = registerBlock("party_flags_trans",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_INTERSEX = registerBlock("party_flags_intersex",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block PARTY_FLAGS_NON_BINARY = registerBlock("party_flags_non_binary",
-                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new PartyFlagsBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
 
 
     //  HOUSE ITEMS
@@ -81,9 +95,11 @@ public class ModBlocks {
         public static final Block PINEAPPLE_JAR = registerBlock("pineapple_jar",
                 new JarBlock(FabricBlockSettings.create().strength(1f)));
         public static final Block CALENDAR = registerBlock("calendar",
-                new CalendarBlock(FabricBlockSettings.create().strength(0.1f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new CalendarBlock(FabricBlockSettings.create().strength(0.1f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
         public static final Block ORANGE_MIRROR = registerBlock("orange_mirror",
-                new OrangeMirrorBlock(FabricBlockSettings.create().strength(1f).nonOpaque().noCollision().sounds(BlockSoundGroup.SCAFFOLDING)));
+                new OrangeMirrorBlock(FabricBlockSettings.create().strength(1f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.SCAFFOLDING)));
         public static final Block PORCELAIN_CHICKEN = registerBlock("porcelain_chicken",
                 new PorcelainChickenBlock(FabricBlockSettings.create().strength(1f)));
         public static final Block FLIP_FLOP = registerBlock("flip_flop",
@@ -100,7 +116,8 @@ public class ModBlocks {
         public static final Block BROKEN_FLOOR_TILES = registerBlock("broken_floor_tiles",
                 new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
         public static final Block BUTTER_POT = registerBlock("butter_pot",
-                new ButterPotBlock(FabricBlockSettings.create().strength(0.01f).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
+                new ButterPotBlock(FabricBlockSettings.create().strength(0.01f)
+                .nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL)));
 
 
     //CROPS
@@ -108,8 +125,16 @@ public class ModBlocks {
             Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "rice_crop"),
             new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
+    //SAPLINGS
+        public static final Block ACEROLA_SAPLING = registerBlock("acerola_sapling",
+            new SaplingBlock(new AcerolaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
+
+    //LEAVES
+        public static final Block ACEROLA_LEAVES = registerBlock("acerola_leaves",
+                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f)));
 
 
+        
 /*
     public static final Block CAPYBARA = registerBlock("capybara",
     new ChairBlock(FabricBlockSettings.create().strength(1f)));

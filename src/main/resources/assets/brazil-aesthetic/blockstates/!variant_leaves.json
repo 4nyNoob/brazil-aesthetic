@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "":
+    [
+      {"model": "minecraft:block/acacia_leaves", "weight": 1},
+      {"model": "minecraft:block/acacia_leaves1", "weight": 5},
+      {"model": "minecraft:block/acacia_leaves2", "weight": 3}
+    ]
+  }
+}

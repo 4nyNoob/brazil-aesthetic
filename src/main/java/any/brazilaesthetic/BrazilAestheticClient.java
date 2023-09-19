@@ -5,14 +5,19 @@ import any.brazilaesthetic.block.entity.SeatEntity;
 import any.brazilaesthetic.util.ModSit;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.ColorResolver;
 
 public class BrazilAestheticClient implements ClientModInitializer {
+
+    //public static final ColorResolver FOLIAGE_COLOR = (biome, x, z) -> biome.getFoliageColor();
     @Override
     public void onInitializeClient() {
         EntityRendererRegistry.register(ModSit.SEAT, EmptyRenderer::new);
@@ -40,11 +45,16 @@ public class BrazilAestheticClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FLIP_FLOP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FLIP_FLOP_2, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RICE_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACEROLA_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACEROLA_LEAVES, RenderLayer.getCutout());
 
 
         //enable alpha blend on blocks
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_PLATE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMBER_MUG, RenderLayer.getTranslucent());
+
+        //BIOME COLORED BLOCKS
+        //ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> BiomeColors.getFoliageColor(world, pos), ModBlocks.CLAY_FILTER);
     }
 
     private static class EmptyRenderer extends EntityRenderer<SeatEntity> {

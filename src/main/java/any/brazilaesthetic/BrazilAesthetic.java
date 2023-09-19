@@ -5,6 +5,7 @@ import any.brazilaesthetic.item.ModItemGroups;
 import any.brazilaesthetic.item.ModItems;
 import any.brazilaesthetic.datagen.ModLootTableModifiers;
 import any.brazilaesthetic.util.ModSit;
+import any.brazilaesthetic.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
@@ -32,5 +33,7 @@ public class BrazilAesthetic implements ModInitializer {
 
 		ModSit.registerSitUtil();
 		ModLootTableModifiers.ModidyLootTables();
+
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "brazil-aesthetic:block/acerola_sapling"
+  }
+}

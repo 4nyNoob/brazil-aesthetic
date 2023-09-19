@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-18T15:17:04.505040392	Brazil Aesthetic/Block Loot Tables
+// 1.20.1	2023-09-19T14:15:34.871877565	Brazil Aesthetic/Block Loot Tables
 68f1ede7d3d686448df19f9977aa0954f2888449 data/brazil-aesthetic/loot_tables/blocks/party_flags_pansexual.json
 328dc8bb9a2fd29323204c38d9fd291e61ca4a19 data/brazil-aesthetic/loot_tables/blocks/yellow_bar_chair.json
 49144b67d119b1d21665aa1dd2e08ac815a8bf7e data/brazil-aesthetic/loot_tables/blocks/red_wire_chair.json
@@ -27,8 +27,8 @@ fc1f0e9d592914cbdedc01c00803afd4fc82a893 data/brazil-aesthetic/loot_tables/block
 f2a2dbabd7a5c07612e4fc1849d038a6f1121a38 data/brazil-aesthetic/loot_tables/blocks/calendar.json
 cab107451caae574d95e9cb24cc7e33561265245 data/brazil-aesthetic/loot_tables/blocks/flip_flop_2.json
 079930ad025165d65f3dc009d23d78299cfe9a1c data/brazil-aesthetic/loot_tables/blocks/amber_plate.json
-c32051a0941b74c26827948012d849f1d07c83dc data/brazil-aesthetic/loot_tables/blocks/party_flags_asexual.json
 19d0371f9022b7fdd7a54e3e4c7cfd9ff72ba8e8 data/brazil-aesthetic/loot_tables/blocks/yellow_bar_table.json
+c32051a0941b74c26827948012d849f1d07c83dc data/brazil-aesthetic/loot_tables/blocks/party_flags_asexual.json
 093f64327707ec96c1552a30b2dd53f91c15f498 data/brazil-aesthetic/loot_tables/blocks/party_flags_lesbian.json
 c8fa0e52d4b355036db88c9d0730f45ab8de4ae1 data/brazil-aesthetic/loot_tables/blocks/green_wire_chair.json
 f35221ff4f69f813852501895aa4b795aa4257ef data/brazil-aesthetic/loot_tables/blocks/party_flags_aromantic.json

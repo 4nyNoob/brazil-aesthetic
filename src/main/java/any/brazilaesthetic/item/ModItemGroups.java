@@ -32,6 +32,9 @@ public class ModItemGroups {
                     //SEEDS
                         entries.add(ModItems.RICE_SEEDS);
 
+                    //SAPLINGS
+                        entries.add(ModBlocks.ACEROLA_SAPLING);
+
                     //JUICES
                         entries.add(ModItems.CUP_AMERICAN);
 

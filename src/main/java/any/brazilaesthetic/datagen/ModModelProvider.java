@@ -19,6 +19,9 @@ public class ModModelProvider extends FabricModelProvider {
         //CUBE-ALL BLOCKS
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_FLOOR_TILES);
 
+        //SAPLING BLOCK
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ACEROLA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         //CROP MODELS
         blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
 
