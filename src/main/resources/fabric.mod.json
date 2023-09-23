@@ -17,13 +17,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"any.brazil-aesthetic.BrazilAesthetic"
+			"any.brazilaesthetic.BrazilAesthetic"
 		],
 		"client": [
-			"any.brazil-aesthetic.BrazilAestheticClient"
+			"any.brazilaesthetic.BrazilAestheticClient"
 		],
 		"fabric-datagen": [
-			"any.brazil-aesthetic.BrazilAestheticDataGenerator"
+			"any.brazilaesthetic.BrazilAestheticDataGenerator"
 		]
 	},
 	"mixins": [
