@@ -41,6 +41,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#' , Items.BROWN_STAINED_GLASS)
                 .criterion(hasItem(Items.BROWN_STAINED_GLASS), FabricRecipeProvider.conditionsFromItem(Items.BROWN_STAINED_GLASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.AMBER_PLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AMBER_PLATE, 3)
+                .pattern("# #")
+                .pattern("###")
+                .input('#' , Items.BROWN_STAINED_GLASS)
+                .criterion(hasItem(Items.BROWN_STAINED_GLASS), FabricRecipeProvider.conditionsFromItem(Items.BROWN_STAINED_GLASS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.AMBER_MUG)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CUP_AMERICAN, 3)
                 .pattern("# #")
@@ -322,8 +328,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" # ")
                 .pattern("EBE")
                 .pattern(" E ")
-                .input('#' , Items.WHITE_CONCRETE)
-                .input('B' , Items.BLACK_CONCRETE)
+                .input('#' , Items.WHITE_TERRACOTTA)
+                .input('B' , Items.BLACK_TERRACOTTA)
                 .input('E' , Items.EGG)
                 .criterion(hasItem(Items.EGG), FabricRecipeProvider.conditionsFromItem(Items.EGG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PORCELAIN_CHICKEN)));

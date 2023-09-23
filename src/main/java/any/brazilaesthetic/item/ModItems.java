@@ -3,6 +3,7 @@ package any.brazilaesthetic.item;
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.ModBlocks;
 //import any.brazilaesthetic.item.custom.*;
+import any.brazilaesthetic.item.custom.AmericanCupItem;
 import any.brazilaesthetic.item.enumeration.Foods;
 import any.brazilaesthetic.item.generics.DrinkItem;
 import any.brazilaesthetic.item.generics.FoodItem;
@@ -21,7 +22,7 @@ public class ModItems {
 
     //  FOOD CONTAINERS
         public static final Item CUP_AMERICAN = registerItem("cup_american",
-                new Item(new FabricItemSettings().maxCount(16)));
+                new AmericanCupItem(new FabricItemSettings().maxCount(16)));
         public static final Item CLAY_CAULDRON = registerItem("clay_cauldron",
                 new Item(new FabricItemSettings().maxCount(4)));
 

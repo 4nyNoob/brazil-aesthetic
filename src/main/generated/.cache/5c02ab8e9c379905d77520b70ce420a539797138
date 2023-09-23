@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-22T22:32:47.308490392	Brazil Aesthetic/Recipes
+// 1.20.1	2023-09-23T15:55:49.55071575	Brazil Aesthetic/Recipes
 e409a8f8a1143e02c3beb26b5689a60a7540738b data/brazil-aesthetic/advancements/recipes/decorations/green_wire_chair.json
 df3e843249db0f9876d812e2d7917b7ba3c9c69f data/brazil-aesthetic/recipes/yellow_wire_chair.json
 d44481a90a3fbabf85faf99bd5d486035da48542 data/brazil-aesthetic/advancements/recipes/food/cheese.json
@@ -48,8 +48,8 @@ e9e4e1bf1f74ba437b44f700a9ddabe92fce9a8e data/brazil-aesthetic/recipes/white_bar
 88e7de472806863f47df960b78ccfbde139013a0 data/brazil-aesthetic/advancements/recipes/decorations/clay_filter.json
 dd9e3b18b38a7a1a36730970532a60c8dd12dcf7 data/brazil-aesthetic/recipes/copacabana_sidewalk.json
 45f32f432974e64ca76edf99484868736b4d7455 data/brazil-aesthetic/recipes/porcelain_chicken.json
-47df9eb1284ee7e350ee09f2b6cfaeb376c81185 data/brazil-aesthetic/advancements/recipes/decorations/party_flags_2.json
 ef73a4923cc35dcfe30afadb97557dd7cf055b56 data/brazil-aesthetic/advancements/recipes/decorations/party_flags_asexual.json
+47df9eb1284ee7e350ee09f2b6cfaeb376c81185 data/brazil-aesthetic/advancements/recipes/decorations/party_flags_2.json
 9676f765ce126d2e78f56092399e01b75ba59210 data/brazil-aesthetic/advancements/recipes/food/acerola_juice.json
 5e42f482a235a8da0226c8b6865732009aebd4b0 data/brazil-aesthetic/advancements/recipes/decorations/blue_wire_chair.json
 ab410675d2a8d7e55c79831827a8471c94c37cd5 data/brazil-aesthetic/recipes/party_flags_trans.json
@@ -59,6 +59,7 @@ d0af90646c5238160d8d994421e2d2f2c39b9a35 data/brazil-aesthetic/advancements/reci
 39bf416b03c2564f2f41c7c63ecafc8a51f5dc80 data/brazil-aesthetic/recipes/party_flags.json
 0f792cf30593b3b04f4a0210d81641e0c30f0bfc data/brazil-aesthetic/advancements/recipes/decorations/copacabana_sidewalk.json
 1bf4c7a93c9fc6e798b09cecc63783790f61ccf1 data/brazil-aesthetic/recipes/avocado_juice.json
+67329db8d240e428f7274981f570d165bbe5bb26 data/brazil-aesthetic/recipes/amber_mug.json
 3274338f449499f71b0e9d39ade913006cdcb031 data/brazil-aesthetic/recipes/guarana_juice.json
 a9138eb90feba2e5c8a219c6b7f482caea0bcae2 data/brazil-aesthetic/advancements/recipes/decorations/pineapple_jar.json
 eb9fde75b2d71b164ecf1bd19e33e01bc0a6c1dd data/brazil-aesthetic/recipes/party_flags_2.json
@@ -81,8 +82,8 @@ e0d05cc84aa3a94db43b5c8a37d674bfa6cbba63 data/brazil-aesthetic/recipes/fiftyone.
 1d6c8d639b2d3b843b1f0de673842c9b50ee47e0 data/brazil-aesthetic/recipes/cane_juice.json
 3c342343c9c428564ce87cbc637d8ce19db81217 data/brazil-aesthetic/advancements/recipes/misc/amber_plate.json
 8d11468c40bc7951d945fe00a0fef06710398ea3 data/brazil-aesthetic/recipes/calendar.json
-71369e816008536893fc1f20587074a72cd649e6 data/brazil-aesthetic/advancements/recipes/food/cider_herb_tea.json
 5203f6b2a6386f3b322ba9f24b733e57230d3b27 data/brazil-aesthetic/advancements/recipes/misc/cup_american.json
+71369e816008536893fc1f20587074a72cd649e6 data/brazil-aesthetic/advancements/recipes/food/cider_herb_tea.json
 e858e62a021bc379f342d27cff7c984f5ca600ce data/brazil-aesthetic/recipes/red_bar_table.json
 20a29470549af95569d40d6483d4e50c33def3bd data/brazil-aesthetic/advancements/recipes/decorations/broken_floor_tiles.json
 f2dec12d06d0f30a3c3b6b13959aaf2e91ea7150 data/brazil-aesthetic/advancements/recipes/food/avocado_juice.json
@@ -98,6 +99,7 @@ e5d5dbdfe9c425f41ddd56d0ab96b39c22d9db89 data/brazil-aesthetic/advancements/reci
 f9a054cb27d90e4d5dacd3177812434057c5acae data/brazil-aesthetic/recipes/corn_grains_from_corn.json
 14b8f55f573e71166fbd31c03bdaafc81bcb424b data/brazil-aesthetic/recipes/party_flags_intersex.json
 dd1ea9e66065404948c439c243e6df6ad092193b data/brazil-aesthetic/advancements/recipes/decorations/porcelain_chicken.json
+a8dec7fa09cb7b554b945d38017364cc08e96887 data/brazil-aesthetic/advancements/recipes/misc/amber_mug.json
 9708d87262e9b03f521f8709b69073030c5e184b data/brazil-aesthetic/recipes/cheese_bread.json
 881b1325cce3ad2ffc19d3f83b3e9c5888addaf5 data/brazil-aesthetic/recipes/cup_american.json
 3123ffd8908b01e0fa8cc4f99d9af4bf3bc709e1 data/brazil-aesthetic/recipes/party_flags_aromantic.json
