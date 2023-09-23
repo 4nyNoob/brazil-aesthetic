@@ -85,6 +85,8 @@ public class ModItems {
                 new FoodItem(food(Foods.CHEESE, Items.AIR, 64), false, false));
         public static final Item CHEESE_BREAD = registerItem("cheese_bread",
                 new FoodItem(food(Foods.CHEESE_BREAD, Items.AIR, 64), false, false));
+        public static final Item CORN = registerItem("corn",
+                new FoodItem(food(Foods.CORN, Items.AIR, 64), false, false));
 
 
 
@@ -116,10 +118,12 @@ public class ModItems {
     //SEEDS
     public static final Item RICE_SEEDS = registerItem("rice_seeds",
             new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings()));
+    public static final Item CORN_SEEDS = registerItem("corn_seeds",
+            new AliasedBlockItem(ModBlocks.CORN_CROP, new FabricItemSettings()));
 
 
     //public static final Item BUTTER_POT_ITEM = registerItem("butter_pot_item",
-            //new BlockItem(ModBlocks.BUTTER_POT, new FabricItemSettings()));
+    //        new BlockItem(ModBlocks.BUTTER_POT, new FabricItemSettings()));
 
 
     private static Item registerItem( String name, Item item){

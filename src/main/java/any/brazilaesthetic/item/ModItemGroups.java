@@ -28,12 +28,22 @@ public class ModItemGroups {
                         entries.add(ModItems.CIDER_HERB);
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.MANDIOCA);
+                        entries.add(ModItems.CORN);
+                        entries.add(ModItems.CORN_GRAINS);
 
                     //SEEDS
                         entries.add(ModItems.RICE_SEEDS);
+                        entries.add(ModItems.CORN_SEEDS);
 
                     //SAPLINGS
                         entries.add(ModBlocks.ACEROLA_SAPLING);
+                        entries.add(ModBlocks.GUARANA_SAPLING);
+                        entries.add(ModBlocks.ORANGE_SAPLING);
+
+                    //LEAVES
+                        entries.add(ModBlocks.ACEROLA_LEAVES);
+                        entries.add(ModBlocks.GUARANA_LEAVES);
+                        entries.add(ModBlocks.ORANGE_LEAVES);
 
                     //JUICES
                         entries.add(ModItems.CUP_AMERICAN);
@@ -72,7 +82,6 @@ public class ModItemGroups {
                         entries.add(ModItems.COCONUT_WITH_STRAW);
                         entries.add(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
                         entries.add(ModItems.BEANS);
-                        entries.add(ModItems.CORN_GRAINS);
                         entries.add(ModItems.RICE_GRAINS);
                         entries.add(ModItems.MANDIOCA_FLOUR);
                         entries.add(ModItems.GLASS_SHARDS);

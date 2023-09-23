@@ -43,16 +43,16 @@ public enum Foods {
     //  FRUITS
     ACAI(1, 0.3f),
     ACEROLA(1, 0.3f),
-    ORANGE(2, 0.5f),
-    GUARANA(0,0, () ->
+    ORANGE(3, 0.5f),
+    GUARANA(2,0.2f, () ->
             new StatusEffectInstance(StatusEffects.HASTE, FoodItem.VERY_SHORT_DURATION, 0)
             , 0.5f, false, false, false),
-    AVOCADO(2, 0.5f),
+    AVOCADO(2, 0.2f),
 
 
 
     //ROOTS
-    MANDIOCA(0,0, () ->
+    MANDIOCA(3,0.15f, () ->
             new StatusEffectInstance(StatusEffects.POISON, FoodItem.SHORT_DURATION, 0)
             , 0.5f, false, false, false),
 
@@ -71,6 +71,7 @@ public enum Foods {
     CHEESE(2, 0.6f),
     CHEESE_BREAD(3, 0.6f),
     FEIJOADA(5, 0.6f),
+    CORN(3, 0.2f),
 
     FOOD_PLACEHOLDER(4, 2.0f, () ->
             new StatusEffectInstance(StatusEffects.GLOWING, 0, 2)

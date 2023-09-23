@@ -2,6 +2,7 @@ package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.util.ModBlockTags;
+import dev.architectury.platform.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -35,6 +36,32 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ORANGE_MIRROR)
                 .add(ModBlocks.AMBER_MUG)
                 .add(ModBlocks.AMBER_PLATE)
+        ;
+
+        //HOE MINEABLE
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.ACEROLA_LEAVES)
+                .add(ModBlocks.GUARANA_LEAVES)
+                .add(ModBlocks.ORANGE_LEAVES)
+        ;
+
+        //LEAVES
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.ACEROLA_LEAVES)
+                .add(ModBlocks.GUARANA_LEAVES)
+                .add(ModBlocks.ORANGE_LEAVES)
+        ;
+
+        //SAPLINGS
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.ACEROLA_SAPLING)
+                .add(ModBlocks.ACEROLA_SAPLING)
+        ;
+
+        //CROPS
+        getOrCreateTagBuilder(BlockTags.CROPS)
+                .add(ModBlocks.RICE_CROP)
+                .add(ModBlocks.CORN_CROP)
         ;
 
         //BAR CHAIRS

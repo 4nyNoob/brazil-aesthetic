@@ -9,20 +9,21 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/4nyNoob/brazil-aesthetic",
+		"issues": "https://github.com/4nyNoob/brazil-aesthetic/issues"
 	},
-	"license": "MIT",
+	"license": "Mozilla Public License 2.0",
 	"icon": "assets/brazil-aesthetic/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"any.brazilaesthetic.BrazilAesthetic"
+			"any.brazil-aesthetic.BrazilAesthetic"
 		],
 		"client": [
-			"any.brazilaesthetic.BrazilAestheticClient"
+			"any.brazil-aesthetic.BrazilAestheticClient"
 		],
 		"fabric-datagen": [
-			"any.brazilaesthetic.BrazilAestheticDataGenerator"
+			"any.brazil-aesthetic.BrazilAestheticDataGenerator"
 		]
 	},
 	"mixins": [

@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "":
+    [
+      {"model": "brazil-aesthetic:block/orange_leaves_fruit", "weight": 1},
+      {"model": "brazil-aesthetic:block/orange_leaves", "weight": 1}
+    ]
+  }
+}

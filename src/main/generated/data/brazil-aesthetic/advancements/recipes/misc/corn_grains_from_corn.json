@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_dye": {
+    "has_corn": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:blue_dye"
+              "brazil-aesthetic:corn"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:flip_flop"
+        "recipe": "minecraft:corn_grains_from_corn"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_blue_dye",
+      "has_corn",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:flip_flop"
+      "minecraft:corn_grains_from_corn"
     ]
   },
   "sends_telemetry_event": false

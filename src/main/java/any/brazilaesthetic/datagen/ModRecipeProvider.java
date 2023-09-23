@@ -32,9 +32,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f, 100, "placeholder");
         */
 
-        //REVERSABLE BLOCK RECIPE
-//        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ACAI,
-//                RecipeCategory.DECORATIONS, ModBlocks.COPACABANA_SIDEWALK);
+        //SHAPELESS RECIPE
+        offerShapelessRecipe(exporter, ModItems.CORN_GRAINS, ModItems.CORN, "food", 6);
 
         //SHAPED RECIPE
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AMBER_PLATE, 3)
@@ -422,6 +421,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C' , Items.CYAN_DYE)
                 .criterion(hasItem(Items.PAPER), FabricRecipeProvider.conditionsFromItem(Items.PAPER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_PANSEXUAL)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PARTY_FLAGS_PRIDE, 1)
                 .pattern("###")
                 .pattern("PPP")
@@ -519,21 +519,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.CHEST), FabricRecipeProvider.conditionsFromItem(Items.CHEST))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BUTTER_POT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FLIP_FLOP, 1)
-                .pattern("X")
-                .pattern("#")
-                .input('X' , Items.BLUE_DYE)
-                .input('#' , Items.WHITE_DYE)
-                .criterion(hasItem(Items.BLUE_DYE), FabricRecipeProvider.conditionsFromItem(Items.BLUE_DYE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLIP_FLOP)));
+        //ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FLIP_FLOP, 1)
+        //        .pattern("X")
+        //        .pattern("#")
+        //        .input('X' , Items.BLUE_DYE)
+        //        .input('#' , Items.WHITE_DYE)
+        //        .criterion(hasItem(Items.BLUE_DYE), FabricRecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+        //        .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLIP_FLOP)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FLIP_FLOP_2, 1)
-                .pattern("X  X")
-                .pattern("#  #")
-                .input('X' , Items.BLUE_DYE)
-                .input('#' , Items.WHITE_DYE)
-                .criterion(hasItem(Items.BLUE_DYE), FabricRecipeProvider.conditionsFromItem(Items.BLUE_DYE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLIP_FLOP_2)));
+        //ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.FLIP_FLOP_2, 1)
+        //        .pattern("X  X")
+        //        .pattern("#  #")
+        //        .input('X' , Items.BLUE_DYE)
+        //        .input('#' , Items.WHITE_DYE)
+        //        .criterion(hasItem(Items.BLUE_DYE), FabricRecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+        //        .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLIP_FLOP_2)));
 
 
     }

@@ -1,6 +1,7 @@
 package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
+import any.brazilaesthetic.block.custom.CornCropBlock;
 import any.brazilaesthetic.block.custom.RiceCropBlock;
 import any.brazilaesthetic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -18,12 +19,16 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //CUBE-ALL BLOCKS
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_FLOOR_TILES);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GUARANA_LEAVES);
 
         //SAPLING BLOCK
         blockStateModelGenerator.registerTintableCross(ModBlocks.ACEROLA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.GUARANA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ORANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         //CROP MODELS
         blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7, 8);
 
         //HORIZONTAL FACING BLOCKS
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.AMBER_MUG);
@@ -101,6 +106,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CIDER_HERB, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEANS, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORN_GRAINS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MANDIOCA_FLOUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.YERBA_MATE, Models.GENERATED);

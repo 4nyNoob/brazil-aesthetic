@@ -16,20 +16,37 @@ import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
-import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
-import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
-import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import net.minecraft.world.gen.trunk.*;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ACEROLA_KEY = registerKey("acerola");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GUARANA_KEY = registerKey("guarana");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORANGE_KEY = registerKey("orange");
 
     public static void bootstrap(Registerable<ConfiguredFeature<? , ?>> context){
+
+        //ACEROLA KEY
         register(context, ACEROLA_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(Blocks.OAK_LOG),
                 new ForkingTrunkPlacer(4, 1, 1),
                 BlockStateProvider.of(ModBlocks.ACEROLA_LEAVES),
                 new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 3),
+                new TwoLayersFeatureSize(1, 0, 3)).build());
+
+        //GUARANA KEY
+        register(context, GUARANA_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(2, 1, 1),
+                BlockStateProvider.of(ModBlocks.GUARANA_LEAVES),
+                new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).build());
+
+        //ORANGE KEY
+        register(context, ORANGE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(3, 1, 1),
+                BlockStateProvider.of(ModBlocks.ORANGE_LEAVES),
+                new LargeOakFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 3),
                 new TwoLayersFeatureSize(1, 0, 3)).build());
     }
 

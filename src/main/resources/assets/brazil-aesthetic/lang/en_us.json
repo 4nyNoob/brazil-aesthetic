@@ -71,6 +71,8 @@
   "item.brazil-aesthetic.coconut": "Coconut",
   "item.brazil-aesthetic.acerola_juice": "Acerola Juice",
   "item.brazil-aesthetic.rice_seeds": "Rice Seeds",
+  "item.brazil-aesthetic.corn_seeds": "Corn Seeds",
+  "item.brazil-aesthetic.corn": "Corn",
 
 
 
@@ -109,5 +111,9 @@
   "block.brazil-aesthetic.party_flags_intersex": "Party Flags Intersex",
   "block.brazil-aesthetic.party_flags_non_binary": "Party Flags Non Binary",
   "block.brazil-aesthetic.acerola_sapling": "Acerola Sapling",
-  "block.brazil-aesthetic.acerola_leaves": "Acerola Leaves"
+  "block.brazil-aesthetic.acerola_leaves": "Acerola Leaves",
+  "block.brazil-aesthetic.guarana_sapling": "Guaraná Sapling",
+  "block.brazil-aesthetic.guarana_leaves": "Guaraná Leaves",
+  "block.brazil-aesthetic.orange_sapling": "Orange Sapling",
+  "block.brazil-aesthetic.orange_leaves": "Orange Leaves"
 }

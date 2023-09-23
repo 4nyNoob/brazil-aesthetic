@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "food",
+  "ingredients": [
+    {
+      "item": "brazil-aesthetic:corn"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "brazil-aesthetic:corn_grains"
+  }
+}
