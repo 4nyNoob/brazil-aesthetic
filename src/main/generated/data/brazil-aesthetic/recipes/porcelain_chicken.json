@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:white_concrete"
+      "item": "minecraft:white_terracotta"
     },
     "B": {
-      "item": "minecraft:black_concrete"
+      "item": "minecraft:black_terracotta"
     },
     "E": {
       "item": "minecraft:egg"

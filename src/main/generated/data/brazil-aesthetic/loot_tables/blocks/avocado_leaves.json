@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "brazil-aesthetic:guarana_leaves"
+              "name": "brazil-aesthetic:avocado_leaves"
             },
             {
               "type": "minecraft:item",
@@ -56,7 +56,7 @@
                   "enchantment": "minecraft:fortune"
                 }
               ],
-              "name": "brazil-aesthetic:guarana_sapling"
+              "name": "brazil-aesthetic:avocado_sapling"
             }
           ]
         }
@@ -183,10 +183,10 @@
               "enchantment": "minecraft:fortune"
             }
           ],
-          "name": "brazil-aesthetic:guarana"
+          "name": "brazil-aesthetic:avocado"
         }
       ],
-      "rolls": 3.0
+      "rolls": 1.0
     }
   ]
 }

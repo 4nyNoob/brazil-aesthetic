@@ -3,6 +3,7 @@ package any.brazilaesthetic.block;
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.custom.*;
 import any.brazilaesthetic.world.tree.AcerolaSaplingGenerator;
+import any.brazilaesthetic.world.tree.AvocadoSaplingGenerator;
 import any.brazilaesthetic.world.tree.GuaranaSaplingGenerator;
 import any.brazilaesthetic.world.tree.OrangeSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -137,6 +138,8 @@ public class ModBlocks {
                 new SaplingBlock(new GuaranaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
         public static final Block ORANGE_SAPLING = registerBlock("orange_sapling",
                 new SaplingBlock(new OrangeSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+        public static final Block AVOCADO_SAPLING = registerBlock("avocado_sapling",
+                new SaplingBlock(new AvocadoSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     //LEAVES
         public static final Block ACEROLA_LEAVES = registerBlock("acerola_leaves",
@@ -144,6 +147,8 @@ public class ModBlocks {
         public static final Block GUARANA_LEAVES = registerBlock("guarana_leaves",
                 new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
         public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",
+                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+        public static final Block AVOCADO_LEAVES = registerBlock("avocado_leaves",
                 new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
 
 /*

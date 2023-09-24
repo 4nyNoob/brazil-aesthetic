@@ -22,6 +22,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ACEROLA_KEY = registerKey("acerola");
     public static final RegistryKey<ConfiguredFeature<?, ?>> GUARANA_KEY = registerKey("guarana");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORANGE_KEY = registerKey("orange");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> AVOCADO_KEY = registerKey("avocado");
 
     public static void bootstrap(Registerable<ConfiguredFeature<? , ?>> context){
 
@@ -48,6 +49,14 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ORANGE_LEAVES),
                 new LargeOakFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 3),
                 new TwoLayersFeatureSize(1, 0, 3)).build());
+        //AVOCADO KEY
+        register(context, AVOCADO_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(3, 1, 1),
+                BlockStateProvider.of(ModBlocks.AVOCADO_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), ConstantIntProvider.create(4),
+                        0.25f, 0.75f, 0.5f, 0.5f),
+                new TwoLayersFeatureSize(1, 0, 4)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

@@ -4,7 +4,6 @@
 
 
   "item.brazil-aesthetic.cup_american": "American Cup",
-  "item.brazil-aesthetic.cup_american.tooltip" : "actually this is a soviet design...",
   "item.brazil-aesthetic.water_cup_american": "American Cup With Water",
   "item.brazil-aesthetic.water_cup_american.tooltip" : "the DEFINITIVE way of drinking water",
   "item.brazil-aesthetic.milk_cup_american": "American Cup With Milk",
@@ -115,5 +114,7 @@
   "block.brazil-aesthetic.guarana_sapling": "Guaraná Sapling",
   "block.brazil-aesthetic.guarana_leaves": "Guaraná Leaves",
   "block.brazil-aesthetic.orange_sapling": "Orange Sapling",
-  "block.brazil-aesthetic.orange_leaves": "Orange Leaves"
+  "block.brazil-aesthetic.orange_leaves": "Orange Leaves",
+  "block.brazil-aesthetic.avocado_sapling": "Avocado Sapling",
+  "block.brazil-aesthetic.avocado_leaves": "Avocado Leaves"
 }

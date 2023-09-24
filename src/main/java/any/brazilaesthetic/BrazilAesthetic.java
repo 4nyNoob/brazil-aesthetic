@@ -3,7 +3,7 @@ package any.brazilaesthetic;
 import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.item.ModItemGroups;
 import any.brazilaesthetic.item.ModItems;
-import any.brazilaesthetic.datagen.ModLootTableModifiers;
+import any.brazilaesthetic.util.ModLootTableModifiers;
 import any.brazilaesthetic.util.ModSit;
 import any.brazilaesthetic.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -32,7 +32,7 @@ public class BrazilAesthetic implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModSit.registerSitUtil();
-		ModLootTableModifiers.ModidyLootTables();
+		ModLootTableModifiers.ModifyLootTables();
 
 		ModWorldGeneration.generateModWorldGeneration();
 	}

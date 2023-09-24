@@ -107,8 +107,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         //FRUIT LEAVES DROPS
         addDrop(ModBlocks.ACEROLA_LEAVES, modLeavesDrops(ModBlocks.ACEROLA_LEAVES, ModBlocks.ACEROLA_SAPLING, ModItems.ACEROLA, 1f, SAPLING_DROP_CHANCE));
-        addDrop(ModBlocks.GUARANA_LEAVES, modLeavesDrops(ModBlocks.GUARANA_LEAVES, ModBlocks.GUARANA_SAPLING, ModItems.GUARANA, 5f, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.GUARANA_LEAVES, modLeavesDrops(ModBlocks.GUARANA_LEAVES, ModBlocks.GUARANA_SAPLING, ModItems.GUARANA, 3f, SAPLING_DROP_CHANCE));
         addDrop(ModBlocks.ORANGE_LEAVES, modLeavesDrops(ModBlocks.ORANGE_LEAVES, ModBlocks.ORANGE_SAPLING, ModItems.ORANGE, 1f, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.AVOCADO_LEAVES, modLeavesDrops(ModBlocks.AVOCADO_LEAVES, ModBlocks.AVOCADO_SAPLING, ModItems.AVOCADO, 1f, SAPLING_DROP_CHANCE));
     }
 
     public LootTable.Builder BlockStateDrop5(Block block, String blockstate) {

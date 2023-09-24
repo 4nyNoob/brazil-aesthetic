@@ -10,6 +10,7 @@ public class ModTreeGeneration {
     public static void generateTrees(){
 
         //ADD TREE ON THESE BIOMES
+        //ACEROLA TREE
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(
                     BiomeKeys.FOREST, BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE,
                     BiomeKeys.RIVER
@@ -17,18 +18,23 @@ public class ModTreeGeneration {
             //VEGETATION TO BE PLACED
             GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ACEROLA_PLACED_KEY
         );
-
+        //GUARANA TREE
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(
-                    BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE, BiomeKeys.FOREST
+                        BiomeKeys.FOREST, BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE
                 ),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.GUARANA_PLACED_KEY
         );
-
+        //ORANGE TREE
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(
-                        BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE, BiomeKeys.FOREST
+                        BiomeKeys.FOREST, BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE
                 ),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ORANGE_PLACED_KEY
         );
-
+        //AVOCADO TREE
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(
+                        BiomeKeys.FOREST, BiomeKeys.JUNGLE, BiomeKeys.SPARSE_JUNGLE
+                ),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AVOCADO_PLACED_KEY
+        );
     }
 }

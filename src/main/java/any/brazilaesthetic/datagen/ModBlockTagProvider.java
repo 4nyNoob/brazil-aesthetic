@@ -43,6 +43,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ACEROLA_LEAVES)
                 .add(ModBlocks.GUARANA_LEAVES)
                 .add(ModBlocks.ORANGE_LEAVES)
+                .add(ModBlocks.AVOCADO_LEAVES)
         ;
 
         //LEAVES
@@ -50,12 +51,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ACEROLA_LEAVES)
                 .add(ModBlocks.GUARANA_LEAVES)
                 .add(ModBlocks.ORANGE_LEAVES)
+                .add(ModBlocks.AVOCADO_LEAVES)
         ;
 
         //SAPLINGS
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
                 .add(ModBlocks.ACEROLA_SAPLING)
-                .add(ModBlocks.ACEROLA_SAPLING)
+                .add(ModBlocks.GUARANA_SAPLING)
+                .add(ModBlocks.ORANGE_SAPLING)
+                .add(ModBlocks.AVOCADO_SAPLING)
         ;
 
         //CROPS

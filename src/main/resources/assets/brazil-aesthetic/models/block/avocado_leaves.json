@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "brazil-aesthetic:block/avocado_leaves"
+  }
+}

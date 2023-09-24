@@ -18,6 +18,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ACEROLA_PLACED_KEY = registerKey("acerola_placed");
     public static final RegistryKey<PlacedFeature> GUARANA_PLACED_KEY = registerKey("guarana_placed");
     public static final RegistryKey<PlacedFeature> ORANGE_PLACED_KEY = registerKey("orange_placed");
+    public static final RegistryKey<PlacedFeature> AVOCADO_PLACED_KEY = registerKey("avocado_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context){
@@ -44,6 +45,13 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         //PLACEMENT QUANTITY
                         PlacedFeatures.createCountExtraModifier(0, 0.2f, 1), ModBlocks.ORANGE_SAPLING)
+        );
+        register(context, AVOCADO_PLACED_KEY,
+                //USE EXISTING KEY ON THE PLACEMENT
+                configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.AVOCADO_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        //PLACEMENT QUANTITY
+                        PlacedFeatures.createCountExtraModifier(0, 0.2f, 1), ModBlocks.AVOCADO_SAPLING)
         );
     }
 
