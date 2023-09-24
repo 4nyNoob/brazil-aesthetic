@@ -469,7 +469,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#' , Items.STRING)
                 .input('P' , Items.PAPER)
                 .input('A' , Items.YELLOW_DYE)
-                .input('B' , Items.WHITE_DYE)
+                .input('B' , Items.PURPLE_DYE)
                 .criterion(hasItem(Items.PAPER), FabricRecipeProvider.conditionsFromItem(Items.PAPER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PARTY_FLAGS_INTERSEX)));
 
