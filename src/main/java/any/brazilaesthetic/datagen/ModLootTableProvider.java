@@ -98,12 +98,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                             .exactMatch(RiceCropBlock.AGE, 8));
             addDrop(ModBlocks.CORN_CROP, modCropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, cornBuilder, 4f, 4f));
 
-            //AnyOfLootCondition.Builder cornBuilder =
-            //        BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
-            //                        .exactMatch(CornCropBlock.AGE, 7))
-            //                .or(BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
-            //                        .exactMatch(CornCropBlock.AGE, 8)));
-            //addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN_GRAINS, ModItems.CORN_SEEDS, cornBuilder));
+
+        BlockStatePropertyLootCondition.Builder beansbuilder =
+                //BLOCO Q RECEBE A LOOTTABLE
+                BlockStatePropertyLootCondition.builder(ModBlocks.BEANS_CROP)
+                        .properties(StatePredicate.Builder.create()
+                                //ONLY DROP ITEMS AT THE AGE OF 7
+                                .exactMatch(RiceCropBlock.AGE, 7));
+        //ADICIONAR DROPS DO BLOCO         		//BLOCO             //PRODUTO            //ITEM DE SEMENTE
+        addDrop(ModBlocks.BEANS_CROP, cropDrops(ModBlocks.BEANS_CROP, ModItems.BEANS, ModItems.BEANS_SEEDS, beansbuilder));
+
+
+
 
         //FRUIT LEAVES DROPS
         addDrop(ModBlocks.ACEROLA_LEAVES, modLeavesDrops(ModBlocks.ACEROLA_LEAVES, ModBlocks.ACEROLA_SAPLING, ModItems.ACEROLA, 1f, SAPLING_DROP_CHANCE));

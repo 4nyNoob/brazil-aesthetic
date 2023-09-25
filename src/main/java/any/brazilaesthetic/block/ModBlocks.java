@@ -126,7 +126,11 @@ public class ModBlocks {
     //CROPS
         public static final Block RICE_CROP =
                 Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "rice_crop"),
-                        new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+                        new BeansCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    public static final Block BEANS_CROP =
+            Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "beans_crop"),
+                    new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
         public static final Block CORN_CROP =
                 Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "corn_crop"),
                         new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));

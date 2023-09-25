@@ -119,8 +119,12 @@ public class ModItems {
     //SEEDS
     public static final Item RICE_SEEDS = registerItem("rice_seeds",
             new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings()));
+
     public static final Item CORN_SEEDS = registerItem("corn_seeds",
             new AliasedBlockItem(ModBlocks.CORN_CROP, new FabricItemSettings()));
+
+    public static final Item BEANS_SEEDS = registerItem("beans_seeds",
+            new AliasedBlockItem(ModBlocks.BEANS_CROP, new FabricItemSettings()));
 
 
     //public static final Item BUTTER_POT_ITEM = registerItem("butter_pot_item",

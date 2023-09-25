@@ -1,6 +1,7 @@
 package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
+import any.brazilaesthetic.block.custom.BeansCropBlock;
 import any.brazilaesthetic.block.custom.CornCropBlock;
 import any.brazilaesthetic.block.custom.RiceCropBlock;
 import any.brazilaesthetic.item.ModItems;
@@ -29,6 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         //CROP MODELS
         blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
+        blockStateModelGenerator.registerCrop(ModBlocks.BEANS_CROP, BeansCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
         blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7, 8);
 
         //HORIZONTAL FACING BLOCKS
