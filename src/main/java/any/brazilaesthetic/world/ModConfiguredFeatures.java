@@ -7,7 +7,11 @@ import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.intprovider.WeightedListIntProvider;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.FeatureConfig;
@@ -49,14 +53,17 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ORANGE_LEAVES),
                 new LargeOakFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 3),
                 new TwoLayersFeatureSize(1, 0, 3)).build());
+
         //AVOCADO KEY
         register(context, AVOCADO_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(Blocks.OAK_LOG),
-                new StraightTrunkPlacer(3, 1, 1),
+                new CherryTrunkPlacer(4, 1,1,
+                        UniformIntProvider.create(2, 3), UniformIntProvider.create(2, 3), UniformIntProvider.create(-3, -1), ConstantIntProvider.create(2)),
                 BlockStateProvider.of(ModBlocks.AVOCADO_LEAVES),
-                new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), ConstantIntProvider.create(4),
-                        0.25f, 0.75f, 0.5f, 0.5f),
-                new TwoLayersFeatureSize(1, 0, 4)).build());
+                new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(0), ConstantIntProvider.create(5),
+                        0.5f, 0.25f, 0.5f, 0.75f),
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

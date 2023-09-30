@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_milk_cup_american": {
+    "has_cup_american": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_milk_cup_american",
+      "has_cup_american",
       "has_the_recipe"
     ]
   ],

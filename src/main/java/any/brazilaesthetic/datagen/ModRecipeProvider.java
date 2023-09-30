@@ -42,7 +42,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         */
 
         //SHAPELESS RECIPE
-        offerShapelessRecipe(exporter, ModItems.CORN_GRAINS, ModItems.CORN, "food", 6);
+        //offerShapelessRecipe(exporter, ModItems.CORN_GRAINS, ModItems.CORN, "food", 6);
 
         //SHAPED RECIPE
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AMBER_PLATE, 3)
@@ -77,9 +77,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.AVOCADO_JUICE, 1)
                 .pattern("X#")
-                .input('#' , ModItems.MILK_CUP_AMERICAN)
+                .input('#' , ModItems.CUP_AMERICAN)
                 .input('X' , ModItems.AVOCADO)
-                .criterion(hasItem(ModItems.MILK_CUP_AMERICAN), FabricRecipeProvider.conditionsFromItem(ModItems.MILK_CUP_AMERICAN))
+                .criterion(hasItem(ModItems.CUP_AMERICAN), FabricRecipeProvider.conditionsFromItem(ModItems.MILK_CUP_AMERICAN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.AVOCADO_JUICE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GUARANA_JUICE, 1)
@@ -236,7 +236,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" W ")
                 .input('#' , Items.WATER_BUCKET)
                 .input('S' , ModItems.FENNEL)
-                .input('X' , ModItems.CORN_GRAINS)
+                //.input('X' , ModItems.CORN_GRAINS)
+                .input('X' , ModItems.CORN)
                 .input('T' , Items.COOKED_PORKCHOP)
                 .input('W' , ModItems.CLAY_CAULDRON)
                 .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
@@ -298,7 +299,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" # ")
                 .pattern("TTT")
                 .pattern("SSS")
-                .input('#' , Items.LIME_DYE)
+                .input('#' , Items.GREEN_DYE)
                 .input('T' , Items.STRING)
                 .input('S' , Items.STICK)
                 .criterion(hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))

@@ -98,15 +98,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                             .exactMatch(RiceCropBlock.AGE, 8));
             addDrop(ModBlocks.CORN_CROP, modCropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, cornBuilder, 4f, 4f));
 
-
-        BlockStatePropertyLootCondition.Builder beansbuilder =
-                //BLOCO Q RECEBE A LOOTTABLE
-                BlockStatePropertyLootCondition.builder(ModBlocks.BEANS_CROP)
-                        .properties(StatePredicate.Builder.create()
-                                //ONLY DROP ITEMS AT THE AGE OF 7
-                                .exactMatch(RiceCropBlock.AGE, 7));
-        //ADICIONAR DROPS DO BLOCO         		//BLOCO             //PRODUTO            //ITEM DE SEMENTE
-        addDrop(ModBlocks.BEANS_CROP, cropDrops(ModBlocks.BEANS_CROP, ModItems.BEANS, ModItems.BEANS_SEEDS, beansbuilder));
+            //BEANS CROP
+            BlockStatePropertyLootCondition.Builder beansbuilder =
+                    BlockStatePropertyLootCondition.builder(ModBlocks.BEANS_CROP)
+                            .properties(StatePredicate.Builder.create()
+                                    .exactMatch(RiceCropBlock.AGE, 7));
+            addDrop(ModBlocks.BEANS_CROP, cropDrops(ModBlocks.BEANS_CROP, ModItems.BEANS, ModItems.BEANS_SEEDS, beansbuilder));
 
 
 

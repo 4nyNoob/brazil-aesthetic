@@ -29,7 +29,9 @@ public class ModItemGroups {
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.MANDIOCA);
                         entries.add(ModItems.CORN);
-                        entries.add(ModItems.CORN_GRAINS);
+                        //entries.add(ModItems.CORN_GRAINS);
+                        entries.add(ModItems.BEANS);
+                        entries.add(ModItems.RICE_GRAINS);
 
                     //SEEDS
                         entries.add(ModItems.RICE_SEEDS);
@@ -84,8 +86,6 @@ public class ModItemGroups {
                         entries.add(ModItems.COCONUT);
                         entries.add(ModItems.COCONUT_WITH_STRAW);
                         entries.add(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
-                        entries.add(ModItems.BEANS);
-                        entries.add(ModItems.RICE_GRAINS);
                         entries.add(ModItems.MANDIOCA_FLOUR);
                         entries.add(ModItems.GLASS_SHARDS);
 

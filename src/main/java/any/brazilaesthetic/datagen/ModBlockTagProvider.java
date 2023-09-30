@@ -17,6 +17,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
+
         //PICKAXE MINEABLE BLOCKS
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.BROKEN_FLOOR_TILES)
@@ -89,5 +90,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(ModBlockTags.WIRE_CHAIRS)
         ;
 
+        //PARTY FLAGS
+        getOrCreateTagBuilder(ModBlockTags.PARTY_FLAGS)
+                .add(ModBlocks.PARTY_FLAGS)
+                .add(ModBlocks.PARTY_FLAGS_2)
+                .add(ModBlocks.PARTY_FLAGS_AROMANTIC)
+                .add(ModBlocks.PARTY_FLAGS_ASEXUAL)
+                .add(ModBlocks.PARTY_FLAGS_BISEXUAL)
+                .add(ModBlocks.PARTY_FLAGS_LESBIAN)
+                .add(ModBlocks.PARTY_FLAGS_PANSEXUAL)
+                .add(ModBlocks.PARTY_FLAGS_PRIDE)
+                .add(ModBlocks.PARTY_FLAGS_TRANS)
+                .add(ModBlocks.PARTY_FLAGS_INTERSEX)
+                .add(ModBlocks.PARTY_FLAGS_NON_BINARY)
+        ;
     }
 }

@@ -105,8 +105,8 @@ public class ModItems {
 
     public static final Item BEANS = registerItem("beans",
             new Item(new FabricItemSettings()));
-    public static final Item CORN_GRAINS = registerItem("corn_grains",
-            new Item(new FabricItemSettings()));
+    //public static final Item CORN_GRAINS = registerItem("corn_grains",
+    //        new Item(new FabricItemSettings()));
     public static final Item RICE_GRAINS = registerItem("rice_grains",
             new Item(new FabricItemSettings()));
     public static final Item COCONUT = registerItem("coconut",

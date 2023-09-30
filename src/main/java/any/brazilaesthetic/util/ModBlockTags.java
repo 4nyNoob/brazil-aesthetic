@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlockTags {
     public static final TagKey<Block> WIRE_CHAIRS = create("wire_chairs");
+    public static final TagKey<Block> PARTY_FLAGS = create("party_flags");
     public static final TagKey<Block> BAR_CHAIRS = create("bar_chairs");
     public static final TagKey<Block> SEATS = create("seats");
 

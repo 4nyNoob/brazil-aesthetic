@@ -124,36 +124,35 @@ public class ModBlocks {
 
 
     //CROPS
-        public static final Block RICE_CROP =
-                Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "rice_crop"),
-                        new BeansCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
-
-    public static final Block BEANS_CROP =
-            Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "beans_crop"),
-                    new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
-        public static final Block CORN_CROP =
-                Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "corn_crop"),
-                        new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+            public static final Block RICE_CROP =
+                    Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "rice_crop"),
+                            new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+            public static final Block BEANS_CROP =
+                    Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "beans_crop"),
+                            new BeansCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+                public static final Block CORN_CROP =
+                        Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "corn_crop"),
+                                new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     //SAPLINGS
-        public static final Block ACEROLA_SAPLING = registerBlock("acerola_sapling",
-            new SaplingBlock(new AcerolaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
-        public static final Block GUARANA_SAPLING = registerBlock("guarana_sapling",
-                new SaplingBlock(new GuaranaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
-        public static final Block ORANGE_SAPLING = registerBlock("orange_sapling",
-                new SaplingBlock(new OrangeSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
-        public static final Block AVOCADO_SAPLING = registerBlock("avocado_sapling",
-                new SaplingBlock(new AvocadoSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            public static final Block ACEROLA_SAPLING = registerBlock("acerola_sapling",
+                new SaplingBlock(new AcerolaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            public static final Block GUARANA_SAPLING = registerBlock("guarana_sapling",
+                    new SaplingBlock(new GuaranaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            public static final Block ORANGE_SAPLING = registerBlock("orange_sapling",
+                    new SaplingBlock(new OrangeSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            public static final Block AVOCADO_SAPLING = registerBlock("avocado_sapling",
+                    new SaplingBlock(new AvocadoSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     //LEAVES
-        public static final Block ACEROLA_LEAVES = registerBlock("acerola_leaves",
-                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-        public static final Block GUARANA_LEAVES = registerBlock("guarana_leaves",
-                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-        public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",
-                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-        public static final Block AVOCADO_LEAVES = registerBlock("avocado_leaves",
-                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block ACEROLA_LEAVES = registerBlock("acerola_leaves",
+                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block GUARANA_LEAVES = registerBlock("guarana_leaves",
+                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",
+                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block AVOCADO_LEAVES = registerBlock("avocado_leaves",
+                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
 
 /*
     public static final Block CAPYBARA = registerBlock("capybara",
