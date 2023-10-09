@@ -2,6 +2,10 @@ package any.brazilaesthetic.block;
 
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.block.custom.*;
+import any.brazilaesthetic.block.custom.leaves.AcerolaFlowerLeavesBlock;
+import any.brazilaesthetic.block.custom.leaves.AvocadoFlowerLeavesBlock;
+import any.brazilaesthetic.block.custom.leaves.GuaranaFlowerLeavesBlock;
+import any.brazilaesthetic.block.custom.leaves.OrangeFlowerLeavesBlock;
 import any.brazilaesthetic.world.tree.AcerolaSaplingGenerator;
 import any.brazilaesthetic.world.tree.AvocadoSaplingGenerator;
 import any.brazilaesthetic.world.tree.GuaranaSaplingGenerator;
@@ -146,13 +150,22 @@ public class ModBlocks {
 
     //LEAVES
             public static final Block ACEROLA_LEAVES = registerBlock("acerola_leaves",
-                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-            public static final Block GUARANA_LEAVES = registerBlock("guarana_leaves",
-                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-            public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",
-                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+                    new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block ACEROLA_LEAVES_FLOWER = registerBlock("acerola_leaves_flower",
+                    new AcerolaFlowerLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
             public static final Block AVOCADO_LEAVES = registerBlock("avocado_leaves",
-                    new ModLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+                    new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block AVOCADO_LEAVES_FLOWER = registerBlock("avocado_leaves_flower",
+                    new AvocadoFlowerLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block GUARANA_LEAVES = registerBlock("guarana_leaves",
+                            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block GUARANA_LEAVES_FLOWER = registerBlock("guarana_leaves_flower",
+                    new GuaranaFlowerLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",
+                    new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            public static final Block ORANGE_LEAVES_FLOWER = registerBlock("orange_leaves_flower",
+                    new OrangeFlowerLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+
 
 /*
     public static final Block CAPYBARA = registerBlock("capybara",

@@ -1,16 +1,13 @@
 package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
-import any.brazilaesthetic.block.custom.CornCropBlock;
 import any.brazilaesthetic.block.custom.RiceCropBlock;
 import any.brazilaesthetic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.*;
@@ -22,10 +19,7 @@ import net.minecraft.loot.function.LootFunctionConsumingBuilder;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.predicate.NumberRange;
 import net.minecraft.predicate.StatePredicate;
-import net.minecraft.predicate.item.EnchantmentPredicate;
-import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.state.property.Property;
 
 import java.util.List;
@@ -109,10 +103,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
         //FRUIT LEAVES DROPS
-        addDrop(ModBlocks.ACEROLA_LEAVES, modLeavesDrops(ModBlocks.ACEROLA_LEAVES, ModBlocks.ACEROLA_SAPLING, ModItems.ACEROLA, 1f, SAPLING_DROP_CHANCE));
-        addDrop(ModBlocks.GUARANA_LEAVES, modLeavesDrops(ModBlocks.GUARANA_LEAVES, ModBlocks.GUARANA_SAPLING, ModItems.GUARANA, 3f, SAPLING_DROP_CHANCE));
-        addDrop(ModBlocks.ORANGE_LEAVES, modLeavesDrops(ModBlocks.ORANGE_LEAVES, ModBlocks.ORANGE_SAPLING, ModItems.ORANGE, 1f, SAPLING_DROP_CHANCE));
-        addDrop(ModBlocks.AVOCADO_LEAVES, modLeavesDrops(ModBlocks.AVOCADO_LEAVES, ModBlocks.AVOCADO_SAPLING, ModItems.AVOCADO, 1f, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.ACEROLA_LEAVES, leavesDrops(ModBlocks.ACEROLA_LEAVES, ModBlocks.ACEROLA_SAPLING, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.ACEROLA_LEAVES_FLOWER, leavesDrops(ModBlocks.ACEROLA_LEAVES_FLOWER, ModBlocks.ACEROLA_SAPLING, SAPLING_DROP_CHANCE));
+
+        addDrop(ModBlocks.AVOCADO_LEAVES, leavesDrops(ModBlocks.AVOCADO_LEAVES, ModBlocks.AVOCADO_SAPLING, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.AVOCADO_LEAVES_FLOWER, leavesDrops(ModBlocks.AVOCADO_LEAVES_FLOWER, ModBlocks.AVOCADO_SAPLING, SAPLING_DROP_CHANCE));
+
+        addDrop(ModBlocks.GUARANA_LEAVES, leavesDrops(ModBlocks.GUARANA_LEAVES, ModBlocks.GUARANA_SAPLING, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.GUARANA_LEAVES_FLOWER, leavesDrops(ModBlocks.GUARANA_LEAVES_FLOWER, ModBlocks.GUARANA_SAPLING, SAPLING_DROP_CHANCE));
+
+        addDrop(ModBlocks.ORANGE_LEAVES, leavesDrops(ModBlocks.ORANGE_LEAVES, ModBlocks.ORANGE_SAPLING, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.ORANGE_LEAVES_FLOWER, leavesDrops(ModBlocks.ORANGE_LEAVES_FLOWER, ModBlocks.ORANGE_SAPLING, SAPLING_DROP_CHANCE));
     }
 
     public LootTable.Builder BlockStateDrop5(Block block, String blockstate) {

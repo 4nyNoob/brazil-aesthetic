@@ -1,9 +1,0 @@
-{
-  "variants": {
-    "":
-    [
-      {"model": "brazil-aesthetic:block/guarana_leaves_fruit", "weight": 1},
-      {"model": "brazil-aesthetic:block/guarana_leaves", "weight": 1}
-    ]
-  }
-}

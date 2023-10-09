@@ -40,15 +40,19 @@ public class ModItemGroups {
 
                     //SAPLINGS
                         entries.add(ModBlocks.ACEROLA_SAPLING);
+                        entries.add(ModBlocks.AVOCADO_SAPLING);
                         entries.add(ModBlocks.GUARANA_SAPLING);
                         entries.add(ModBlocks.ORANGE_SAPLING);
-                        entries.add(ModBlocks.AVOCADO_SAPLING);
 
                     //LEAVES
                         entries.add(ModBlocks.ACEROLA_LEAVES);
-                        entries.add(ModBlocks.GUARANA_LEAVES);
-                        entries.add(ModBlocks.ORANGE_LEAVES);
+                        entries.add(ModBlocks.ACEROLA_LEAVES_FLOWER);
                         entries.add(ModBlocks.AVOCADO_LEAVES);
+                        entries.add(ModBlocks.AVOCADO_LEAVES_FLOWER);
+                        entries.add(ModBlocks.GUARANA_LEAVES);
+                        entries.add(ModBlocks.GUARANA_LEAVES_FLOWER);
+                        entries.add(ModBlocks.ORANGE_LEAVES);
+                        entries.add(ModBlocks.ORANGE_LEAVES_FLOWER);
 
                     //JUICES
                         entries.add(ModItems.CUP_AMERICAN);

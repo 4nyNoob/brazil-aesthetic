@@ -2,7 +2,6 @@ package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.util.ModBlockTags;
-import dev.architectury.platform.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -50,6 +49,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //LEAVES
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.ACEROLA_LEAVES)
+                .add(ModBlocks.ACEROLA_LEAVES_FLOWER)
                 .add(ModBlocks.GUARANA_LEAVES)
                 .add(ModBlocks.ORANGE_LEAVES)
                 .add(ModBlocks.AVOCADO_LEAVES)

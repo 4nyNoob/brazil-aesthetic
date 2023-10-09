@@ -16,9 +16,9 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> ACEROLA_PLACED_KEY = registerKey("acerola_placed");
+    public static final RegistryKey<PlacedFeature> AVOCADO_PLACED_KEY = registerKey("avocado_placed");
     public static final RegistryKey<PlacedFeature> GUARANA_PLACED_KEY = registerKey("guarana_placed");
     public static final RegistryKey<PlacedFeature> ORANGE_PLACED_KEY = registerKey("orange_placed");
-    public static final RegistryKey<PlacedFeature> AVOCADO_PLACED_KEY = registerKey("avocado_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context){

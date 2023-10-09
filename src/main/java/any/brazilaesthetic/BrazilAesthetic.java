@@ -7,6 +7,7 @@ import any.brazilaesthetic.util.ModLootTableModifiers;
 import any.brazilaesthetic.util.ModSit;
 import any.brazilaesthetic.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import org.slf4j.Logger;
@@ -17,7 +18,6 @@ public class BrazilAesthetic implements ModInitializer {
 
 	public static final String MOD_ID = "brazil-aesthetic";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
 
 	//STANDARD TOOLTIP STYLE
 	public static MutableText CustomTooltip(String key, Object... args) {
@@ -35,5 +35,26 @@ public class BrazilAesthetic implements ModInitializer {
 		ModLootTableModifiers.ModifyLootTables();
 
 		ModWorldGeneration.generateModWorldGeneration();
+		registerFlammableBlocks();
+	}
+
+	public static void registerFlammableBlocks() {
+		FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
+
+		registry.add(ModBlocks.ACEROLA_LEAVES_FLOWER, 30, 60);
+		registry.add(ModBlocks.ACEROLA_LEAVES, 30, 60);
+		registry.add(ModBlocks.ACEROLA_SAPLING, 30, 60);
+
+		registry.add(ModBlocks.AVOCADO_LEAVES_FLOWER, 30, 60);
+		registry.add(ModBlocks.AVOCADO_LEAVES, 30, 60);
+		registry.add(ModBlocks.AVOCADO_SAPLING, 30, 60);
+
+		registry.add(ModBlocks.GUARANA_LEAVES_FLOWER, 30, 60);
+		registry.add(ModBlocks.GUARANA_LEAVES, 30, 60);
+		registry.add(ModBlocks.GUARANA_SAPLING, 30, 60);
+
+		registry.add(ModBlocks.ORANGE_LEAVES_FLOWER, 30, 60);
+		registry.add(ModBlocks.ORANGE_LEAVES, 30, 60);
+		registry.add(ModBlocks.ORANGE_SAPLING, 30, 60);
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/leaves",
   "textures": {
-    "all": "brazil-aesthetic:block/guarana_leaves"
+    "all": "brazil-aesthetic:block/guarana_leaves_flower"
   }
 }

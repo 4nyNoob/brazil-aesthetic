@@ -5,11 +5,24 @@ import any.brazilaesthetic.block.custom.BeansCropBlock;
 import any.brazilaesthetic.block.custom.CornCropBlock;
 import any.brazilaesthetic.block.custom.RiceCropBlock;
 import any.brazilaesthetic.item.ModItems;
+import com.google.gson.JsonElement;
+import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.Property;
+import net.minecraft.util.Identifier;
+
+import java.util.function.BiConsumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -20,24 +33,33 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //CUBE-ALL BLOCKS
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_FLOOR_TILES);
-        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GUARANA_LEAVES);
+
+        //LEAVES
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ACEROLA_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AVOCADO_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GUARANA_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_LEAVES);
+
 
         //SAPLING BLOCK
         blockStateModelGenerator.registerTintableCross(ModBlocks.ACEROLA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.AVOCADO_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.GUARANA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.ORANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(ModBlocks.AVOCADO_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
         //CROP MODELS
-        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
-        blockStateModelGenerator.registerCrop(ModBlocks.BEANS_CROP, BeansCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7);
-        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6 ,7, 8);
+        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.BEANS_CROP, BeansCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
+
 
         //HORIZONTAL FACING BLOCKS
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.AMBER_MUG);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.BUTTER_POT);
 
 
+        //PARTY FLAGS
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_2);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_AROMANTIC);
@@ -51,12 +73,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PARTY_FLAGS_TRANS);
 
 
+        //WIRE CHAIRS
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.BLUE_WIRE_CHAIR);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GREEN_WIRE_CHAIR);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.RED_WIRE_CHAIR);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.YELLOW_WIRE_CHAIR);
 
 
+        //DECORATION
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CALENDAR);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CLAY_FILTER);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
@@ -67,6 +91,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PORCELAIN_CHICKEN);
 
 
+        //BAR DECORATIONS
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.YELLOW_BAR_TABLE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.RED_BAR_TABLE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.RED_BAR_CHAIR);
