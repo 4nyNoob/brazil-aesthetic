@@ -43,11 +43,11 @@ public class ModItems {
         public static final Item MILK_CUP_AMERICAN = registerItem("milk_cup_american",
                 new DrinkItem(food(Foods.MILK_CUP_AMERICAN, ModItems.CUP_AMERICAN, 16), false,false));
         public static final Item CIDER_HERB_TEA = registerItem("cider_herb_tea",
-                new DrinkItem(food(Foods.CIDER_HERB_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,true));
+                new DrinkItem(food(Foods.CIDER_HERB_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,false));
         public static final Item FENNEL_TEA = registerItem("fennel_tea",
-                new DrinkItem(food(Foods.FENNEL_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,true));
+                new DrinkItem(food(Foods.FENNEL_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,false));
         public static final Item YERBA_MATE_TEA = registerItem("yerba_mate_tea",
-                new DrinkItem(food(Foods.YERBA_MATE_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,true));
+                new DrinkItem(food(Foods.YERBA_MATE_TEA, ModBlocks.AMBER_MUG.asItem(), 1), true,false));
         public static final Item FIFTYONE = registerItem("fiftyone",
                 new DrinkItem(food(Foods.FIFTY_ONE, Items.GLASS_BOTTLE, 3), false,false));
         public static final Item COCONUT_WITH_STRAW = registerItem("coconut_with_straw",
@@ -79,7 +79,7 @@ public class ModItems {
         public static final Item BRIGADEIRO = registerItem("brigadeiro",
                 new FoodItem(food(Foods.BRIGADEIRO, Items.AIR, 64), false, false));
         public static final Item BEIJINHO = registerItem("beijinho",
-                new FoodItem(food(Foods.BEIJINHO, Items.AIR, 64), false, true));
+                new FoodItem(food(Foods.BEIJINHO, Items.AIR, 64), false, false));
         public static final Item FRIED_PASTRY = registerItem("fried_pastry",
                 new FoodItem(food(Foods.FRIED_PASTRY, Items.AIR, 64), false, false));
         public static final Item CHEESE = registerItem("cheese",
@@ -105,8 +105,6 @@ public class ModItems {
 
     public static final Item BEANS = registerItem("beans",
             new Item(new FabricItemSettings()));
-    //public static final Item CORN_GRAINS = registerItem("corn_grains",
-    //        new Item(new FabricItemSettings()));
     public static final Item RICE_GRAINS = registerItem("rice_grains",
             new Item(new FabricItemSettings()));
     public static final Item COCONUT = registerItem("coconut",

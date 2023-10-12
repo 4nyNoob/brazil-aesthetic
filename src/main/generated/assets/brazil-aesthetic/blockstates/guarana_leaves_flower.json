@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "brazil-aesthetic:block/guarana_leaves_flower_stage0"
+    },
+    "age=1": {
+      "model": "brazil-aesthetic:block/guarana_leaves_flower_stage1"
+    }
+  }
+}

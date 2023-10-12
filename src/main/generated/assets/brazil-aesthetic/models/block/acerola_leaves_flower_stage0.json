@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "brazil-aesthetic:block/acerola_leaves_flower_stage0"
+  }
+}

@@ -46,7 +46,7 @@ public class ModConfiguredFeatures {
                         .add(ModBlocks.ACEROLA_LEAVES.getDefaultState(), 1)
                         .add(ModBlocks.ACEROLA_LEAVES_FLOWER.getDefaultState()
                                 .with(AcerolaFlowerLeavesBlock.AGE, AcerolaFlowerLeavesBlock.MAX_AGE)
-                                .with(AcerolaFlowerLeavesBlock.WATERLOGGED, false), 1)
+                                /*.with(AcerolaFlowerLeavesBlock.WATERLOGGED, false)*/, 1)
                 ),
                 new LargeOakFoliagePlacer(UniformIntProvider.create(2, 3), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2))
@@ -66,7 +66,7 @@ public class ModConfiguredFeatures {
                                 .add(ModBlocks.AVOCADO_LEAVES.getDefaultState(), 2)
                                 .add(ModBlocks.AVOCADO_LEAVES_FLOWER.getDefaultState()
                                         .with(AvocadoFlowerLeavesBlock.AGE, AvocadoFlowerLeavesBlock.MAX_AGE)
-                                        .with(AvocadoFlowerLeavesBlock.WATERLOGGED, false), 1)
+                                        /*.with(AvocadoFlowerLeavesBlock.WATERLOGGED, false)*/, 1)
                 ),
                 new CherryFoliagePlacer(UniformIntProvider.create(4, 5), ConstantIntProvider.create(0), UniformIntProvider.create(4, 5),
                         0.5f, 0.25f, 0.5f, 0.75f),
@@ -83,7 +83,7 @@ public class ModConfiguredFeatures {
                                 .add(ModBlocks.GUARANA_LEAVES.getDefaultState(), 1)
                                 .add(ModBlocks.GUARANA_LEAVES_FLOWER.getDefaultState()
                                         .with(GuaranaFlowerLeavesBlock.AGE, GuaranaFlowerLeavesBlock.MAX_AGE)
-                                        .with(GuaranaFlowerLeavesBlock.WATERLOGGED, false), 1)
+                                        /*.with(GuaranaFlowerLeavesBlock.WATERLOGGED, false)*/, 1)
                 ),
                 new LargeOakFoliagePlacer(UniformIntProvider.create(2, 2), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1))

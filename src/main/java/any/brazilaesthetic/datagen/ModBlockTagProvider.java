@@ -41,9 +41,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //HOE MINEABLE
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.ACEROLA_LEAVES)
+                .add(ModBlocks.ACEROLA_LEAVES_FLOWER)
                 .add(ModBlocks.GUARANA_LEAVES)
+                .add(ModBlocks.GUARANA_LEAVES_FLOWER)
                 .add(ModBlocks.ORANGE_LEAVES)
+                .add(ModBlocks.ORANGE_LEAVES_FLOWER)
                 .add(ModBlocks.AVOCADO_LEAVES)
+                .add(ModBlocks.AVOCADO_LEAVES_FLOWER)
         ;
 
         //LEAVES
@@ -51,8 +55,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ACEROLA_LEAVES)
                 .add(ModBlocks.ACEROLA_LEAVES_FLOWER)
                 .add(ModBlocks.GUARANA_LEAVES)
+                .add(ModBlocks.GUARANA_LEAVES_FLOWER)
                 .add(ModBlocks.ORANGE_LEAVES)
+                .add(ModBlocks.ORANGE_LEAVES_FLOWER)
                 .add(ModBlocks.AVOCADO_LEAVES)
+                .add(ModBlocks.AVOCADO_LEAVES_FLOWER)
         ;
 
         //SAPLINGS

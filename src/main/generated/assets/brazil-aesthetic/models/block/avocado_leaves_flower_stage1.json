@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "brazil-aesthetic:block/avocado_leaves_flower_stage1"
+  }
+}

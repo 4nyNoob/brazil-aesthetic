@@ -19,24 +19,23 @@ public class ModItemGroups {
 
                     //INGREDIENTS
                         entries.add(ModItems.ACAI);
-                        entries.add(ModItems.GUARANA);
-                        entries.add(ModItems.ORANGE);
                         entries.add(ModItems.ACEROLA);
                         entries.add(ModItems.AVOCADO);
-                        entries.add(ModItems.YERBA_MATE);
-                        entries.add(ModItems.FENNEL);
-                        entries.add(ModItems.CIDER_HERB);
-                        entries.add(ModItems.CHEESE);
-                        entries.add(ModItems.MANDIOCA);
-                        entries.add(ModItems.CORN);
-                        //entries.add(ModItems.CORN_GRAINS);
                         entries.add(ModItems.BEANS);
+                        entries.add(ModItems.CHEESE);
+                        entries.add(ModItems.CIDER_HERB);
+                        entries.add(ModItems.CORN);
+                        entries.add(ModItems.FENNEL);
+                        entries.add(ModItems.GUARANA);
+                        entries.add(ModItems.MANDIOCA);
+                        entries.add(ModItems.ORANGE);
                         entries.add(ModItems.RICE_GRAINS);
+                        entries.add(ModItems.YERBA_MATE);
 
                     //SEEDS
-                        entries.add(ModItems.RICE_SEEDS);
-                        entries.add(ModItems.CORN_SEEDS);
                         entries.add(ModItems.BEANS_SEEDS);
+                        entries.add(ModItems.CORN_SEEDS);
+                        entries.add(ModItems.RICE_SEEDS);
 
                     //SAPLINGS
                         entries.add(ModBlocks.ACEROLA_SAPLING);
@@ -59,39 +58,39 @@ public class ModItemGroups {
 
                         entries.add(ModItems.WATER_CUP_AMERICAN);
                         entries.add(ModItems.MILK_CUP_AMERICAN);
+                        entries.add(ModItems.ACEROLA_JUICE);
                         entries.add(ModItems.AVOCADO_JUICE);
+                        entries.add(ModItems.CANE_JUICE);
                         entries.add(ModItems.GUARANA_JUICE);
                         entries.add(ModItems.ORANGE_JUICE);
-                        entries.add(ModItems.ACEROLA_JUICE);
-                        entries.add(ModItems.CANE_JUICE);
 
                     //TEAS
                         entries.add(ModBlocks.AMBER_MUG);
 
                         entries.add(ModItems.CIDER_HERB_TEA);
-                        entries.add(ModItems.YERBA_MATE_TEA);
                         entries.add(ModItems.FENNEL_TEA);
+                        entries.add(ModItems.YERBA_MATE_TEA);
 
                     //CAULDRON FOOD
                         entries.add(ModItems.CLAY_CAULDRON);
 
-                        entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
                         entries.add(ModItems.CLAY_CAULDRON_WITH_CANJICA);
+                        entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
 
                     //FOODS AND DRINKS
-                        entries.add(ModItems.FIFTYONE);
-                        entries.add(ModItems.CHEESE_BREAD);
-                        entries.add(ModItems.FRIED_PASTRY);
-                        entries.add(ModItems.COXINHA);
-                        entries.add(ModItems.BEIJU);
-                        entries.add(ModItems.FRENCH_BREAD);
-                        entries.add(ModItems.BRIGADEIRO);
                         entries.add(ModItems.BEIJINHO);
+                        entries.add(ModItems.BEIJU);
+                        entries.add(ModItems.BRIGADEIRO);
+                        entries.add(ModItems.CHEESE_BREAD);
                         entries.add(ModItems.COCONUT);
-                        entries.add(ModItems.COCONUT_WITH_STRAW);
-                        entries.add(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
+                        entries.add(ModItems.COXINHA);
+                        entries.add(ModItems.FIFTYONE);
+                        entries.add(ModItems.FRENCH_BREAD);
+                        entries.add(ModItems.FRIED_PASTRY);
                         entries.add(ModItems.MANDIOCA_FLOUR);
                         entries.add(ModItems.GLASS_SHARDS);
+                        entries.add(ModItems.COCONUT_WITH_STRAW);
+                        entries.add(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
 
                     //CHAIRS
                         entries.add(ModBlocks.BLUE_WIRE_CHAIR);
@@ -103,18 +102,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.YELLOW_BAR_CHAIR);
 
                     //TABLES
-                        entries.add(ModBlocks.YELLOW_BAR_TABLE);
                         entries.add(ModBlocks.RED_BAR_TABLE);
+                        entries.add(ModBlocks.YELLOW_BAR_TABLE);
 
                     //DECORATIONS
-                        entries.add(ModBlocks.BUTTER_POT);
-                        entries.add(ModBlocks.CLAY_FILTER);
                         entries.add(ModBlocks.AMBER_PLATE);
-                        entries.add(ModBlocks.PINEAPPLE_JAR);
+                        entries.add(ModBlocks.BUTTER_POT);
+                        entries.add(ModBlocks.CALENDAR);
+                        entries.add(ModBlocks.CLAY_FILTER);
+                        entries.add(ModBlocks.ORANGE_MIRROR);
                         entries.add(ModBlocks.PARTY_FLAGS);
                         entries.add(ModBlocks.PARTY_FLAGS_2);
-                        entries.add(ModBlocks.CALENDAR);
-                        entries.add(ModBlocks.ORANGE_MIRROR);
+                        entries.add(ModBlocks.PINEAPPLE_JAR);
                         entries.add(ModBlocks.PORCELAIN_CHICKEN);
                         entries.add(ModBlocks.FLIP_FLOP);
                         entries.add(ModBlocks.FLIP_FLOP_2);
@@ -127,12 +126,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PARTY_FLAGS_AROMANTIC);
                         entries.add(ModBlocks.PARTY_FLAGS_ASEXUAL);
                         entries.add(ModBlocks.PARTY_FLAGS_BISEXUAL);
+                        entries.add(ModBlocks.PARTY_FLAGS_INTERSEX);
                         entries.add(ModBlocks.PARTY_FLAGS_LESBIAN);
+                        entries.add(ModBlocks.PARTY_FLAGS_NON_BINARY);
                         entries.add(ModBlocks.PARTY_FLAGS_PANSEXUAL);
                         entries.add(ModBlocks.PARTY_FLAGS_PRIDE);
                         entries.add(ModBlocks.PARTY_FLAGS_TRANS);
-                        entries.add(ModBlocks.PARTY_FLAGS_INTERSEX);
-                        entries.add(ModBlocks.PARTY_FLAGS_NON_BINARY);
 
 
                     //WHY IS IT STILL HERE?

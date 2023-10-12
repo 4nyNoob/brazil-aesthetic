@@ -4,25 +4,20 @@ import any.brazilaesthetic.block.ModBlocks;
 import any.brazilaesthetic.block.custom.BeansCropBlock;
 import any.brazilaesthetic.block.custom.CornCropBlock;
 import any.brazilaesthetic.block.custom.RiceCropBlock;
+import any.brazilaesthetic.block.custom.leaves.AcerolaFlowerLeavesBlock;
+import any.brazilaesthetic.block.custom.leaves.AvocadoFlowerLeavesBlock;
+import any.brazilaesthetic.block.custom.leaves.GuaranaFlowerLeavesBlock;
+import any.brazilaesthetic.block.custom.leaves.OrangeFlowerLeavesBlock;
 import any.brazilaesthetic.item.ModItems;
-import com.google.gson.JsonElement;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
-import net.minecraft.data.family.BlockFamilies;
-import net.minecraft.data.family.BlockFamily;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
 import net.minecraft.util.Identifier;
 
-import java.util.function.BiConsumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
+import java.util.Arrays;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -97,6 +92,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.RED_BAR_CHAIR);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.WHITE_BAR_CHAIR);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.YELLOW_BAR_CHAIR);
+
+        registerFruitLeaves(blockStateModelGenerator, ModBlocks.ACEROLA_LEAVES_FLOWER, AcerolaFlowerLeavesBlock.AGE, 0, 1);
+        registerFruitLeaves(blockStateModelGenerator, ModBlocks.AVOCADO_LEAVES_FLOWER, AvocadoFlowerLeavesBlock.AGE, 0, 1);
+        registerFruitLeaves(blockStateModelGenerator, ModBlocks.GUARANA_LEAVES_FLOWER, GuaranaFlowerLeavesBlock.AGE, 0, 1);
+        registerFruitLeaves(blockStateModelGenerator, ModBlocks.ORANGE_LEAVES_FLOWER, OrangeFlowerLeavesBlock.AGE, 0, 1);
     }
 
     @Override
@@ -107,48 +107,63 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CLAY_CAULDRON, Models.GENERATED);
 
 
+        itemModelGenerator.register(ModItems.ACEROLA_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AVOCADO_JUICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CANE_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GUARANA_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE_JUICE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ACEROLA_JUICE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CANE_JUICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.WATER_CUP_AMERICAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.MILK_CUP_AMERICAN, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.CIDER_HERB_TEA, Models.GENERATED);
         itemModelGenerator.register(ModItems.FENNEL_TEA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.YERBA_MATE_TEA, Models.GENERATED);
         itemModelGenerator.register(ModItems.FIFTYONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YERBA_MATE_TEA, Models.GENERATED);
 
 
-        itemModelGenerator.register(ModItems.MANDIOCA, Models.GENERATED);
         itemModelGenerator.register(ModItems.ACAI, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ACEROLA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GUARANA, Models.GENERATED);
         itemModelGenerator.register(ModItems.AVOCADO, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GLASS_SHARDS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FENNEL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CIDER_HERB, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEANS, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.CORN_GRAINS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CIDER_HERB, Models.GENERATED);
         itemModelGenerator.register(ModItems.COCONUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FENNEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GLASS_SHARDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GUARANA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANDIOCA, Models.GENERATED);
         itemModelGenerator.register(ModItems.MANDIOCA_FLOUR, Models.GENERATED);
-        itemModelGenerator.register(ModItems.YERBA_MATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RICE_GRAINS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YERBA_MATE, Models.GENERATED);
 
 
-        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_FEIJOADA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_CANJICA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BEIJU, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FRENCH_BREAD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.COXINHA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BRIGADEIRO, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEIJINHO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BEIJU, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRIGADEIRO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COXINHA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FRENCH_BREAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIED_PASTRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE_BREAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_CANJICA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_FEIJOADA, Models.GENERATED);
+    }
+
+    public final void registerFruitLeaves(BlockStateModelGenerator blockStateModelGenerator, Block fruitLeavesBlock, Property<Integer> ageProperty, int ... ageTextureIndices) {
+        if (ageProperty.getValues().size() != ageTextureIndices.length) {
+            throw new IllegalArgumentException();
+        }
+        Int2ObjectOpenHashMap int2ObjectMap = new Int2ObjectOpenHashMap();
+        BlockStateVariantMap blockStateVariantMap = BlockStateVariantMap.create(ageProperty).register(integer -> {
+            int i = ageTextureIndices[integer];
+            Identifier identifier = (Identifier) int2ObjectMap.computeIfAbsent(i, j ->
+                    blockStateModelGenerator.createSubModel(fruitLeavesBlock, "_stage" + i, Models.CUBE_ALL, TextureMap::all));
+            return BlockStateVariant.create().put(VariantSettings.MODEL, identifier);
+        });
+        blockStateModelGenerator.registerParentedItemModel(fruitLeavesBlock.asItem(),
+                 new Identifier(fruitLeavesBlock.getLootTableId().toString().replace("blocks", "block") + "_stage0"));
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(fruitLeavesBlock).coordinate(blockStateVariantMap));
     }
 }
