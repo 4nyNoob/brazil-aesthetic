@@ -93,15 +93,15 @@ public class ModConfiguredFeatures {
         //ORANGE KEY
         register(context, ORANGE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(Blocks.OAK_LOG),
-                new StraightTrunkPlacer(3, 1, 1),
+                new StraightTrunkPlacer(3, 1, 0),
                 new WeightedBlockStateProvider(
                         new DataPool.Builder()
-                                .add(ModBlocks.ORANGE_LEAVES.getDefaultState(), 2)
+                                .add(ModBlocks.ORANGE_LEAVES.getDefaultState(), 1)
                                 .add(ModBlocks.ORANGE_LEAVES_FLOWER.getDefaultState()
                                         .with(OrangeFlowerLeavesBlock.AGE, OrangeFlowerLeavesBlock.MAX_AGE)
                                         /*.with(OrangeFruitLeavesBlock.WATERLOGGED, false)*/, 1)
                 ),
-                new LargeOakFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(1, 2), 3),
+                new LargeOakFoliagePlacer(UniformIntProvider.create(2, 3), ConstantIntProvider.create(1), 3),
                 new TwoLayersFeatureSize(1, 0, 3))
                 .decorators(List.of(
                         new  AttachedToLeavesTreeDecorator(0.2f, 1, 0,

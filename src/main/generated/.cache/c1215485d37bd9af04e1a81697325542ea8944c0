@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-12T00:41:04.932440693	Brazil Aesthetic/Block Loot Tables
+// 1.20.1	2023-10-12T14:56:31.914717459	Brazil Aesthetic/Block Loot Tables
 68f1ede7d3d686448df19f9977aa0954f2888449 data/brazil-aesthetic/loot_tables/blocks/party_flags_pansexual.json
 328dc8bb9a2fd29323204c38d9fd291e61ca4a19 data/brazil-aesthetic/loot_tables/blocks/yellow_bar_chair.json
 171c32342e9fe51f10a9167d3d9012b1f83ca24c data/brazil-aesthetic/loot_tables/blocks/orange_leaves_flower.json
@@ -9,8 +9,8 @@
 d2a42adb2f338a9996c91597a564d9ef03b10f96 data/brazil-aesthetic/loot_tables/blocks/copacabana_sidewalk.json
 d52a2d6f2c124c177392acf7875f52a74a3e4495 data/brazil-aesthetic/loot_tables/blocks/amber_mug.json
 0071d23bef9cc90e312b68aea4ae76837aad78da data/brazil-aesthetic/loot_tables/blocks/corn_crop.json
-02750f5f7fa962d0b69e70602d5236261535f244 data/brazil-aesthetic/loot_tables/blocks/avocado_leaves.json
 e0215e6f916dfcf02d08129e8eb5590039f84b87 data/brazil-aesthetic/loot_tables/blocks/pineapple_jar.json
+02750f5f7fa962d0b69e70602d5236261535f244 data/brazil-aesthetic/loot_tables/blocks/avocado_leaves.json
 3405c2b4710949c657a39e12e36c91cf1c5939db data/brazil-aesthetic/loot_tables/blocks/porcelain_chicken.json
 d25282f99eb4c00e922d908f9c6b827c3175db46 data/brazil-aesthetic/loot_tables/blocks/coconut_with_straw_empty.json
 332b3821043829c9089f4b5d813483369b3e4d5d data/brazil-aesthetic/loot_tables/blocks/party_flags_non_binary.json
