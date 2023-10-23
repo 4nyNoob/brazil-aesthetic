@@ -12,7 +12,7 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import software.bernie.geckolib.GeckoLib;
+//import software.bernie.geckolib.GeckoLib;
 
 public class BrazilAesthetic implements ModInitializer {
 
@@ -26,7 +26,7 @@ public class BrazilAesthetic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		GeckoLib.initialize();
+//		GeckoLib.initialize();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
