@@ -74,6 +74,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.CROPS)
                 .add(ModBlocks.RICE_CROP)
                 .add(ModBlocks.CORN_CROP)
+                .add(ModBlocks.MANDIOCA_CROP)
         ;
 
         //BAR CHAIRS

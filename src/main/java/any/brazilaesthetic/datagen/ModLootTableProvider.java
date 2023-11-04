@@ -92,6 +92,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                             .exactMatch(RiceCropBlock.AGE, 8));
             addDrop(ModBlocks.CORN_CROP, modCropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, cornBuilder, 4f, 4f));
 
+             //MANDIOCA CROP
+              BlockStatePropertyLootCondition.Builder mandiocaBuilder =
+                BlockStatePropertyLootCondition.builder(ModBlocks.MANDIOCA_CROP).properties(StatePredicate.Builder.create()
+                        .exactMatch(RiceCropBlock.AGE, 8));
+              addDrop(ModBlocks.MANDIOCA_CROP, modCropDrops(ModBlocks.MANDIOCA_CROP, ModItems.MANDIOCA, ModItems.MANDIOCA, mandiocaBuilder, 4f, 4f));
+
             //BEANS CROP
             BlockStatePropertyLootCondition.Builder beansbuilder =
                     BlockStatePropertyLootCondition.builder(ModBlocks.BEANS_CROP)

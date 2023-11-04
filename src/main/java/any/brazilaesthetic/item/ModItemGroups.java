@@ -27,13 +27,13 @@ public class ModItemGroups {
                         entries.add(ModItems.CORN);
                         entries.add(ModItems.FENNEL);
                         entries.add(ModItems.GUARANA);
-                        entries.add(ModItems.MANDIOCA);
                         entries.add(ModItems.ORANGE);
                         entries.add(ModItems.RICE_GRAINS);
                         entries.add(ModItems.YERBA_MATE);
 
                     //SEEDS
                         entries.add(ModItems.BEANS_SEEDS);
+                        entries.add(ModItems.MANDIOCA);
                         entries.add(ModItems.CORN_SEEDS);
                         entries.add(ModItems.RICE_SEEDS);
 

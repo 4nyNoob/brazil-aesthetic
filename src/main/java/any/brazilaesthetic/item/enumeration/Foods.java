@@ -51,10 +51,8 @@ public enum Foods {
 
 
 
-    //ROOTS
-    MANDIOCA(3,0.15f, () ->
-            new StatusEffectInstance(StatusEffects.POISON, FoodItem.SHORT_DURATION, 0)
-            , 0.5f, false, false, false),
+
+
 
 
 

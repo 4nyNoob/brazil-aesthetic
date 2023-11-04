@@ -91,8 +91,7 @@ public class ModItems {
 
 
 
-    public static final Item MANDIOCA = registerItem("mandioca",
-            new FoodItem(food(Foods.MANDIOCA, Items.AIR, 64), false, false));
+
     public static final Item FENNEL = registerItem("fennel",
             new Item(new FabricItemSettings()));
     public static final Item CLAY_CAULDRON_WITH_FEIJOADA = registerItem("clay_cauldron_with_feijoada",
@@ -117,6 +116,10 @@ public class ModItems {
     //SEEDS
     public static final Item RICE_SEEDS = registerItem("rice_seeds",
             new AliasedBlockItem(ModBlocks.RICE_CROP, new FabricItemSettings()));
+
+    public static final Item MANDIOCA = registerItem("mandioca",
+            new AliasedBlockItem(ModBlocks.MANDIOCA_CROP, new FabricItemSettings()));
+
 
     public static final Item CORN_SEEDS = registerItem("corn_seeds",
             new AliasedBlockItem(ModBlocks.CORN_CROP, new FabricItemSettings()));
