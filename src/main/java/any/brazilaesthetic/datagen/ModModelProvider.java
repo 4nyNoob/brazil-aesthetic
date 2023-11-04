@@ -135,7 +135,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FENNEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.GLASS_SHARDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.GUARANA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MANDIOCA, Models.GENERATED);
         itemModelGenerator.register(ModItems.MANDIOCA_FLOUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORANGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RICE_GRAINS, Models.GENERATED);
