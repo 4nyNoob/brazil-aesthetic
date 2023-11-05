@@ -142,6 +142,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         itemModelGenerator.register(ModItems.BEIJINHO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_MANDIOCA, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEIJU, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRIGADEIRO, Models.GENERATED);
         itemModelGenerator.register(ModItems.COXINHA, Models.GENERATED);

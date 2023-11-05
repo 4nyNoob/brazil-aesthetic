@@ -87,6 +87,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FIFTYONE);
                         entries.add(ModItems.FRENCH_BREAD);
                         entries.add(ModItems.FRIED_PASTRY);
+                        entries.add(ModItems.COOKED_MANDIOCA);
                         entries.add(ModItems.MANDIOCA_FLOUR);
                         entries.add(ModItems.GLASS_SHARDS);
                         entries.add(ModItems.COCONUT_WITH_STRAW);

@@ -80,6 +80,8 @@ public class ModItems {
                 new FoodItem(food(Foods.BRIGADEIRO, Items.AIR, 64), false, false));
         public static final Item BEIJINHO = registerItem("beijinho",
                 new FoodItem(food(Foods.BEIJINHO, Items.AIR, 64), false, false));
+    public static final Item COOKED_MANDIOCA = registerItem("cooked_mandioca",
+            new FoodItem(food(Foods.COOKED_MANDIOCA, Items.AIR, 64), false, false));
         public static final Item FRIED_PASTRY = registerItem("fried_pastry",
                 new FoodItem(food(Foods.FRIED_PASTRY, Items.AIR, 64), false, false));
         public static final Item CHEESE = registerItem("cheese",

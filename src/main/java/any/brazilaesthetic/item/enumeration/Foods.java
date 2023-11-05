@@ -65,6 +65,8 @@ public enum Foods {
             , 1f, false, false, true),
     BRIGADEIRO(2, 0.6f),
     BEIJINHO(2, 0.6f),
+
+    COOKED_MANDIOCA(4, 0.2f),
     FRIED_PASTRY(4, 0.8f),
     CHEESE(2, 0.6f),
     CHEESE_BREAD(3, 0.6f),
