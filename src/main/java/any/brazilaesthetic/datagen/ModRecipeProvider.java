@@ -28,6 +28,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     public static void generateCookingRecipes(Consumer<RecipeJsonProvider> exporter, String cooker, RecipeSerializer<? extends AbstractCookingRecipe> serializer, int cookingTime) {
         RecipeProvider.offerFoodCookingRecipe(exporter, cooker, serializer, cookingTime, ModItems.MANDIOCA_FLOUR, ModItems.BEIJU, 0.35f);
+        RecipeProvider.offerFoodCookingRecipe(exporter, cooker, serializer, cookingTime, ModItems.MANDIOCA, ModItems.COOKED_MANDIOCA, 0.40f);
     }
 
     @Override
