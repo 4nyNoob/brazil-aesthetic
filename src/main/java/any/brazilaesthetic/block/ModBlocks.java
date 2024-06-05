@@ -130,16 +130,15 @@ public class ModBlocks {
     //CROPS
             public static final Block RICE_CROP =
                     Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "rice_crop"),
-                            new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+                    new RiceCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
             public static final Block BEANS_CROP =
                     Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "beans_crop"),
-                            new BeansCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+                    new BeansCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
             public static final Block CORN_CROP =
-                        Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "corn_crop"),
-                                new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
-
+                    Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "corn_crop"),
+                    new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
             public static final Block MANDIOCA_CROP =
-            Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "mandioca_crop"),
+                    Registry.register(Registries.BLOCK, new Identifier(BrazilAesthetic.MOD_ID, "mandioca_crop"),
                     new MandiocaCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     //SAPLINGS
@@ -162,7 +161,7 @@ public class ModBlocks {
             public static final Block AVOCADO_LEAVES_FLOWER = registerBlock("avocado_leaves_flower",
                     new AvocadoFlowerLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
             public static final Block GUARANA_LEAVES = registerBlock("guarana_leaves",
-                            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+                    new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
             public static final Block GUARANA_LEAVES_FLOWER = registerBlock("guarana_leaves_flower",
                     new GuaranaFlowerLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
             public static final Block ORANGE_LEAVES = registerBlock("orange_leaves",

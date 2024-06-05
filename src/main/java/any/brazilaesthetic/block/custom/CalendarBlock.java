@@ -20,7 +20,8 @@ import org.jetbrains.annotations.Nullable;
 public class CalendarBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public CalendarBlock(Settings settings) {
+    public
+    CalendarBlock(Settings settings) {
         super(settings);
 
     }
