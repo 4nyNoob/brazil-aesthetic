@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "textures": {
-    "crop": "brazil-aesthetic:block/corn_crop_stage2"
-  }
-}

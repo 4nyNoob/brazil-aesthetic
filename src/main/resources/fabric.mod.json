@@ -1,18 +1,17 @@
 {
 	"schemaVersion": 1,
 	"id": "brazil-aesthetic",
-	"version": "1.20.1-0.1.0",
+	"version": "${version}",
 	"name": "Brazil Aesthetic",
-	"description": "This is a mod that adds brazilian items into minecraft :)",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"4ny, Niharu and friends"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://github.com/4nyNoob/brazil-aesthetic",
-		"sources": "https://github.com/4nyNoob/brazil-aesthetic",
-		"issues": "https://github.com/4nyNoob/brazil-aesthetic/issues"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "Mozilla Public License 2.0",
+	"license": "CC0-1.0",
 	"icon": "assets/brazil-aesthetic/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -27,19 +26,19 @@
 		]
 	},
 	"mixins": [
-		"brazil-aesthetic.mixins.json"
+		"brazil-aesthetic.mixins.json",
+		{
+			"config": "brazil-aesthetic.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.16.13",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*",
-		"farmersdelight": ">=1.20.1-2.1.1+refabricated"
+		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*",
-		"architectury": ">=9.1.12",
-		"cloth-config": ">=11.1.106",
-		"roughlyenoughitems": ">=12.0.652"
+		"another-mod": "*"
 	}
 }
