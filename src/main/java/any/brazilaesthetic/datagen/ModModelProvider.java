@@ -149,8 +149,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FRENCH_BREAD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIED_PASTRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE_BREAD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_CANJICA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_FEIJOADA, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_CANJICA, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.CLAY_CAULDRON_WITH_FEIJOADA, Models.GENERATED);
     }
 
     public final void registerFruitLeaves(BlockStateModelGenerator blockStateModelGenerator, Block fruitLeavesBlock, Property<Integer> ageProperty, int ... ageTextureIndices) {

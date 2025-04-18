@@ -219,30 +219,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MANDIOCA), FabricRecipeProvider.conditionsFromItem(ModItems.MANDIOCA))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MANDIOCA_FLOUR)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_FEIJOADA, 1)
-                .pattern("SXT")
-                .pattern("#X#")
-                .pattern(" W ")
-                .input('#' , Items.WATER_BUCKET)
-                .input('S' , ModItems.ORANGE)
-                .input('X' , ModItems.BEANS)
-                .input('T' , Items.COOKED_PORKCHOP)
-                .input('W' , ModItems.CLAY_CAULDRON)
-                .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_FEIJOADA)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_CANJICA, 1)
-                .pattern("SXT")
-                .pattern("#X#")
-                .pattern(" W ")
-                .input('#' , Items.WATER_BUCKET)
-                .input('S' , ModItems.FENNEL)
-                //.input('X' , ModItems.CORN_GRAINS)
-                .input('X' , ModItems.CORN)
-                .input('T' , Items.COOKED_PORKCHOP)
-                .input('W' , ModItems.CLAY_CAULDRON)
-                .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_CANJICA)));
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_FEIJOADA, 1)
+//                .pattern("SXT")
+//                .pattern("#X#")
+//                .pattern(" W ")
+//                .input('#' , Items.WATER_BUCKET)
+//                .input('S' , ModItems.ORANGE)
+//                .input('X' , ModItems.BEANS)
+//                .input('T' , Items.COOKED_PORKCHOP)
+//                .input('W' , ModItems.CLAY_CAULDRON)
+//                .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_FEIJOADA)));
+//
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CLAY_CAULDRON_WITH_CANJICA, 1)
+//                .pattern("SXT")
+//                .pattern("#X#")
+//                .pattern(" W ")
+//                .input('#' , Items.WATER_BUCKET)
+//                .input('S' , ModItems.FENNEL)
+//                //.input('X' , ModItems.CORN_GRAINS)
+//                .input('X' , ModItems.CORN)
+//                .input('T' , Items.COOKED_PORKCHOP)
+//                .input('W' , ModItems.CLAY_CAULDRON)
+//                .criterion(hasItem(ModItems.CLAY_CAULDRON), FabricRecipeProvider.conditionsFromItem(ModItems.CLAY_CAULDRON))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLAY_CAULDRON_WITH_CANJICA)));
 
         //decorações :3
 

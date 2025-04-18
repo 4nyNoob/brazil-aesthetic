@@ -9,6 +9,9 @@ import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsage;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
@@ -48,9 +51,18 @@ public class JarBlock extends HorizontalFacingBlock implements FabricBlock {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        ItemStack itemStack = null;
-        if (!world.isClient && player.getStackInHand(hand).isOf(ModItems.CUP_AMERICAN)) {
-            player.setStackInHand(hand, ModItems.WATER_CUP_AMERICAN.getDefaultStack());
+        ItemStack itemStack = player.getStackInHand(hand);
+        if (!world.isClient && itemStack.isOf(ModItems.CUP_AMERICAN)) {
+            world.playSound(null, pos, SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.BLOCKS, 0.5f, 1f);
+            ItemStack itemStack2;
+            if(itemStack.getCount() == 1){
+                itemStack2 = ItemUsage.exchangeStack(ModItems.CUP_AMERICAN.getDefaultStack(), player, ModItems.WATER_CUP_AMERICAN.getDefaultStack());
+            } else{
+                itemStack2 = ItemUsage.exchangeStack(itemStack, player, ModItems.WATER_CUP_AMERICAN.getDefaultStack());
+            }
+            player.setStackInHand(hand, itemStack2);
+            //player.getStackInHand(hand).decrement(1);
+            //player.giveItemStack(ModItems.WATER_CUP_AMERICAN.getDefaultStack());
             return ActionResult.SUCCESS;
         }
         return ActionResult.PASS;

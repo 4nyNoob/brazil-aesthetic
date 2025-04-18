@@ -148,8 +148,8 @@ public class ModItemGroups {
                     //CAULDRON FOOD
                         entries.add(ModItems.CLAY_CAULDRON);
 
-                        entries.add(ModItems.CLAY_CAULDRON_WITH_CANJICA);
-                        entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
+//                        entries.add(ModItems.CLAY_CAULDRON_WITH_CANJICA);
+//                        entries.add(ModItems.CLAY_CAULDRON_WITH_FEIJOADA);
 
 
                     //INGREDIENTS
@@ -207,10 +207,6 @@ public class ModItemGroups {
                         entries.add(ModItems.GLASS_SHARDS);
                         entries.add(ModItems.COCONUT_WITH_STRAW);
                         entries.add(ModBlocks.COCONUT_WITH_STRAW_EMPTY);
-
-
-                    //WHY IS IT STILL HERE?
-                        //entries.add(ModBlocks.CAPYBARA);
                     })).build());
 
     public static void registerItemGroups() {

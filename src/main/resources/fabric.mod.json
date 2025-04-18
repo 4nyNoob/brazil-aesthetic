@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "brazil-aesthetic",
-	"version": "0.1",
+	"version": "1.20.1-0.1.0",
 	"name": "Brazil Aesthetic",
 	"description": "This is a mod that adds brazilian items into minecraft :)",
 	"authors": [
@@ -33,12 +33,12 @@
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"farmersdelight": ">=1.20.1-2.1.1+refabricated"
 	},
 	"suggests": {
 		"another-mod": "*",
 		"architectury": ">=9.1.12",
-		"farmersdelight": ">=2.1.1",
 		"cloth-config": ">=11.1.106",
 		"roughlyenoughitems": ">=12.0.652"
 	}

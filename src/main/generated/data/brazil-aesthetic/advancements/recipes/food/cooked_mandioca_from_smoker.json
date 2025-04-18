@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_clay_cauldron": {
+    "has_mandioca": {
       "conditions": {
         "items": [
           {
             "items": [
-              "brazil-aesthetic:clay_cauldron"
+              "brazil-aesthetic:mandioca"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:clay_cauldron_with_feijoada"
+        "recipe": "minecraft:cooked_mandioca_from_smoker"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_clay_cauldron",
+      "has_mandioca",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:clay_cauldron_with_feijoada"
+      "minecraft:cooked_mandioca_from_smoker"
     ]
   },
   "sends_telemetry_event": false

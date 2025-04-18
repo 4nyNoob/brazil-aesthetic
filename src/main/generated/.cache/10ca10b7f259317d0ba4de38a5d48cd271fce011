@@ -1,10 +1,10 @@
-// 1.20.1	2024-02-09T16:44:35.0703674	Brazil Aesthetic/Tags for minecraft:block
-140cacfb26f6e821bd792f8b41aca1cab2f2c632 data\minecraft\tags\blocks\saplings.json
-19db3ebb75bfe436efe5fe21984fadf7c9806ca0 data\brazil-aesthetic\tags\blocks\bar_chairs.json
-2de1ae77cb69e1b05b8d96a1d5e9a82171b4a6e2 data\brazil-aesthetic\tags\blocks\wire_chairs.json
-192e7ee71ac368cbda06eecb6d4959cb0dd8d15c data\brazil-aesthetic\tags\blocks\party_flags.json
-4e5d6a4f029b7d0269e264b9701782a1bc0daa03 data\minecraft\tags\blocks\leaves.json
-4e5d6a4f029b7d0269e264b9701782a1bc0daa03 data\minecraft\tags\blocks\mineable\hoe.json
-c64a21602e4359f9e3c2721bb4f2ae4ef4710afa data\minecraft\tags\blocks\crops.json
-37ab7196cb62a0c7a193f968a659c24fdf31b0f6 data\brazil-aesthetic\tags\blocks\seats.json
-8499ee1ca75047fd68ac2f5a9206368899e0c7d2 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.1	2024-10-17T16:42:17.561256179	Brazil Aesthetic/Tags for minecraft:block
+4e5d6a4f029b7d0269e264b9701782a1bc0daa03 data/minecraft/tags/blocks/mineable/hoe.json
+140cacfb26f6e821bd792f8b41aca1cab2f2c632 data/minecraft/tags/blocks/saplings.json
+37ab7196cb62a0c7a193f968a659c24fdf31b0f6 data/brazil-aesthetic/tags/blocks/seats.json
+4e5d6a4f029b7d0269e264b9701782a1bc0daa03 data/minecraft/tags/blocks/leaves.json
+904f46d3fd96eb1f945741628ea0eadf0b3219ad data/minecraft/tags/blocks/mineable/pickaxe.json
+192e7ee71ac368cbda06eecb6d4959cb0dd8d15c data/brazil-aesthetic/tags/blocks/party_flags.json
+c64a21602e4359f9e3c2721bb4f2ae4ef4710afa data/minecraft/tags/blocks/crops.json
+19db3ebb75bfe436efe5fe21984fadf7c9806ca0 data/brazil-aesthetic/tags/blocks/bar_chairs.json
+2de1ae77cb69e1b05b8d96a1d5e9a82171b4a6e2 data/brazil-aesthetic/tags/blocks/wire_chairs.json

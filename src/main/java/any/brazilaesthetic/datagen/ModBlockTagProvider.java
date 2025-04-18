@@ -22,6 +22,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BROKEN_FLOOR_TILES)
                 .add(ModBlocks.COPACABANA_SIDEWALK)
                 .add(ModBlocks.CLAY_FILTER)
+                .add(ModBlocks.PINEAPPLE_JAR)
                 .add(ModBlocks.COCONUT_WITH_STRAW_EMPTY)
                 .add(ModBlocks.BLUE_WIRE_CHAIR)
                 .add(ModBlocks.GREEN_WIRE_CHAIR)
@@ -36,6 +37,30 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ORANGE_MIRROR)
                 .add(ModBlocks.AMBER_MUG)
                 .add(ModBlocks.AMBER_PLATE)
+        ;
+
+        //AXE MINEABLE BLOCKS
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.ACEROLA_SAPLING)
+                .add(ModBlocks.AVOCADO_SAPLING)
+                .add(ModBlocks.GUARANA_SAPLING)
+                .add(ModBlocks.ORANGE_SAPLING)
+                .add(ModBlocks.BEANS_CROP)
+                .add(ModBlocks.CORN_CROP)
+                .add(ModBlocks.RICE_CROP)
+                .add(ModBlocks.MANDIOCA_CROP)
+        ;
+
+        //AXE MINEABLE BLOCKS
+        getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT)
+                .add(ModBlocks.ACEROLA_SAPLING)
+                .add(ModBlocks.AVOCADO_SAPLING)
+                .add(ModBlocks.GUARANA_SAPLING)
+                .add(ModBlocks.ORANGE_SAPLING)
+                .add(ModBlocks.BEANS_CROP)
+                .add(ModBlocks.CORN_CROP)
+                .add(ModBlocks.RICE_CROP)
+                .add(ModBlocks.MANDIOCA_CROP)
         ;
 
         //HOE MINEABLE
@@ -72,8 +97,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         //CROPS
         getOrCreateTagBuilder(BlockTags.CROPS)
-                .add(ModBlocks.RICE_CROP)
+                .add(ModBlocks.BEANS_CROP)
                 .add(ModBlocks.CORN_CROP)
+                .add(ModBlocks.RICE_CROP)
                 .add(ModBlocks.MANDIOCA_CROP)
         ;
 
