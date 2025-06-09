@@ -1,0 +1,7 @@
+{
+  "parent": "brazil-aesthetic:block/parent_sofa_right",
+  "textures": {
+    "particle": "minecraft:block/gray_wool",
+    "sofa": "brazil-aesthetic:block/sofa_gray"
+  }
+}

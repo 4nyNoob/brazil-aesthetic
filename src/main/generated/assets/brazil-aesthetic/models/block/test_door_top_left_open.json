@@ -1,0 +1,7 @@
+{
+  "parent": "brazil-aesthetic:block/door_top_left_open",
+  "textures": {
+    "bottom": "brazil-aesthetic:block/test_door_bottom",
+    "top": "brazil-aesthetic:block/test_door_top"
+  }
+}

@@ -1,0 +1,769 @@
+{
+  "variants": {
+    "color=black,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_left_carpet"
+    },
+    "color=black,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_right_carpet"
+    },
+    "color=black,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_single_carpet"
+    },
+    "color=black,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_left_carpet",
+      "y": 270
+    },
+    "color=black,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_right_carpet",
+      "y": 270
+    },
+    "color=black,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_single_carpet",
+      "y": 270
+    },
+    "color=black,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_left_carpet",
+      "y": 90
+    },
+    "color=black,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_right_carpet",
+      "y": 90
+    },
+    "color=black,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_single_carpet",
+      "y": 90
+    },
+    "color=black,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_left_carpet",
+      "y": 180
+    },
+    "color=black,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_right_carpet",
+      "y": 180
+    },
+    "color=black,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_black_single_carpet",
+      "y": 180
+    },
+    "color=blue,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_left_carpet"
+    },
+    "color=blue,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_right_carpet"
+    },
+    "color=blue,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_single_carpet"
+    },
+    "color=blue,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_left_carpet",
+      "y": 270
+    },
+    "color=blue,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_right_carpet",
+      "y": 270
+    },
+    "color=blue,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_single_carpet",
+      "y": 270
+    },
+    "color=blue,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_left_carpet",
+      "y": 90
+    },
+    "color=blue,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_right_carpet",
+      "y": 90
+    },
+    "color=blue,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_single_carpet",
+      "y": 90
+    },
+    "color=blue,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_left_carpet",
+      "y": 180
+    },
+    "color=blue,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_right_carpet",
+      "y": 180
+    },
+    "color=blue,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_blue_single_carpet",
+      "y": 180
+    },
+    "color=brown,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_left_carpet"
+    },
+    "color=brown,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_right_carpet"
+    },
+    "color=brown,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_single_carpet"
+    },
+    "color=brown,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_left_carpet",
+      "y": 270
+    },
+    "color=brown,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_right_carpet",
+      "y": 270
+    },
+    "color=brown,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_single_carpet",
+      "y": 270
+    },
+    "color=brown,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_left_carpet",
+      "y": 90
+    },
+    "color=brown,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_right_carpet",
+      "y": 90
+    },
+    "color=brown,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_single_carpet",
+      "y": 90
+    },
+    "color=brown,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_left_carpet",
+      "y": 180
+    },
+    "color=brown,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_right_carpet",
+      "y": 180
+    },
+    "color=brown,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_brown_single_carpet",
+      "y": 180
+    },
+    "color=cyan,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_left_carpet"
+    },
+    "color=cyan,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_right_carpet"
+    },
+    "color=cyan,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_single_carpet"
+    },
+    "color=cyan,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_left_carpet",
+      "y": 270
+    },
+    "color=cyan,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_right_carpet",
+      "y": 270
+    },
+    "color=cyan,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_single_carpet",
+      "y": 270
+    },
+    "color=cyan,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_left_carpet",
+      "y": 90
+    },
+    "color=cyan,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_right_carpet",
+      "y": 90
+    },
+    "color=cyan,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_single_carpet",
+      "y": 90
+    },
+    "color=cyan,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_left_carpet",
+      "y": 180
+    },
+    "color=cyan,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_right_carpet",
+      "y": 180
+    },
+    "color=cyan,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_cyan_single_carpet",
+      "y": 180
+    },
+    "color=gray,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_left_carpet"
+    },
+    "color=gray,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_right_carpet"
+    },
+    "color=gray,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_single_carpet"
+    },
+    "color=gray,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_left_carpet",
+      "y": 270
+    },
+    "color=gray,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_right_carpet",
+      "y": 270
+    },
+    "color=gray,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_single_carpet",
+      "y": 270
+    },
+    "color=gray,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_left_carpet",
+      "y": 90
+    },
+    "color=gray,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_right_carpet",
+      "y": 90
+    },
+    "color=gray,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_single_carpet",
+      "y": 90
+    },
+    "color=gray,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_left_carpet",
+      "y": 180
+    },
+    "color=gray,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_right_carpet",
+      "y": 180
+    },
+    "color=gray,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_gray_single_carpet",
+      "y": 180
+    },
+    "color=green,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_left_carpet"
+    },
+    "color=green,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_right_carpet"
+    },
+    "color=green,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_single_carpet"
+    },
+    "color=green,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_left_carpet",
+      "y": 270
+    },
+    "color=green,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_right_carpet",
+      "y": 270
+    },
+    "color=green,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_single_carpet",
+      "y": 270
+    },
+    "color=green,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_left_carpet",
+      "y": 90
+    },
+    "color=green,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_right_carpet",
+      "y": 90
+    },
+    "color=green,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_single_carpet",
+      "y": 90
+    },
+    "color=green,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_left_carpet",
+      "y": 180
+    },
+    "color=green,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_right_carpet",
+      "y": 180
+    },
+    "color=green,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_green_single_carpet",
+      "y": 180
+    },
+    "color=light_blue,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_left_carpet"
+    },
+    "color=light_blue,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_right_carpet"
+    },
+    "color=light_blue,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_single_carpet"
+    },
+    "color=light_blue,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_left_carpet",
+      "y": 270
+    },
+    "color=light_blue,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_right_carpet",
+      "y": 270
+    },
+    "color=light_blue,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_single_carpet",
+      "y": 270
+    },
+    "color=light_blue,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_left_carpet",
+      "y": 90
+    },
+    "color=light_blue,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_right_carpet",
+      "y": 90
+    },
+    "color=light_blue,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_single_carpet",
+      "y": 90
+    },
+    "color=light_blue,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_left_carpet",
+      "y": 180
+    },
+    "color=light_blue,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_right_carpet",
+      "y": 180
+    },
+    "color=light_blue,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_blue_single_carpet",
+      "y": 180
+    },
+    "color=light_gray,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_left_carpet"
+    },
+    "color=light_gray,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_right_carpet"
+    },
+    "color=light_gray,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_single_carpet"
+    },
+    "color=light_gray,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_left_carpet",
+      "y": 270
+    },
+    "color=light_gray,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_right_carpet",
+      "y": 270
+    },
+    "color=light_gray,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_single_carpet",
+      "y": 270
+    },
+    "color=light_gray,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_left_carpet",
+      "y": 90
+    },
+    "color=light_gray,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_right_carpet",
+      "y": 90
+    },
+    "color=light_gray,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_single_carpet",
+      "y": 90
+    },
+    "color=light_gray,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_left_carpet",
+      "y": 180
+    },
+    "color=light_gray,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_right_carpet",
+      "y": 180
+    },
+    "color=light_gray,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_light_gray_single_carpet",
+      "y": 180
+    },
+    "color=lime,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_left_carpet"
+    },
+    "color=lime,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_right_carpet"
+    },
+    "color=lime,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_single_carpet"
+    },
+    "color=lime,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_left_carpet",
+      "y": 270
+    },
+    "color=lime,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_right_carpet",
+      "y": 270
+    },
+    "color=lime,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_single_carpet",
+      "y": 270
+    },
+    "color=lime,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_left_carpet",
+      "y": 90
+    },
+    "color=lime,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_right_carpet",
+      "y": 90
+    },
+    "color=lime,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_single_carpet",
+      "y": 90
+    },
+    "color=lime,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_left_carpet",
+      "y": 180
+    },
+    "color=lime,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_right_carpet",
+      "y": 180
+    },
+    "color=lime,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_lime_single_carpet",
+      "y": 180
+    },
+    "color=magenta,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_left_carpet"
+    },
+    "color=magenta,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_right_carpet"
+    },
+    "color=magenta,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_single_carpet"
+    },
+    "color=magenta,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_left_carpet",
+      "y": 270
+    },
+    "color=magenta,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_right_carpet",
+      "y": 270
+    },
+    "color=magenta,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_single_carpet",
+      "y": 270
+    },
+    "color=magenta,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_left_carpet",
+      "y": 90
+    },
+    "color=magenta,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_right_carpet",
+      "y": 90
+    },
+    "color=magenta,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_single_carpet",
+      "y": 90
+    },
+    "color=magenta,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_left_carpet",
+      "y": 180
+    },
+    "color=magenta,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_right_carpet",
+      "y": 180
+    },
+    "color=magenta,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_magenta_single_carpet",
+      "y": 180
+    },
+    "color=orange,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_left_carpet"
+    },
+    "color=orange,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_right_carpet"
+    },
+    "color=orange,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_single_carpet"
+    },
+    "color=orange,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_left_carpet",
+      "y": 270
+    },
+    "color=orange,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_right_carpet",
+      "y": 270
+    },
+    "color=orange,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_single_carpet",
+      "y": 270
+    },
+    "color=orange,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_left_carpet",
+      "y": 90
+    },
+    "color=orange,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_right_carpet",
+      "y": 90
+    },
+    "color=orange,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_single_carpet",
+      "y": 90
+    },
+    "color=orange,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_left_carpet",
+      "y": 180
+    },
+    "color=orange,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_right_carpet",
+      "y": 180
+    },
+    "color=orange,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_orange_single_carpet",
+      "y": 180
+    },
+    "color=pink,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_left_carpet"
+    },
+    "color=pink,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_right_carpet"
+    },
+    "color=pink,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_single_carpet"
+    },
+    "color=pink,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_left_carpet",
+      "y": 270
+    },
+    "color=pink,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_right_carpet",
+      "y": 270
+    },
+    "color=pink,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_single_carpet",
+      "y": 270
+    },
+    "color=pink,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_left_carpet",
+      "y": 90
+    },
+    "color=pink,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_right_carpet",
+      "y": 90
+    },
+    "color=pink,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_single_carpet",
+      "y": 90
+    },
+    "color=pink,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_left_carpet",
+      "y": 180
+    },
+    "color=pink,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_right_carpet",
+      "y": 180
+    },
+    "color=pink,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_pink_single_carpet",
+      "y": 180
+    },
+    "color=purple,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_left_carpet"
+    },
+    "color=purple,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_right_carpet"
+    },
+    "color=purple,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_single_carpet"
+    },
+    "color=purple,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_left_carpet",
+      "y": 270
+    },
+    "color=purple,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_right_carpet",
+      "y": 270
+    },
+    "color=purple,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_single_carpet",
+      "y": 270
+    },
+    "color=purple,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_left_carpet",
+      "y": 90
+    },
+    "color=purple,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_right_carpet",
+      "y": 90
+    },
+    "color=purple,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_single_carpet",
+      "y": 90
+    },
+    "color=purple,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_left_carpet",
+      "y": 180
+    },
+    "color=purple,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_right_carpet",
+      "y": 180
+    },
+    "color=purple,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_purple_single_carpet",
+      "y": 180
+    },
+    "color=red,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_left_carpet"
+    },
+    "color=red,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_right_carpet"
+    },
+    "color=red,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_single_carpet"
+    },
+    "color=red,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_left_carpet",
+      "y": 270
+    },
+    "color=red,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_right_carpet",
+      "y": 270
+    },
+    "color=red,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_single_carpet",
+      "y": 270
+    },
+    "color=red,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_left_carpet",
+      "y": 90
+    },
+    "color=red,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_right_carpet",
+      "y": 90
+    },
+    "color=red,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_single_carpet",
+      "y": 90
+    },
+    "color=red,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_left_carpet",
+      "y": 180
+    },
+    "color=red,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_right_carpet",
+      "y": 180
+    },
+    "color=red,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_red_single_carpet",
+      "y": 180
+    },
+    "color=uncolored,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_left"
+    },
+    "color=uncolored,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_right"
+    },
+    "color=uncolored,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_single"
+    },
+    "color=uncolored,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_left",
+      "y": 270
+    },
+    "color=uncolored,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_right",
+      "y": 270
+    },
+    "color=uncolored,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_single",
+      "y": 270
+    },
+    "color=uncolored,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_left",
+      "y": 90
+    },
+    "color=uncolored,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_right",
+      "y": 90
+    },
+    "color=uncolored,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_single",
+      "y": 90
+    },
+    "color=uncolored,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_left",
+      "y": 180
+    },
+    "color=uncolored,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_right",
+      "y": 180
+    },
+    "color=uncolored,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_single",
+      "y": 180
+    },
+    "color=white,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_left_carpet"
+    },
+    "color=white,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_right_carpet"
+    },
+    "color=white,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_single_carpet"
+    },
+    "color=white,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_left_carpet",
+      "y": 270
+    },
+    "color=white,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_right_carpet",
+      "y": 270
+    },
+    "color=white,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_single_carpet",
+      "y": 270
+    },
+    "color=white,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_left_carpet",
+      "y": 90
+    },
+    "color=white,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_right_carpet",
+      "y": 90
+    },
+    "color=white,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_single_carpet",
+      "y": 90
+    },
+    "color=white,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_left_carpet",
+      "y": 180
+    },
+    "color=white,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_right_carpet",
+      "y": 180
+    },
+    "color=white,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_white_single_carpet",
+      "y": 180
+    },
+    "color=yellow,facing=east,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_left_carpet"
+    },
+    "color=yellow,facing=east,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_right_carpet"
+    },
+    "color=yellow,facing=east,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_single_carpet"
+    },
+    "color=yellow,facing=north,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_left_carpet",
+      "y": 270
+    },
+    "color=yellow,facing=north,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_right_carpet",
+      "y": 270
+    },
+    "color=yellow,facing=north,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_single_carpet",
+      "y": 270
+    },
+    "color=yellow,facing=south,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_left_carpet",
+      "y": 90
+    },
+    "color=yellow,facing=south,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_right_carpet",
+      "y": 90
+    },
+    "color=yellow,facing=south,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_single_carpet",
+      "y": 90
+    },
+    "color=yellow,facing=west,type=left": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_left_carpet",
+      "y": 180
+    },
+    "color=yellow,facing=west,type=right": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_right_carpet",
+      "y": 180
+    },
+    "color=yellow,facing=west,type=single": {
+      "model": "brazil-aesthetic:block/table_planks_jungle_yellow_single_carpet",
+      "y": 180
+    }
+  }
+}

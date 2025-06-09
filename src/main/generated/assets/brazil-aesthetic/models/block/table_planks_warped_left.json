@@ -1,0 +1,7 @@
+{
+  "parent": "brazil-aesthetic:block/parent_table_planks_left",
+  "textures": {
+    "particle": "minecraft:block/warped_planks",
+    "wood": "brazil-aesthetic:block/table_planks_warped_wood"
+  }
+}

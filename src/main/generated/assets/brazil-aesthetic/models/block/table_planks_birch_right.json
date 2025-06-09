@@ -1,0 +1,7 @@
+{
+  "parent": "brazil-aesthetic:block/parent_table_planks_right",
+  "textures": {
+    "particle": "minecraft:block/birch_planks",
+    "wood": "brazil-aesthetic:block/table_planks_birch_wood"
+  }
+}

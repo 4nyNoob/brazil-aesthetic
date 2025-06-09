@@ -1,0 +1,61 @@
+package any.brazilaesthetic.datagen;
+
+import any.brazilaesthetic.blocks.ModBlocks;
+import any.brazilaesthetic.items.ModItems;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
+
+public class ModModelGenerator extends FabricModelProvider {
+    public ModModelGenerator(FabricDataOutput output) {
+        super(output);
+    }
+
+    @Override
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_BLOCK);
+//        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TEST_TABLE);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_WHITE);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_LIGHT_GRAY);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_GRAY);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_BLACK);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_BROWN);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_RED);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_ORANGE);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_YELLOW);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_LIME);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_GREEN);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_CYAN);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_LIGHT_BLUE);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_BLUE);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_PURPLE);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_MAGENTA);
+        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_PINK);
+//        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TEST_SOFA);
+//        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_ACACIA);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_BAMBOO);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_BIRCH);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_CHERRY);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_CRIMSON);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_DARK_OAK);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_JUNGLE);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_MANGROVE);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_OAK);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_SPRUCE);
+        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_WARPED);
+
+
+//        blockStateModelGenerator.registerDoor();
+
+        ModModels.registerModDoor(blockStateModelGenerator, ModBlocks.TEST_DOOR, Blocks.OAK_PLANKS, ModModels.modTopBottom(Blocks.OAK_PLANKS));
+
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+//        itemModelGenerator.register(ModItems.TEST_ITEM, Models.GENERATED);
+
+    }
+}

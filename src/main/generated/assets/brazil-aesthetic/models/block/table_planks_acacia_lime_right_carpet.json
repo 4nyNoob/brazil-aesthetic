@@ -1,0 +1,8 @@
+{
+  "parent": "brazil-aesthetic:block/parent_table_planks_right_carpet",
+  "textures": {
+    "carpet": "brazil-aesthetic:block/table_planks_carpet_lime",
+    "particle": "minecraft:block/acacia_planks",
+    "wood": "brazil-aesthetic:block/table_planks_acacia_wood"
+  }
+}
