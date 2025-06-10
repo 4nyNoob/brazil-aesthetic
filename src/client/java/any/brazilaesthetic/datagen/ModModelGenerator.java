@@ -48,7 +48,7 @@ public class ModModelGenerator extends FabricModelProvider {
 
 //        blockStateModelGenerator.registerDoor();
 
-        ModModels.registerModDoor(blockStateModelGenerator, ModBlocks.TEST_DOOR, Blocks.OAK_PLANKS, ModModels.doorTextureMap(Blocks.OAK_PLANKS));
+        ModModels.registerDoor(blockStateModelGenerator, ModBlocks.TEST_DOOR);
 
     }
 

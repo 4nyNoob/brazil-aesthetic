@@ -10,6 +10,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.enums.DoorHinge;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.data.client.*;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
@@ -63,7 +64,8 @@ public class ModModels {
 
     public static void registerSofa(BlockStateModelGenerator blockStateModelGenerator, Block block) {
         TextureMap textureMap = ModSofaTextureMap(block);
-        BlockStateVariantMap.DoubleProperty<Direction, DoubleBlockType> variantMap = BlockStateVariantMap.create(Properties.HORIZONTAL_FACING, SofaBlock.SOFA_TYPE);
+        BlockStateVariantMap.DoubleProperty<Direction, DoubleBlockType> variantMap =
+            BlockStateVariantMap.create(Properties.HORIZONTAL_FACING, SofaBlock.SOFA_TYPE);
         Identifier parent = null;
 
         for(DoubleBlockType doubleBlockType : DOUBLE_BLOCK_TYPES){
@@ -152,13 +154,15 @@ public class ModModels {
         TableColor.LIME, TableColor.GREEN, TableColor.CYAN, TableColor.LIGHT_BLUE,
         TableColor.BLUE, TableColor.PURPLE, TableColor.MAGENTA, TableColor.PINK
     );
+
     public static List<DoubleBlockType> DOUBLE_BLOCK_TYPES = List.of(
         DoubleBlockType.SINGLE, DoubleBlockType.LEFT, DoubleBlockType.RIGHT
     );
 
     public static void registerModTable(BlockStateModelGenerator blockstateModelGenerator, Block block) {
         TextureMap textureMap = ModTablePlanksTextureMap(block);
-        BlockStateVariantMap.TripleProperty<Direction, DoubleBlockType, TableColor> variantMap = BlockStateVariantMap.create(Properties.HORIZONTAL_FACING, TableBlock.TABLE_TYPE, TableBlock.TABLE_COLOR);
+        BlockStateVariantMap.TripleProperty<Direction, DoubleBlockType, TableColor> variantMap =
+            BlockStateVariantMap.create(Properties.HORIZONTAL_FACING, TableBlock.TABLE_TYPE, TableBlock.TABLE_COLOR);
         Identifier parent = null;
 
         for (TableColor tableColor : TABLE_COLORS) {
@@ -208,21 +212,13 @@ public class ModModels {
         }
 
         blockstateModelGenerator.registerParentedItemModel(block.asItem(), parent);
-        blockstateModelGenerator.blockStateCollector.accept(
-            VariantsBlockStateSupplier.create(block)
-                .coordinate(variantMap)
-        );
+        blockstateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(variantMap));
     }
 
     //CUSTOM DOOR
-    public static final Model MOD_DOOR_BOTTOM_LEFT = block("door_bottom_left", "_bottom_left", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_BOTTOM_LEFT_OPEN = block("door_bottom_left_open", "_bottom_left_open", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_BOTTOM_RIGHT = block("door_bottom_right", "_bottom_right", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_BOTTOM_RIGHT_OPEN = block("door_bottom_right_open", "_bottom_right_open", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_TOP_LEFT = block("door_top_left", "_top_left", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_TOP_LEFT_OPEN = block("door_top_left_open", "_top_left_open", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_TOP_RIGHT = block("door_top_right", "_top_right", TextureKey.TOP, TextureKey.BOTTOM);
-    public static final Model MOD_DOOR_TOP_RIGHT_OPEN = block("door_top_right_open", "_top_right_open", TextureKey.TOP, TextureKey.BOTTOM);
+    public static List<DoubleBlockHalf> DOUBLE_BLOCK_HALF = List.of(
+        DoubleBlockHalf.UPPER, DoubleBlockHalf.LOWER
+    );
 
     public static TextureMap doorTextureMap(Block block) {
         return new TextureMap()
@@ -230,94 +226,69 @@ public class ModModels {
             .put(TextureKey.BOTTOM, ModelIds.getBlockSubModelId(block, "_bottom"));
     }
 
-    public static BlockStateVariantMap.QuadrupleProperty<Direction, DoubleBlockHalf, DoorHinge, Boolean> createDoorBlockStates(
-        BlockStateVariantMap.QuadrupleProperty<Direction, DoubleBlockHalf, DoorHinge, Boolean> variantMap,
-        DoubleBlockHalf targetHalf,
-        Identifier leftHingeClosedModelId,
-        Identifier leftHingeOpenModelId,
-        Identifier rightHingeClosedModelId,
-        Identifier rightHingeOpenModelId
-    ) {
-        return variantMap.register(Direction.EAST, targetHalf, DoorHinge.LEFT, false, BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeClosedModelId))
-            .register(Direction.SOUTH, targetHalf, DoorHinge.LEFT, false,
-                BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeClosedModelId).put(VariantSettings.Y, VariantSettings.Rotation.R90)
-            )
-            .register(Direction.WEST, targetHalf, DoorHinge.LEFT, false,
-                BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeClosedModelId).put(VariantSettings.Y, VariantSettings.Rotation.R180)
-            )
-            .register(Direction.NORTH, targetHalf, DoorHinge.LEFT, false,
-                BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeClosedModelId).put(VariantSettings.Y, VariantSettings.Rotation.R270)
-            )
-            .register(Direction.EAST, targetHalf, DoorHinge.RIGHT, false, BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeClosedModelId))
-
-            .register(Direction.SOUTH, targetHalf, DoorHinge.RIGHT, false,
-                BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeClosedModelId).put(VariantSettings.Y, VariantSettings.Rotation.R90)
-            )
-            .register(Direction.WEST, targetHalf, DoorHinge.RIGHT, false,
-                BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeClosedModelId).put(VariantSettings.Y, VariantSettings.Rotation.R180)
-            )
-            .register(Direction.NORTH, targetHalf, DoorHinge.RIGHT, false,
-                BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeClosedModelId).put(VariantSettings.Y, VariantSettings.Rotation.R270)
-            )
-            .register(Direction.EAST, targetHalf, DoorHinge.LEFT, true,
-                BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeOpenModelId).put(VariantSettings.Y, VariantSettings.Rotation.R90)
-            )
-            .register(Direction.SOUTH, targetHalf, DoorHinge.LEFT, true,
-                BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeOpenModelId).put(VariantSettings.Y, VariantSettings.Rotation.R180)
-            )
-            .register(Direction.WEST, targetHalf, DoorHinge.LEFT, true,
-                BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeOpenModelId).put(VariantSettings.Y, VariantSettings.Rotation.R270)
-            )
-            .register(Direction.NORTH, targetHalf, DoorHinge.LEFT, true, BlockStateVariant.create().put(VariantSettings.MODEL, leftHingeOpenModelId))
-
-            .register(Direction.EAST, targetHalf, DoorHinge.RIGHT, true,
-                BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeOpenModelId).put(VariantSettings.Y, VariantSettings.Rotation.R270)
-            )
-            .register(Direction.SOUTH, targetHalf, DoorHinge.RIGHT, true, BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeOpenModelId))
-
-            .register(Direction.WEST, targetHalf, DoorHinge.RIGHT, true,
-                BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeOpenModelId).put(VariantSettings.Y, VariantSettings.Rotation.R90)
-            )
-            .register(Direction.NORTH, targetHalf, DoorHinge.RIGHT, true,
-                BlockStateVariant.create().put(VariantSettings.MODEL, rightHingeOpenModelId).put(VariantSettings.Y, VariantSettings.Rotation.R180)
+    public static void registerDoor(BlockStateModelGenerator blockStateModelGenerator, Block block) {
+        TextureMap textureMap = doorTextureMap(block);
+        BlockStateVariantMap.QuadrupleProperty<Direction, DoubleBlockHalf, DoorHinge, Boolean> variantMap =
+            BlockStateVariantMap.create(
+                Properties.HORIZONTAL_FACING, Properties.DOUBLE_BLOCK_HALF,
+                Properties.DOOR_HINGE, Properties.OPEN
             );
-    }
 
-    public static BlockStateSupplier createDoorBlockState(
-        Block doorBlock,
-        Identifier bottomLeftHingeClosedModelId,
-        Identifier bottomLeftHingeOpenModelId,
-        Identifier bottomRightHingeClosedModelId,
-        Identifier bottomRightHingeOpenModelId,
-        Identifier topLeftHingeClosedModelId,
-        Identifier topLeftHingeOpenModelId,
-        Identifier topRightHingeClosedModelId,
-        Identifier topRightHingeOpenModelId
-    ) {
-        return VariantsBlockStateSupplier.create(doorBlock)
-            .coordinate(
-                createDoorBlockStates(
-                    createDoorBlockStates(
-                        BlockStateVariantMap.create(Properties.HORIZONTAL_FACING, Properties.DOUBLE_BLOCK_HALF, Properties.DOOR_HINGE, Properties.OPEN),
-                        DoubleBlockHalf.LOWER, bottomLeftHingeClosedModelId, bottomLeftHingeOpenModelId, bottomRightHingeClosedModelId, bottomRightHingeOpenModelId
-                    ),
-                    DoubleBlockHalf.UPPER, topLeftHingeClosedModelId, topLeftHingeOpenModelId, topRightHingeClosedModelId, topRightHingeOpenModelId
-                )
-            );
-    }
+        for (DoubleBlockHalf doubleBlockHalf : DOUBLE_BLOCK_HALF) {
+            String bottomTop;
 
-    public static void registerModDoor(BlockStateModelGenerator generator, Block splitDoorBlock, Block fullBlock, TextureMap textures) {
-        TextureMap textureMap = TextureMap.topBottom(splitDoorBlock);
-        Identifier identifier = MOD_DOOR_BOTTOM_LEFT.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier2 = MOD_DOOR_BOTTOM_LEFT_OPEN.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier3 = MOD_DOOR_BOTTOM_RIGHT.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier4 = MOD_DOOR_BOTTOM_RIGHT_OPEN.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier5 = MOD_DOOR_TOP_LEFT.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier6 = MOD_DOOR_TOP_LEFT_OPEN.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier7 = MOD_DOOR_TOP_RIGHT.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        Identifier identifier8 = MOD_DOOR_TOP_RIGHT_OPEN.upload(splitDoorBlock, textureMap, generator.modelCollector);
-        generator.registerItemModel(splitDoorBlock.asItem());
-        generator.blockStateCollector.accept(createDoorBlockState(splitDoorBlock, identifier, identifier2, identifier3, identifier4, identifier5, identifier6, identifier7, identifier8));
+            if (doubleBlockHalf.equals(DoubleBlockHalf.LOWER)){
+                bottomTop = "bottom";
+            } else {
+                bottomTop = "top";
+            }
+
+            Identifier identifierLeftOpen = block(
+                "door_" + bottomTop + "_left_open",
+                "_" + bottomTop + "_left_open",
+                TextureKey.TOP, TextureKey.BOTTOM)
+                .upload(block, textureMap, blockStateModelGenerator.modelCollector);
+            Identifier identifierLeftClosed = block(
+                "door_" + bottomTop + "_left",
+                "_" + bottomTop + "_left",
+                TextureKey.TOP, TextureKey.BOTTOM)
+                .upload(block, textureMap, blockStateModelGenerator.modelCollector);
+            Identifier identifierRightOpen = block(
+                "door_" + bottomTop + "_right_open",
+                "_" + bottomTop + "_right_open",
+                TextureKey.TOP, TextureKey.BOTTOM)
+                .upload(block, textureMap, blockStateModelGenerator.modelCollector);
+            Identifier identifierRightClosed = block(
+                "door_" + bottomTop + "_right",
+                "_" + bottomTop + "_right",
+                TextureKey.TOP, TextureKey.BOTTOM)
+                .upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+            variantMap.register(Direction.EAST, doubleBlockHalf, DoorHinge.LEFT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftClosed));
+            variantMap.register(Direction.SOUTH, doubleBlockHalf, DoorHinge.LEFT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftClosed).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+            variantMap.register(Direction.WEST, doubleBlockHalf, DoorHinge.LEFT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftClosed).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+            variantMap.register(Direction.NORTH, doubleBlockHalf, DoorHinge.LEFT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftClosed).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+
+            variantMap.register(Direction.EAST, doubleBlockHalf, DoorHinge.RIGHT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightClosed));
+            variantMap.register(Direction.SOUTH, doubleBlockHalf, DoorHinge.RIGHT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightClosed).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+            variantMap.register(Direction.WEST, doubleBlockHalf, DoorHinge.RIGHT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightClosed).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+            variantMap.register(Direction.NORTH, doubleBlockHalf, DoorHinge.RIGHT, false, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightClosed).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+
+            variantMap.register(Direction.EAST, doubleBlockHalf, DoorHinge.LEFT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftOpen).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+            variantMap.register(Direction.SOUTH, doubleBlockHalf, DoorHinge.LEFT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftOpen).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+            variantMap.register(Direction.WEST, doubleBlockHalf, DoorHinge.LEFT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftOpen).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+            variantMap.register(Direction.NORTH, doubleBlockHalf, DoorHinge.LEFT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierLeftOpen));
+
+            variantMap.register(Direction.EAST, doubleBlockHalf, DoorHinge.RIGHT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightOpen).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+            variantMap.register(Direction.SOUTH, doubleBlockHalf, DoorHinge.RIGHT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightOpen));
+            variantMap.register(Direction.WEST, doubleBlockHalf, DoorHinge.RIGHT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightOpen).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+            variantMap.register(Direction.NORTH, doubleBlockHalf, DoorHinge.RIGHT, true, BlockStateVariant.create().put(VariantSettings.MODEL, identifierRightOpen).put(VariantSettings.Y, VariantSettings.Rotation.R180));
+
+        }
+
+        blockStateModelGenerator.registerItemModel(block.asItem());
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(variantMap));
+
     }
 
 }
