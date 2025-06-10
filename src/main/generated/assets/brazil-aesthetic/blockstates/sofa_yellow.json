@@ -13,16 +13,13 @@
       "y": 90
     },
     "facing=north,type=left": {
-      "model": "brazil-aesthetic:block/sofa_yellow_left",
-      "y": 0
+      "model": "brazil-aesthetic:block/sofa_yellow_left"
     },
     "facing=north,type=right": {
-      "model": "brazil-aesthetic:block/sofa_yellow_right",
-      "y": 0
+      "model": "brazil-aesthetic:block/sofa_yellow_right"
     },
     "facing=north,type=single": {
-      "model": "brazil-aesthetic:block/sofa_yellow_single",
-      "y": 0
+      "model": "brazil-aesthetic:block/sofa_yellow_single"
     },
     "facing=south,type=left": {
       "model": "brazil-aesthetic:block/sofa_yellow_left",

@@ -1,7 +1,6 @@
 package any.brazilaesthetic.datagen;
 
 import any.brazilaesthetic.blocks.ModBlocks;
-import any.brazilaesthetic.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
@@ -16,22 +15,22 @@ public class ModModelGenerator extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 //        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_BLOCK);
 //        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TEST_TABLE);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_WHITE);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_LIGHT_GRAY);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_GRAY);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_BLACK);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_BROWN);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_RED);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_ORANGE);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_YELLOW);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_LIME);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_GREEN);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_CYAN);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_LIGHT_BLUE);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_BLUE);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_PURPLE);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_MAGENTA);
-        ModModels.registerModSofa(blockStateModelGenerator, ModBlocks.SOFA_PINK);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_WHITE);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_LIGHT_GRAY);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_GRAY);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_BLACK);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_BROWN);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_RED);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_ORANGE);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_YELLOW);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_LIME);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_GREEN);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_CYAN);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_LIGHT_BLUE);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_BLUE);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_PURPLE);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_MAGENTA);
+        ModModels.registerSofa(blockStateModelGenerator, ModBlocks.SOFA_PINK);
 //        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.TEST_SOFA);
 //        ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS);
         ModModels.registerModTable(blockStateModelGenerator, ModBlocks.TABLE_PLANKS_ACACIA);
@@ -49,7 +48,7 @@ public class ModModelGenerator extends FabricModelProvider {
 
 //        blockStateModelGenerator.registerDoor();
 
-        ModModels.registerModDoor(blockStateModelGenerator, ModBlocks.TEST_DOOR, Blocks.OAK_PLANKS, ModModels.modTopBottom(Blocks.OAK_PLANKS));
+        ModModels.registerModDoor(blockStateModelGenerator, ModBlocks.TEST_DOOR, Blocks.OAK_PLANKS, ModModels.doorTextureMap(Blocks.OAK_PLANKS));
 
     }
 
