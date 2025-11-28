@@ -10,7 +10,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.enums.DoorHinge;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.data.client.*;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
@@ -21,14 +20,14 @@ import java.util.Optional;
 
 public class ModModels {
 
-    private static Model block(String parent, TextureKey... requiredTextureKeys) {
-        return new Model(Optional.ofNullable(Identifier.of(BrazilAesthetic.MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
-    }
+//    private static Model block(String parent, TextureKey... requiredTextureKeys) {
+//        return new Model(Optional.ofNullable(Identifier.of(BrazilAesthetic.MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
+//    }
 
     private static Model block(String parent, String variant, TextureKey... requiredTextureKeys) {
         return new Model(Optional.ofNullable(Identifier.of(BrazilAesthetic.MOD_ID, "block/" + parent)), Optional.of(variant), requiredTextureKeys);
     }
-    //GENRAL TEXTURE KEYS
+    //GENERAL TEXTURE KEYS
     public static final TextureKey PARTICLE_TEXTURE_KEY = TextureKey.of("particle");
 
     //SOFA

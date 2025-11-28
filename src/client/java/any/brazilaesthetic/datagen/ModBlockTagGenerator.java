@@ -30,9 +30,8 @@ public class ModBlockTagGenerator extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.TABLE_PLANKS_OAK)
             .add(ModBlocks.TABLE_PLANKS_SPRUCE)
             .add(ModBlocks.TABLE_PLANKS_WARPED)
-//            .add(ModBlocks.TEST_SOFA)
-//            .add(ModBlocks.SOFA_BLACK)
-//            .add(ModBlocks.SOFA_RED)
+
+            .add(ModBlocks.RADIO)
         ;
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)

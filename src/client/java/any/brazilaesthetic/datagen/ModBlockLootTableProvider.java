@@ -60,5 +60,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SOFA_PURPLE);
         addDrop(ModBlocks.SOFA_MAGENTA);
         addDrop(ModBlocks.SOFA_PINK);
+
+        addDrop(ModBlocks.RADIO);
     }
 }

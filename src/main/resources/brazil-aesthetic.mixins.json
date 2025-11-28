@@ -3,7 +3,7 @@
 	"package": "any.brazilaesthetic.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"MusicDiscItemMixins"
 	],
 	"injectors": {
 		"defaultRequire": 1

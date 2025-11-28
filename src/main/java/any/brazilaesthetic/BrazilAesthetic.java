@@ -5,7 +5,7 @@ import any.brazilaesthetic.entity.ModEntityTypes;
 import any.brazilaesthetic.items.ModItemGroups;
 import any.brazilaesthetic.items.ModItems;
 import net.fabricmc.api.ModInitializer;
-
+import net.minecraft.block.entity.BlockEntityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,11 +15,13 @@ public class BrazilAesthetic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-//		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Welcome to Brasil!!");
 		ModItems.initialize();
 		ModBlocks.initialize();
 		ModItemGroups.registerItemGroups();
 
 		ModEntityTypes.registerModEntities();
+
+		BlockEntityType.JUKEBOX.supports(ModBlocks.RADIO.getDefaultState());
 	}
 }

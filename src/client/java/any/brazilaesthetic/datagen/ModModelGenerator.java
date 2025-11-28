@@ -3,8 +3,8 @@ package any.brazilaesthetic.datagen;
 import any.brazilaesthetic.blocks.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
-import net.minecraft.data.client.*;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
 
 public class ModModelGenerator extends FabricModelProvider {
     public ModModelGenerator(FabricDataOutput output) {
@@ -50,6 +50,7 @@ public class ModModelGenerator extends FabricModelProvider {
 
         ModModels.registerDoor(blockStateModelGenerator, ModBlocks.TEST_DOOR);
 
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.RADIO);
     }
 
     @Override

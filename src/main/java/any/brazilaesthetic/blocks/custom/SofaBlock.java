@@ -1,7 +1,6 @@
 package any.brazilaesthetic.blocks.custom;
 
 import any.brazilaesthetic.blocks.custom.proprieties.DoubleBlockType;
-import any.brazilaesthetic.blocks.custom.proprieties.TableColor;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
@@ -14,7 +13,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
-import org.apache.commons.compress.archivers.dump.DumpArchiveEntry;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;

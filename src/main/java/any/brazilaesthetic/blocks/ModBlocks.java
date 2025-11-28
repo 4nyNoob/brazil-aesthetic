@@ -1,18 +1,12 @@
 package any.brazilaesthetic.blocks;
 
 import any.brazilaesthetic.BrazilAesthetic;
-import any.brazilaesthetic.blocks.custom.SittableBlock;
-import any.brazilaesthetic.blocks.custom.SofaBlock;
-import any.brazilaesthetic.blocks.custom.SplitDoorBlock;
-import any.brazilaesthetic.blocks.custom.TableBlock;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.impl.itemgroup.ItemGroupEventsImpl;
+import any.brazilaesthetic.blocks.custom.*;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -86,6 +80,10 @@ public class ModBlocks {
         "sofa_magenta", true);
     public static final Block SOFA_PINK = register(new SofaBlock(AbstractBlock.Settings.copy(Blocks.PINK_WOOL).nonOpaque()),
         "sofa_pink", true);
+
+
+    public static final Block RADIO = register(new RadioBlock(AbstractBlock.Settings.copy(Blocks.JUKEBOX).nonOpaque()),
+        "radio", true);
 
 
     public static Block register(Block block, String name, boolean shouldRegisterItem) {

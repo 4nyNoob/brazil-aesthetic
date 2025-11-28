@@ -1,8 +1,11 @@
 package any.brazilaesthetic.blocks.custom;
 
-import any.brazilaesthetic.blocks.custom.proprieties.TableColor;
 import any.brazilaesthetic.blocks.custom.proprieties.DoubleBlockType;
-import net.minecraft.block.*;
+import any.brazilaesthetic.blocks.custom.proprieties.TableColor;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;

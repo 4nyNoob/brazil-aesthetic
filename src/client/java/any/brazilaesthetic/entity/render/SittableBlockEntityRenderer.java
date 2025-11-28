@@ -18,6 +18,6 @@ public class SittableBlockEntityRenderer extends EntityRenderer<SittableBlockEnt
 
     @Override
     public boolean shouldRender(SittableBlockEntity entity, Frustum frustum, double x, double y, double z) {
-        return true;
+        return false;
     }
 }

@@ -2,7 +2,6 @@ package any.brazilaesthetic.entity;
 
 import any.brazilaesthetic.BrazilAesthetic;
 import any.brazilaesthetic.entity.custom.SittableBlockEntity;
-import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;

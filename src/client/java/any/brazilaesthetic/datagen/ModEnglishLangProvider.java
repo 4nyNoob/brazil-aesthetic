@@ -43,5 +43,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.SOFA_MAGENTA.getTranslationKey(), "Magenta Sofa");
         translationBuilder.add(ModBlocks.SOFA_PINK.getTranslationKey(), "Pink Sofa");
 
+        translationBuilder.add(ModBlocks.RADIO.getTranslationKey(), "Radio");
+
     }
 }

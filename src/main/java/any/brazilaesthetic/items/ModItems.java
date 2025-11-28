@@ -1,7 +1,6 @@
 package any.brazilaesthetic.items;
 
 import any.brazilaesthetic.BrazilAesthetic;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

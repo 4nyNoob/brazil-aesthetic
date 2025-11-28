@@ -48,6 +48,8 @@ public class ModItemGroups {
                 entries.add(ModBlocks.SOFA_MAGENTA);
                 entries.add(ModBlocks.SOFA_PINK);
 
+                entries.add(ModBlocks.RADIO);
+
                 //BLOCKS
 //                entries.add(ModBlocks.TEST_BLOCK);
 //                entries.add(ModBlocks.TEST_TABLE);
